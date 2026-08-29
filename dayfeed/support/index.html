@@ -8,86 +8,194 @@
 <style>
   :root{
     --bg:#F7F4FC; --card:#FFFFFF; --ink:#2A1B3D; --muted:#6B5F7A;
-    --brand:#4A1F7C; --line:#DDD6F3;
+    --brand:#4A1F7C; --line:#DDD6F3; --chip:#EDE7F6;
   }
   @media (prefers-color-scheme: dark){
     :root{ --bg:#2A1B3D; --card:#3A2255; --ink:#F7F4FC; --muted:#B9AECB;
-           --brand:#A88CF5; --line:#5A3A78; }
+           --brand:#A88CF5; --line:#5A3A78; --chip:#4A2E6A; }
   }
   *{box-sizing:border-box}
   body{margin:0;background:var(--bg);color:var(--ink);
        font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
        padding:32px 20px}
   main{max-width:660px;margin:0 auto}
-  header{display:flex;align-items:center;gap:14px;margin-bottom:8px}
+  header{display:flex;align-items:center;gap:14px;margin-bottom:18px}
   .mark{width:44px;height:44px;border-radius:12px;flex:none;
         background:linear-gradient(135deg,#6A0572,#A855F7);
         display:grid;place-items:center;font-size:22px}
   h1{font-size:26px;margin:0;letter-spacing:-.5px}
-  .tag{color:var(--muted);margin:0 0 28px}
+  nav{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:24px}
+  nav button{font:inherit;font-size:13px;font-weight:600;cursor:pointer;
+             padding:7px 14px;border-radius:999px;border:1px solid var(--line);
+             background:var(--chip);color:var(--ink);transition:.15s}
+  nav button[aria-current="true"]{background:var(--brand);color:#fff;border-color:var(--brand)}
+  @media (prefers-color-scheme: dark){ nav button[aria-current="true"]{color:#2A1B3D} }
+  .tag{color:var(--muted);margin:0 0 24px}
   section{background:var(--card);border:1px solid var(--line);
           border-radius:16px;padding:20px 22px;margin-bottom:16px}
   h2{font-size:15px;text-transform:uppercase;letter-spacing:.8px;
      color:var(--muted);margin:0 0 12px}
   a{color:var(--brand);text-decoration:none;font-weight:600}
   a:hover{text-decoration:underline}
-  ul{margin:0;padding-left:20px}
-  li{margin-bottom:6px}
+  ul{margin:0;padding-left:20px} li{margin-bottom:6px}
+  p{margin:0 0 12px} p:last-child{margin-bottom:0}
   .mail{display:inline-block;background:var(--brand);color:#fff;
         padding:11px 18px;border-radius:12px;font-weight:700}
   @media (prefers-color-scheme: dark){ .mail{color:#2A1B3D} }
+  [data-lang]{display:none} [data-lang].on{display:block}
   footer{color:var(--muted);font-size:13px;text-align:center;margin-top:28px}
 </style>
 </head>
 <body>
 <main>
-  <header>
-    <div class="mark">🌟</div>
-    <h1>Dayfeed Support</h1>
-  </header>
-  <p class="tag">Every day is a celebration. Here's how to get help with the app.</p>
+  <header><div class="mark">🌟</div><h1>Dayfeed Support</h1></header>
 
-  <section>
-    <h2>Contact</h2>
-    <p>Questions, bugs, or a special day we're missing — email us and we'll reply
-       within a couple of days.</p>
-    <p><a class="mail" href="mailto:nevranizamoglu@gmail.com?subject=Dayfeed%20Support">nevranizamoglu@gmail.com</a></p>
-  </section>
+  <nav id="langnav" aria-label="Language">
+    <button data-pick="en" type="button">English</button>
+    <button data-pick="tr" type="button">Türkçe</button>
+    <button data-pick="de" type="button">Deutsch</button>
+    <button data-pick="es" type="button">Español</button>
+    <button data-pick="fr" type="button">Français</button>
+  </nav>
 
-  <section>
-    <h2>What to include</h2>
-    <ul>
+  <!-- ENGLISH -->
+  <div data-lang="en">
+    <p class="tag">Every day is a celebration. Here's how to get help with the app.</p>
+    <section><h2>Contact</h2>
+      <p>Questions, bugs, or a special day we're missing — email us and we'll reply within a couple of days.</p>
+      <p><a class="mail" href="mailto:nevranizamoglu@gmail.com?subject=Dayfeed%20Support">nevranizamoglu@gmail.com</a></p></section>
+    <section><h2>What to include</h2><ul>
       <li>Your device and OS version (e.g. iPhone 15, iOS 18)</li>
       <li>The app version, from Settings → About</li>
       <li>What you expected, and what happened instead</li>
-      <li>A screenshot, if the problem is something you can see</li>
-    </ul>
-  </section>
-
-  <section>
-    <h2>Common questions</h2>
-    <ul>
-      <li><strong>Restore a purchase:</strong> Settings → Restore Purchases, using
-          the same Apple ID or Google account you bought with.</li>
-      <li><strong>Manage or cancel Pro:</strong> through your App Store or Google
-          Play subscription settings — we can't cancel it for you.</li>
-      <li><strong>Not getting reminders:</strong> check notifications are allowed
-          for Dayfeed in your device settings, and that you've picked interests
-          in the app.</li>
-      <li><strong>Suggest a special day:</strong> use "Suggest a Day" inside the
-          app, or email us.</li>
-    </ul>
-  </section>
-
-  <section>
-    <h2>Legal</h2>
-    <ul>
+      <li>A screenshot, if the problem is something you can see</li></ul></section>
+    <section><h2>Common questions</h2><ul>
+      <li><strong>Restore a purchase:</strong> Settings → Restore Purchases, using the same Apple ID or Google account you bought with.</li>
+      <li><strong>Manage or cancel Pro:</strong> through your App Store or Google Play subscription settings — we can't cancel it for you.</li>
+      <li><strong>Not getting reminders:</strong> check notifications are allowed for Dayfeed in your device settings, and that you've picked interests in the app.</li>
+      <li><strong>Suggest a special day:</strong> use "Suggest a Day" inside the app, or email us.</li></ul></section>
+    <section><h2>Legal</h2><ul>
       <li><a href="https://gist.github.com/nevranizamoglu/57fb77a8eff833239be54c83fa33f70e">Privacy Policy</a></li>
-      <li><a href="https://gist.github.com/nevranizamoglu/57fb77a8eff833239be54c83fa33f70e">Terms of Service</a></li>
-    </ul>
-  </section>
+      <li><a href="https://gist.github.com/nevranizamoglu/57fb77a8eff833239be54c83fa33f70e">Terms of Service</a></li></ul></section>
+  </div>
+
+  <!-- TÜRKÇE -->
+  <div data-lang="tr">
+    <p class="tag">Her gün bir kutlama. Uygulamayla ilgili yardım almak için:</p>
+    <section><h2>İletişim</h2>
+      <p>Sorular, hatalar ya da eksik bir özel gün — bize e-posta gönder, birkaç gün içinde yanıtlayalım.</p>
+      <p><a class="mail" href="mailto:nevranizamoglu@gmail.com?subject=Dayfeed%20Destek">nevranizamoglu@gmail.com</a></p></section>
+    <section><h2>Nelerden bahsetmelisin</h2><ul>
+      <li>Cihazın ve işletim sistemi sürümü (örn. iPhone 15, iOS 18)</li>
+      <li>Uygulama sürümü — Ayarlar → Hakkında</li>
+      <li>Ne olmasını bekledin, bunun yerine ne oldu</li>
+      <li>Sorun gözle görülüyorsa bir ekran görüntüsü</li></ul></section>
+    <section><h2>Sık sorulanlar</h2><ul>
+      <li><strong>Satın alımı geri yükleme:</strong> Ayarlar → Satın Alımları Geri Yükle; satın alırken kullandığın Apple Kimliği veya Google hesabıyla.</li>
+      <li><strong>Pro'yu yönetme veya iptal etme:</strong> App Store ya da Google Play abonelik ayarlarından — bunu senin adına biz iptal edemeyiz.</li>
+      <li><strong>Hatırlatıcılar gelmiyor:</strong> cihaz ayarlarından Dayfeed için bildirimlere izin verildiğini ve uygulamada ilgi alanı seçtiğini kontrol et.</li>
+      <li><strong>Özel gün öner:</strong> uygulamadaki "Gün Öner" bölümünü kullan ya da bize yaz.</li></ul></section>
+    <section><h2>Yasal</h2><ul>
+      <li><a href="https://gist.github.com/nevranizamoglu/57fb77a8eff833239be54c83fa33f70e">Gizlilik Politikası</a></li>
+      <li><a href="https://gist.github.com/nevranizamoglu/57fb77a8eff833239be54c83fa33f70e">Kullanım Koşulları</a></li></ul></section>
+  </div>
+
+  <!-- DEUTSCH -->
+  <div data-lang="de">
+    <p class="tag">Jeder Tag ist ein Fest. So bekommst du Hilfe zur App.</p>
+    <section><h2>Kontakt</h2>
+      <p>Fragen, Fehler oder ein besonderer Tag, der fehlt — schreib uns, wir antworten innerhalb weniger Tage.</p>
+      <p><a class="mail" href="mailto:nevranizamoglu@gmail.com?subject=Dayfeed%20Support">nevranizamoglu@gmail.com</a></p></section>
+    <section><h2>Was du angeben solltest</h2><ul>
+      <li>Dein Gerät und die Betriebssystemversion (z. B. iPhone 15, iOS 18)</li>
+      <li>Die App-Version, unter Einstellungen → Über</li>
+      <li>Was du erwartet hast und was stattdessen passiert ist</li>
+      <li>Ein Screenshot, wenn man das Problem sehen kann</li></ul></section>
+    <section><h2>Häufige Fragen</h2><ul>
+      <li><strong>Kauf wiederherstellen:</strong> Einstellungen → Käufe wiederherstellen, mit derselben Apple-ID bzw. demselben Google-Konto wie beim Kauf.</li>
+      <li><strong>Pro verwalten oder kündigen:</strong> über deine Abo-Einstellungen im App Store oder bei Google Play — wir können das nicht für dich kündigen.</li>
+      <li><strong>Keine Erinnerungen:</strong> prüfe, ob Mitteilungen für Dayfeed in den Geräteeinstellungen erlaubt sind und ob du in der App Interessen gewählt hast.</li>
+      <li><strong>Einen Tag vorschlagen:</strong> nutze „Tag vorschlagen" in der App oder schreib uns.</li></ul></section>
+    <section><h2>Rechtliches</h2><ul>
+      <li><a href="https://gist.github.com/nevranizamoglu/57fb77a8eff833239be54c83fa33f70e">Datenschutzerklärung</a></li>
+      <li><a href="https://gist.github.com/nevranizamoglu/57fb77a8eff833239be54c83fa33f70e">Nutzungsbedingungen</a></li></ul></section>
+  </div>
+
+  <!-- ESPAÑOL -->
+  <div data-lang="es">
+    <p class="tag">Cada día es una celebración. Así puedes conseguir ayuda con la app.</p>
+    <section><h2>Contacto</h2>
+      <p>Dudas, errores o un día especial que falta — escríbenos y te respondemos en un par de días.</p>
+      <p><a class="mail" href="mailto:nevranizamoglu@gmail.com?subject=Dayfeed%20Soporte">nevranizamoglu@gmail.com</a></p></section>
+    <section><h2>Qué incluir</h2><ul>
+      <li>Tu dispositivo y versión del sistema (p. ej. iPhone 15, iOS 18)</li>
+      <li>La versión de la app, en Ajustes → Acerca de</li>
+      <li>Qué esperabas y qué ocurrió en su lugar</li>
+      <li>Una captura de pantalla, si el problema se ve</li></ul></section>
+    <section><h2>Preguntas frecuentes</h2><ul>
+      <li><strong>Restaurar una compra:</strong> Ajustes → Restaurar compras, con el mismo ID de Apple o cuenta de Google con la que compraste.</li>
+      <li><strong>Gestionar o cancelar Pro:</strong> desde los ajustes de suscripción de App Store o Google Play — nosotros no podemos cancelarla por ti.</li>
+      <li><strong>No llegan los recordatorios:</strong> comprueba que las notificaciones estén permitidas para Dayfeed en los ajustes del dispositivo y que hayas elegido intereses en la app.</li>
+      <li><strong>Sugerir un día especial:</strong> usa "Sugerir un día" dentro de la app o escríbenos.</li></ul></section>
+    <section><h2>Legal</h2><ul>
+      <li><a href="https://gist.github.com/nevranizamoglu/57fb77a8eff833239be54c83fa33f70e">Política de privacidad</a></li>
+      <li><a href="https://gist.github.com/nevranizamoglu/57fb77a8eff833239be54c83fa33f70e">Términos de uso</a></li></ul></section>
+  </div>
+
+  <!-- FRANÇAIS -->
+  <div data-lang="fr">
+    <p class="tag">Chaque jour est une célébration. Voici comment obtenir de l'aide.</p>
+    <section><h2>Contact</h2>
+      <p>Questions, bugs ou une journée spéciale manquante — écrivez-nous, nous répondons sous quelques jours.</p>
+      <p><a class="mail" href="mailto:nevranizamoglu@gmail.com?subject=Dayfeed%20Assistance">nevranizamoglu@gmail.com</a></p></section>
+    <section><h2>À inclure dans votre message</h2><ul>
+      <li>Votre appareil et la version du système (par ex. iPhone 15, iOS 18)</li>
+      <li>La version de l'app, dans Réglages → À propos</li>
+      <li>Ce que vous attendiez et ce qui s'est passé à la place</li>
+      <li>Une capture d'écran, si le problème est visible</li></ul></section>
+    <section><h2>Questions fréquentes</h2><ul>
+      <li><strong>Restaurer un achat :</strong> Réglages → Restaurer les achats, avec l'identifiant Apple ou le compte Google utilisé lors de l'achat.</li>
+      <li><strong>Gérer ou annuler Pro :</strong> depuis vos réglages d'abonnement App Store ou Google Play — nous ne pouvons pas l'annuler à votre place.</li>
+      <li><strong>Rappels non reçus :</strong> vérifiez que les notifications sont autorisées pour Dayfeed dans les réglages de l'appareil et que vous avez choisi des centres d'intérêt dans l'app.</li>
+      <li><strong>Proposer une journée :</strong> utilisez « Proposer un jour » dans l'app ou écrivez-nous.</li></ul></section>
+    <section><h2>Mentions légales</h2><ul>
+      <li><a href="https://gist.github.com/nevranizamoglu/57fb77a8eff833239be54c83fa33f70e">Politique de confidentialité</a></li>
+      <li><a href="https://gist.github.com/nevranizamoglu/57fb77a8eff833239be54c83fa33f70e">Conditions d'utilisation</a></li></ul></section>
+  </div>
 
   <footer>© 2026 Nevra Nizamoğlu</footer>
 </main>
+
+<script>
+(function(){
+  var LANGS = ['en','tr','de','es','fr'];
+  function pick(){
+    var q = new URLSearchParams(location.search).get('lang');
+    var h = location.hash.replace('#','');
+    var cands = [q, h].concat(navigator.languages || [navigator.language || 'en']);
+    for (var i=0;i<cands.length;i++){
+      if(!cands[i]) continue;
+      var code = String(cands[i]).toLowerCase().split('-')[0];
+      if (LANGS.indexOf(code) > -1) return code;
+    }
+    return 'en';
+  }
+  function show(code){
+    LANGS.forEach(function(l){
+      var el = document.querySelector('[data-lang="'+l+'"]');
+      if (el) el.classList.toggle('on', l === code);
+    });
+    document.querySelectorAll('#langnav button').forEach(function(b){
+      b.setAttribute('aria-current', String(b.dataset.pick === code));
+    });
+    document.documentElement.lang = code;
+  }
+  document.querySelectorAll('#langnav button').forEach(function(b){
+    b.addEventListener('click', function(){ show(b.dataset.pick); });
+  });
+  show(pick());
+})();
+</script>
+<noscript><style>[data-lang]{display:block !important} #langnav{display:none}</style></noscript>
 </body>
 </html>
