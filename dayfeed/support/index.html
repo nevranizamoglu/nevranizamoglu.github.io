@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dayfeed — Support</title>
+<meta name="description" content="Help and contact for Dayfeed, the special-days discovery and poster app.">
+<style>
+  :root{
+    --bg:#F7F4FC; --card:#FFFFFF; --ink:#2A1B3D; --muted:#6B5F7A;
+    --brand:#4A1F7C; --line:#DDD6F3;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{ --bg:#2A1B3D; --card:#3A2255; --ink:#F7F4FC; --muted:#B9AECB;
+           --brand:#A88CF5; --line:#5A3A78; }
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);
+       font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
+       padding:32px 20px}
+  main{max-width:660px;margin:0 auto}
+  header{display:flex;align-items:center;gap:14px;margin-bottom:8px}
+  .mark{width:44px;height:44px;border-radius:12px;flex:none;
+        background:linear-gradient(135deg,#6A0572,#A855F7);
+        display:grid;place-items:center;font-size:22px}
+  h1{font-size:26px;margin:0;letter-spacing:-.5px}
+  .tag{color:var(--muted);margin:0 0 28px}
+  section{background:var(--card);border:1px solid var(--line);
+          border-radius:16px;padding:20px 22px;margin-bottom:16px}
+  h2{font-size:15px;text-transform:uppercase;letter-spacing:.8px;
+     color:var(--muted);margin:0 0 12px}
+  a{color:var(--brand);text-decoration:none;font-weight:600}
+  a:hover{text-decoration:underline}
+  ul{margin:0;padding-left:20px}
+  li{margin-bottom:6px}
+  .mail{display:inline-block;background:var(--brand);color:#fff;
+        padding:11px 18px;border-radius:12px;font-weight:700}
+  @media (prefers-color-scheme: dark){ .mail{color:#2A1B3D} }
+  footer{color:var(--muted);font-size:13px;text-align:center;margin-top:28px}
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <div class="mark">🌟</div>
+    <h1>Dayfeed Support</h1>
+  </header>
+  <p class="tag">Every day is a celebration. Here's how to get help with the app.</p>
+
+  <section>
+    <h2>Contact</h2>
+    <p>Questions, bugs, or a special day we're missing — email us and we'll reply
+       within a couple of days.</p>
+    <p><a class="mail" href="mailto:nevranizamoglu@gmail.com?subject=Dayfeed%20Support">nevranizamoglu@gmail.com</a></p>
+  </section>
+
+  <section>
+    <h2>What to include</h2>
+    <ul>
+      <li>Your device and OS version (e.g. iPhone 15, iOS 18)</li>
+      <li>The app version, from Settings → About</li>
+      <li>What you expected, and what happened instead</li>
+      <li>A screenshot, if the problem is something you can see</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Common questions</h2>
+    <ul>
+      <li><strong>Restore a purchase:</strong> Settings → Restore Purchases, using
+          the same Apple ID or Google account you bought with.</li>
+      <li><strong>Manage or cancel Pro:</strong> through your App Store or Google
+          Play subscription settings — we can't cancel it for you.</li>
+      <li><strong>Not getting reminders:</strong> check notifications are allowed
+          for Dayfeed in your device settings, and that you've picked interests
+          in the app.</li>
+      <li><strong>Suggest a special day:</strong> use "Suggest a Day" inside the
+          app, or email us.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Legal</h2>
+    <ul>
+      <li><a href="https://gist.github.com/nevranizamoglu/57fb77a8eff833239be54c83fa33f70e">Privacy Policy</a></li>
+      <li><a href="https://gist.github.com/nevranizamoglu/57fb77a8eff833239be54c83fa33f70e">Terms of Service</a></li>
+    </ul>
+  </section>
+
+  <footer>© 2026 Nevra Nizamoğlu</footer>
+</main>
+</body>
+</html>
