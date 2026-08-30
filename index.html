@@ -4,60 +4,99 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Nevra Nizamoğlu — Apps</title>
-<meta name="description" content="Apps by Nevra Nizamoğlu — Dayfeed and Lubunca Sözlük. Support, privacy and store links.">
+<meta name="description" content="Apps by Nevra Nizamoğlu — Dayfeed, Lubunca Sözlük and Dig Hazard. Support, privacy and store links.">
+<link rel="icon" href="dighazard/support/icon.png" type="image/png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&display=swap" rel="stylesheet">
 <style>
+  /* The site's own palette: İznik cobalt and turquoise. It belongs to none of
+     the three apps on purpose — each icon is loud and brings its own colour,
+     so the page has to be the shelf rather than a fourth identity competing
+     with them. Each app's accent below is sampled from its own icon. */
   :root{
-    --bg:#F7F4FC; --card:#FFFFFF; --ink:#2A1B3D; --muted:#6B5F7A;
-    --brand:#4A1F7C; --line:#DDD6F3;
+    --bg:#E9EEF0; --card:#FFFFFF; --ink:#10243A; --muted:#556C81;
+    --brand:#14497F; --line:#D3DEE4; --chip:#F1F5F7;
+    --dayfeed:#4A1F7C; --lubunca:#C9256A; --dighazard:#9A6410;
   }
   @media (prefers-color-scheme: dark){
-    :root{ --bg:#2A1B3D; --card:#3A2255; --ink:#F7F4FC; --muted:#B9AECB;
-           --brand:#A88CF5; --line:#5A3A78; }
+    :root{ --bg:#0B1620; --card:#12222E; --ink:#E4ECF1; --muted:#8FA6B5;
+           --brand:#6FC2D4; --line:#24394A; --chip:#1A2E3D;
+           --dayfeed:#A88CF5; --lubunca:#FF7FAC; --dighazard:#E8B54A; }
   }
   *{box-sizing:border-box}
   body{margin:0;background:var(--bg);color:var(--ink);
-       font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
-       padding:48px 20px}
-  main{max-width:660px;margin:0 auto}
-  h1{font-size:28px;margin:0 0 6px;letter-spacing:-.5px}
-  .lede{color:var(--muted);margin:0 0 36px}
-  .app{background:var(--card);border:1px solid var(--line);border-radius:16px;
-       padding:22px;margin-bottom:16px;display:flex;gap:16px;align-items:flex-start}
-  .app img{width:56px;height:56px;border-radius:14px;flex:none}
-  .app .body{flex:1;min-width:0}
-  h2{font-size:19px;margin:0 0 4px}
+       font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
+       padding:64px 20px 40px}
+  main{max-width:680px;margin:0 auto}
+
+  .display{font-family:"Bricolage Grotesque",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+           font-weight:700;letter-spacing:-.02em}
+  h1{font-size:clamp(30px,7vw,40px);margin:0 0 10px;line-height:1.1}
+  .lede{color:var(--muted);margin:0 0 44px;font-size:17px;max-width:46ch}
+
+  /* Each row carries its app's own colour in the rule at its edge, and borrows
+     a few percent of it into the card on hover. That is the whole idea of the
+     page: one shelf, three identities. */
+  .app{position:relative;background:var(--card);border:1px solid var(--line);
+       border-radius:14px;padding:20px 22px 20px 24px;margin-bottom:14px;
+       display:flex;gap:18px;align-items:flex-start;overflow:hidden;
+       transition:border-color .18s,transform .18s}
+  .app::before{content:"";position:absolute;left:0;top:0;bottom:0;width:4px;
+               background:var(--accent);transition:width .18s}
+  .app:hover{border-color:var(--accent);transform:translateY(-2px)}
+  .app:hover::before{width:7px}
+  .app.dayfeed{--accent:var(--dayfeed)}
+  .app.lubunca{--accent:var(--lubunca)}
+  .app.dighazard{--accent:var(--dighazard)}
+
+  .app img{width:60px;height:60px;border-radius:15px;flex:none;
+           border:1px solid var(--line)}
+  .body{flex:1;min-width:0}
+  .name{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap;margin:0 0 5px}
+  h2{font-size:20px;margin:0}
+  .status{font-size:11px;font-weight:700;letter-spacing:.7px;text-transform:uppercase;
+          color:var(--accent)}
   .desc{color:var(--muted);margin:0 0 14px;font-size:15px}
-  .links{display:flex;flex-wrap:wrap;gap:8px}
+  .links{display:flex;flex-wrap:wrap;gap:7px}
   .links a{font-size:13px;font-weight:600;text-decoration:none;
-           padding:7px 13px;border-radius:999px;border:1px solid var(--line);
-           color:var(--brand);background:transparent;transition:.15s}
-  .links a:hover{background:var(--brand);color:#fff;border-color:var(--brand)}
-  @media (prefers-color-scheme: dark){ .links a:hover{color:#2A1B3D} }
-  .soon{display:inline-block;font-size:11px;font-weight:700;letter-spacing:.6px;
-        text-transform:uppercase;padding:3px 9px;border-radius:999px;
-        background:var(--line);color:var(--muted);vertical-align:middle;
-        margin-left:9px}
-  .app.upcoming{opacity:.86}
-  footer{color:var(--muted);font-size:14px;text-align:center;margin-top:36px}
+           padding:6px 12px;border-radius:8px;border:1px solid var(--line);
+           color:var(--ink);background:var(--chip);transition:.15s}
+  .links a:hover{border-color:var(--accent);color:var(--accent)}
+  .links a.store{background:var(--accent);border-color:var(--accent);color:var(--card)}
+  .links a.store:hover{opacity:.88;color:var(--card)}
+  a:focus-visible{outline:2px solid var(--brand);outline-offset:2px}
+
+  footer{color:var(--muted);font-size:14px;margin-top:40px;
+         padding-top:22px;border-top:1px solid var(--line)}
   footer a{color:var(--brand);font-weight:600;text-decoration:none}
   footer a:hover{text-decoration:underline}
-  @media (max-width:480px){ .app{flex-direction:column} }
+
+  @media (max-width:520px){
+    body{padding-top:44px}
+    .app{flex-direction:column;gap:14px}
+    .app img{width:52px;height:52px}
+  }
+  @media (prefers-reduced-motion:reduce){
+    *{transition:none !important}
+    .app:hover{transform:none}
+  }
 </style>
 </head>
 <body>
 <main>
-  <h1>Nevra Nizamoğlu</h1>
-  <p class="lede">Independent app developer. Here's what I've built, and where to get help with it.</p>
-
-  <div class="app">
-    <img src="dayfeed/support/icon.png" alt="" width="56" height="56">
+  <h1 class="display">Nevra Nizamoğlu</h1>
+  <p class="lede">Independent developer in Türkiye. I make small apps about
+     days worth marking, words worth keeping, and caves worth digging.</p>
+  <div class="app dayfeed">
+    <img src="dayfeed/support/icon.png" alt="" width="60" height="60">
     <div class="body">
-      <h2>Dayfeed</h2>
-      <p class="desc">Discover the world's special days and turn the ones you love into
-         beautiful, share-ready posters. 799 days, five languages.</p>
+      <div class="name"><h2 class="display">Dayfeed</h2><span class="status">iOS · Android</span></div>
+      <p class="desc">The world's special days, and a poster maker for the ones
+         you want to share. 799 days in five languages.</p>
       <div class="links">
-        <a href="https://apps.apple.com/app/id6778334948">App Store</a>
-        <a href="https://play.google.com/store/apps/details?id=com.nevranizamoglu.dayfeed">Google Play</a>
+        <a class="store" href="https://apps.apple.com/app/id6778334948">App Store</a>
+        <a class="store" href="https://play.google.com/store/apps/details?id=com.nevranizamoglu.dayfeed">Google Play</a>
         <a href="dayfeed/support/">Support</a>
         <a href="https://gist.github.com/nevranizamoglu/57fb77a8eff833239be54c83fa33f70e#file-dayfeed_privacy-md">Privacy</a>
         <a href="https://gist.github.com/nevranizamoglu/57fb77a8eff833239be54c83fa33f70e#file-dayfeed_terms-md">Terms</a>
@@ -65,27 +104,27 @@
     </div>
   </div>
 
-  <div class="app">
-    <img src="lubunca/icon.png" alt="" width="56" height="56">
+  <div class="app lubunca">
+    <img src="lubunca/icon.png" alt="" width="60" height="60">
     <div class="body">
-      <h2>Lubunca Sözlük</h2>
-      <p class="desc">A dictionary of Lubunca, the Turkish queer argot — its words,
-         their meanings and where they come from.</p>
+      <div class="name"><h2 class="display">Lubunca Sözlük</h2><span class="status">iOS · Android</span></div>
+      <p class="desc">A dictionary of Lubunca, the Turkish queer argot — its
+         words, what they mean, and where they came from.</p>
       <div class="links">
-        <a href="https://apps.apple.com/app/id6759158607">App Store</a>
-        <a href="https://play.google.com/store/apps/details?id=com.nevranizamoglu.lubuncasozluk">Google Play</a>
+        <a class="store" href="https://apps.apple.com/app/id6759158607">App Store</a>
+        <a class="store" href="https://play.google.com/store/apps/details?id=com.nevranizamoglu.lubuncasozluk">Google Play</a>
         <a href="https://gist.github.com/nevranizamoglu/ed420b4d0ac9b8cb705f3a1997616ffa">Privacy</a>
       </div>
     </div>
   </div>
 
-  <div class="app upcoming">
-    <img src="dighazard/icon.png" alt="" width="56" height="56">
+  <div class="app dighazard">
+    <img src="dighazard/support/icon.png" alt="" width="60" height="60">
     <div class="body">
-      <h2>Dig Hazard: Tomb Miner <span class="soon">Coming soon</span></h2>
-      <p class="desc">A Boulder Dash-style digging game. Jack tunnels through ancient
-         excavation sites for gems and artifacts, dodging falling boulders,
-         toppling statues and tomb-guardian mummies.</p>
+      <div class="name"><h2 class="display">Dig Hazard: Tomb Miner</h2><span class="status">Coming soon</span></div>
+      <p class="desc">A Boulder Dash-style digging game. Jack tunnels through
+         ancient sites for gems and relics, dodging falling boulders, toppling
+         statues and tomb guardians.</p>
       <div class="links">
         <a href="dighazard/support/">Support</a>
         <a href="dighazard/privacy/">Privacy</a>
