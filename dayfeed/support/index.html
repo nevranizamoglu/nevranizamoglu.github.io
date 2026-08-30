@@ -48,7 +48,7 @@
 </head>
 <body>
 <main>
-  <header><img class="mark" src="icon.png" alt="Dayfeed" width="52" height="52"><h1>Dayfeed Support</h1></header>
+  <header><img class="mark" src="icon.png" alt="Dayfeed" width="52" height="52"><h1 id="title">Dayfeed Support</h1></header>
 
   <nav id="langnav" aria-label="Language">
     <button data-pick="en" type="button">English</button>
@@ -169,6 +169,13 @@
 <script>
 (function(){
   var LANGS = ['en','tr','de','es','fr'];
+  // The heading sits outside the language blocks, so it is swapped here.
+  // Left in English in the markup so it still reads without JavaScript.
+  var TITLES = {
+    en:'Dayfeed Support',       tr:'Dayfeed Destek',
+    de:'Dayfeed Hilfe',         es:'Soporte de Dayfeed',
+    fr:'Assistance Dayfeed'
+  };
   function pick(){
     var q = new URLSearchParams(location.search).get('lang');
     var h = location.hash.replace('#','');
@@ -189,6 +196,10 @@
       b.setAttribute('aria-current', String(b.dataset.pick === code));
     });
     document.documentElement.lang = code;
+    var t = TITLES[code] || TITLES.en;
+    var h = document.getElementById('title');
+    if (h) h.textContent = t;
+    document.title = t;
   }
   document.querySelectorAll('#langnav button').forEach(function(b){
     b.addEventListener('click', function(){ show(b.dataset.pick); });
