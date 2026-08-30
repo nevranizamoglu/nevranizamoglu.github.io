@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dig Hazard — Support</title>
+<meta name="description" content="Help and contact for Dig Hazard: Tomb Miner, the Boulder Dash-style digging game.">
+<link rel="icon" href="icon.png" type="image/png">
+<link rel="apple-touch-icon" href="icon.png">
+<style>
+  :root{
+    --bg:#F5EEE0; --card:#FFFFFF; --ink:#2A1B0F; --muted:#7A6A55;
+    --brand:#8A5A16; --line:#E4D9C3; --chip:#F0E5D0;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{ --bg:#1A120B; --card:#241A11; --ink:#E8E0D0; --muted:#9C8F79;
+           --brand:#FFD54F; --line:#4A3620; --chip:#33261A; }
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);
+       font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
+       padding:32px 20px}
+  main{max-width:660px;margin:0 auto}
+  header{display:flex;align-items:center;gap:14px;margin-bottom:18px}
+  .mark{width:52px;height:52px;border-radius:13px;flex:none;display:block}
+  h1{font-size:26px;margin:0;letter-spacing:-.5px}
+  nav{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:24px}
+  nav button{font:inherit;font-size:13px;font-weight:600;cursor:pointer;
+             padding:7px 14px;border-radius:999px;border:1px solid var(--line);
+             background:var(--chip);color:var(--ink);transition:.15s}
+  nav button:hover{border-color:var(--brand)}
+  nav button[aria-current="true"]{background:var(--brand);color:#FFF8E7;border-color:var(--brand)}
+  @media (prefers-color-scheme: dark){ nav button[aria-current="true"]{color:#1A120B} }
+  nav button:focus-visible,a:focus-visible{outline:2px solid var(--brand);outline-offset:2px}
+  .tag{color:var(--muted);margin:0 0 24px}
+  section{background:var(--card);border:1px solid var(--line);
+          border-radius:16px;padding:20px 22px;margin-bottom:16px}
+  h2{font-size:15px;text-transform:uppercase;letter-spacing:.8px;
+     color:var(--muted);margin:0 0 12px}
+  a{color:var(--brand);text-decoration:none;font-weight:600}
+  a:hover{text-decoration:underline}
+  ul{margin:0;padding-left:20px} li{margin-bottom:6px}
+  p{margin:0 0 12px} p:last-child{margin-bottom:0}
+  .mail{display:inline-block;background:var(--brand);color:#FFF8E7;
+        padding:11px 18px;border-radius:12px;font-weight:700}
+  .mail:hover{text-decoration:none;opacity:.9}
+  @media (prefers-color-scheme: dark){ .mail{color:#1A120B} }
+  [data-lang]{display:none} [data-lang].on{display:block}
+  footer{color:var(--muted);font-size:13px;text-align:center;margin-top:28px}
+  footer a{font-weight:600}
+  @media (prefers-reduced-motion:reduce){ *{transition:none !important} }
+</style>
+</head>
+<body>
+<main>
+  <header><img class="mark" src="icon.png" alt="Dig Hazard" width="52" height="52"><h1 id="title">Dig Hazard Support</h1></header>
+
+  <nav id="langnav" aria-label="Language">
+    <button data-pick="en" type="button">English</button>
+    <button data-pick="tr" type="button">Türkçe</button>
+    <button data-pick="es" type="button">Español</button>
+    <button data-pick="pt" type="button">Português</button>
+    <button data-pick="fr" type="button">Français</button>
+    <button data-pick="de" type="button">Deutsch</button>
+    <button data-pick="it" type="button">Italiano</button>
+    <button data-pick="pl" type="button">Polski</button>
+    <button data-pick="ru" type="button">Русский</button>
+    <button data-pick="id" type="button">Bahasa Indonesia</button>
+    <button data-pick="vi" type="button">Tiếng Việt</button>
+  </nav>
+
+  <!-- ENGLISH -->
+  <div data-lang="en">
+    <p class="tag">Dig deep, watch your head. Here's how to get help with the game.</p>
+    <section><h2>Contact</h2>
+      <p>Questions, bugs, or a site you're stuck on — email us and we'll reply within a couple of days.</p>
+      <p><a class="mail" href="mailto:nevranizamoglu@gmail.com?subject=Dig%20Hazard%20Support">nevranizamoglu@gmail.com</a></p></section>
+    <section><h2>What to include</h2><ul>
+      <li>Your device and OS version (e.g. iPhone 15, iOS 18)</li>
+      <li>The site number you were digging, if it happened in a level</li>
+      <li>What you expected, and what happened instead</li>
+      <li>A screenshot, if the problem is something you can see</li></ul></section>
+    <section><h2>Common questions</h2><ul>
+      <li><strong>Restore a purchase:</strong> open the Store and tap <em>Restore Purchases</em>, using the same Apple ID or Google account you bought with.</li>
+      <li><strong>Manage or cancel Tomb Pass:</strong> through your App Store or Google Play subscription settings — we can't cancel it for you.</li>
+      <li><strong>Doubloons didn't arrive:</strong> try <em>Restore Purchases</em> first. If they're still missing, email us with the store receipt and we'll sort it out.</li>
+      <li><strong>Ads still showing after buying:</strong> a pack purchase removes ads permanently, but the game needs to hear back from the store — reopen the app, and use <em>Restore Purchases</em> if it hasn't caught up.</li>
+      <li><strong>Change your ad privacy choice:</strong> Settings → <em>Ad privacy options</em>. It appears where consent rules apply.</li>
+      <li><strong>Progress lives on your device:</strong> purchases restore to a new phone, but dig progress doesn't travel with them.</li></ul></section>
+    <section><h2>Legal</h2><ul>
+      <li><a href="https://gist.github.com/nevranizamoglu/a995c11c536844fe5894d7386ee927e5#file-dighazard-privacy-policy-md">Privacy Policy</a></li>
+      <li><a href="https://gist.github.com/nevranizamoglu/a995c11c536844fe5894d7386ee927e5#file-dighazard-terms-of-use-md">Terms of Use</a></li></ul></section>
+  </div>
+
+  <!-- TÜRKÇE -->
+  <div data-lang="tr">
+    <p class="tag">Derine kaz, başına dikkat et. Oyunla ilgili yardım almak için:</p>
+    <section><h2>İletişim</h2>
+      <p>Sorular, hatalar ya da takıldığın bir kazı alanı — bize e-posta gönder, birkaç gün içinde yanıtlayalım.</p>
+      <p><a class="mail" href="mailto:nevranizamoglu@gmail.com?subject=Dig%20Hazard%20Destek">nevranizamoglu@gmail.com</a></p></section>
+    <section><h2>Nelerden bahsetmelisin</h2><ul>
+      <li>Cihazın ve işletim sistemi sürümü (örn. iPhone 15, iOS 18)</li>
+      <li>Bir bölümde olduysa kaçıncı kazı alanında olduğun</li>
+      <li>Ne olmasını bekledin, bunun yerine ne oldu</li>
+      <li>Sorun gözle görülüyorsa bir ekran görüntüsü</li></ul></section>
+    <section><h2>Sık sorulanlar</h2><ul>
+      <li><strong>Satın alımı geri yükleme:</strong> Mağaza'yı aç ve <em>Satın Almaları Geri Yükle</em>'ye dokun; satın alırken kullandığın Apple Kimliği veya Google hesabıyla.</li>
+      <li><strong>Mezar Kartı'nı yönetme veya iptal etme:</strong> App Store ya da Google Play abonelik ayarlarından — bunu senin adına biz iptal edemeyiz.</li>
+      <li><strong>Dublonlar gelmedi:</strong> önce <em>Satın Almaları Geri Yükle</em>'yi dene. Hâlâ yoksa mağaza makbuzuyla bize yaz, çözelim.</li>
+      <li><strong>Satın aldıktan sonra hâlâ reklam çıkıyor:</strong> bir paket satın alımı reklamları kalıcı olarak kaldırır ama oyunun mağazadan yanıt alması gerekir — uygulamayı yeniden aç, gecikirse <em>Satın Almaları Geri Yükle</em>'yi kullan.</li>
+      <li><strong>Reklam gizlilik tercihini değiştirme:</strong> Ayarlar → <em>Reklam gizlilik seçenekleri</em>. Rıza kurallarının geçerli olduğu yerlerde görünür.</li>
+      <li><strong>İlerleme cihazında tutulur:</strong> satın alımlar yeni telefona geri yüklenir, kazı ilerlemesi onlarla birlikte taşınmaz.</li></ul></section>
+    <section><h2>Yasal</h2><ul>
+      <li><a href="https://gist.github.com/nevranizamoglu/a995c11c536844fe5894d7386ee927e5#file-dighazard-privacy-policy-md">Gizlilik Politikası</a></li>
+      <li><a href="https://gist.github.com/nevranizamoglu/a995c11c536844fe5894d7386ee927e5#file-dighazard-terms-of-use-md">Kullanım Koşulları</a></li></ul></section>
+  </div>
+
+  <!-- ESPAÑOL -->
+  <div data-lang="es">
+    <p class="tag">Cava hondo y cuidado con la cabeza. Así puedes conseguir ayuda con el juego.</p>
+    <section><h2>Contacto</h2>
+      <p>Dudas, errores o una excavación donde te has quedado atascado — escríbenos y te respondemos en un par de días.</p>
+      <p><a class="mail" href="mailto:nevranizamoglu@gmail.com?subject=Dig%20Hazard%20Soporte">nevranizamoglu@gmail.com</a></p></section>
+    <section><h2>Qué incluir</h2><ul>
+      <li>Tu dispositivo y versión del sistema (p. ej. iPhone 15, iOS 18)</li>
+      <li>El número de excavación en el que estabas, si ocurrió en un nivel</li>
+      <li>Qué esperabas y qué ocurrió en su lugar</li>
+      <li>Una captura de pantalla, si el problema se ve</li></ul></section>
+    <section><h2>Preguntas frecuentes</h2><ul>
+      <li><strong>Restaurar una compra:</strong> abre la Tienda y toca <em>Restaurar compras</em>, con el mismo ID de Apple o cuenta de Google con la que compraste.</li>
+      <li><strong>Gestionar o cancelar el Pase de Tumba:</strong> desde los ajustes de suscripción de App Store o Google Play — nosotros no podemos cancelarlo por ti.</li>
+      <li><strong>No llegaron los doblones:</strong> prueba primero <em>Restaurar compras</em>. Si siguen sin aparecer, escríbenos con el recibo de la tienda y lo solucionamos.</li>
+      <li><strong>Siguen saliendo anuncios tras comprar:</strong> comprar un pack quita los anuncios para siempre, pero el juego necesita la confirmación de la tienda — reabre la app y usa <em>Restaurar compras</em> si aún no se ha actualizado.</li>
+      <li><strong>Cambiar tu decisión sobre anuncios:</strong> Ajustes → <em>Opciones de privacidad de anuncios</em>. Aparece donde se aplican las reglas de consentimiento.</li>
+      <li><strong>El progreso vive en tu dispositivo:</strong> las compras se restauran en un teléfono nuevo, pero el progreso de excavación no viaja con ellas.</li></ul></section>
+    <section><h2>Legal</h2><ul>
+      <li><a href="https://gist.github.com/nevranizamoglu/a995c11c536844fe5894d7386ee927e5#file-dighazard-privacy-policy-md">Política de Privacidad</a></li>
+      <li><a href="https://gist.github.com/nevranizamoglu/a995c11c536844fe5894d7386ee927e5#file-dighazard-terms-of-use-md">Condiciones de Uso</a></li></ul></section>
+  </div>
+
+  <!-- PORTUGUÊS -->
+  <div data-lang="pt">
+    <p class="tag">Cave fundo e cuidado com a cabeça. Veja como obter ajuda com o jogo.</p>
+    <section><h2>Contato</h2>
+      <p>Dúvidas, erros ou uma escavação em que você travou — mande um e-mail e respondemos em alguns dias.</p>
+      <p><a class="mail" href="mailto:nevranizamoglu@gmail.com?subject=Dig%20Hazard%20Suporte">nevranizamoglu@gmail.com</a></p></section>
+    <section><h2>O que incluir</h2><ul>
+      <li>Seu aparelho e a versão do sistema (ex.: iPhone 15, iOS 18)</li>
+      <li>O número da escavação em que você estava, se aconteceu num nível</li>
+      <li>O que você esperava e o que aconteceu no lugar</li>
+      <li>Uma captura de tela, se dá para ver o problema</li></ul></section>
+    <section><h2>Perguntas frequentes</h2><ul>
+      <li><strong>Restaurar uma compra:</strong> abra a Loja e toque em <em>Restaurar compras</em>, com o mesmo ID Apple ou conta Google usada na compra.</li>
+      <li><strong>Gerenciar ou cancelar o Passe da Tumba:</strong> nas configurações de assinatura da App Store ou do Google Play — não podemos cancelar por você.</li>
+      <li><strong>Os dobrões não chegaram:</strong> tente <em>Restaurar compras</em> primeiro. Se ainda faltarem, escreva com o recibo da loja e a gente resolve.</li>
+      <li><strong>Ainda aparecem anúncios depois da compra:</strong> comprar um pacote remove os anúncios para sempre, mas o jogo precisa da confirmação da loja — reabra o app e use <em>Restaurar compras</em> se ainda não tiver atualizado.</li>
+      <li><strong>Mudar sua escolha sobre anúncios:</strong> Ajustes → <em>Opções de privacidade de anúncios</em>. Aparece onde valem as regras de consentimento.</li>
+      <li><strong>O progresso fica no seu aparelho:</strong> as compras se restauram num celular novo, mas o progresso das escavações não vai junto.</li></ul></section>
+    <section><h2>Jurídico</h2><ul>
+      <li><a href="https://gist.github.com/nevranizamoglu/a995c11c536844fe5894d7386ee927e5#file-dighazard-privacy-policy-md">Política de Privacidade</a></li>
+      <li><a href="https://gist.github.com/nevranizamoglu/a995c11c536844fe5894d7386ee927e5#file-dighazard-terms-of-use-md">Termos de Uso</a></li></ul></section>
+  </div>
+
+  <!-- FRANÇAIS -->
+  <div data-lang="fr">
+    <p class="tag">Creusez profond, attention à la tête. Voici comment obtenir de l'aide.</p>
+    <section><h2>Contact</h2>
+      <p>Questions, bugs ou un chantier qui vous bloque — écrivez-nous, nous répondons sous quelques jours.</p>
+      <p><a class="mail" href="mailto:nevranizamoglu@gmail.com?subject=Dig%20Hazard%20Assistance">nevranizamoglu@gmail.com</a></p></section>
+    <section><h2>À inclure dans votre message</h2><ul>
+      <li>Votre appareil et la version du système (par ex. iPhone 15, iOS 18)</li>
+      <li>Le numéro du chantier où vous étiez, si c'est arrivé dans un niveau</li>
+      <li>Ce que vous attendiez et ce qui s'est passé à la place</li>
+      <li>Une capture d'écran, si le problème est visible</li></ul></section>
+    <section><h2>Questions fréquentes</h2><ul>
+      <li><strong>Restaurer un achat :</strong> ouvrez la Boutique et touchez <em>Restaurer les achats</em>, avec l'identifiant Apple ou le compte Google utilisé lors de l'achat.</li>
+      <li><strong>Gérer ou annuler le Passe du Tombeau :</strong> depuis vos réglages d'abonnement App Store ou Google Play — nous ne pouvons pas l'annuler à votre place.</li>
+      <li><strong>Les doublons ne sont pas arrivés :</strong> essayez d'abord <em>Restaurer les achats</em>. S'ils manquent toujours, écrivez-nous avec le reçu de la boutique.</li>
+      <li><strong>Des publicités après un achat :</strong> l'achat d'un pack supprime les publicités définitivement, mais le jeu doit recevoir la confirmation de la boutique — rouvrez l'app et utilisez <em>Restaurer les achats</em> si rien n'a changé.</li>
+      <li><strong>Modifier votre choix publicitaire :</strong> Réglages → <em>Options de confidentialité des publicités</em>. Disponible là où les règles de consentement s'appliquent.</li>
+      <li><strong>La progression reste sur l'appareil :</strong> les achats se restaurent sur un nouveau téléphone, mais la progression des fouilles ne les suit pas.</li></ul></section>
+    <section><h2>Mentions légales</h2><ul>
+      <li><a href="https://gist.github.com/nevranizamoglu/a995c11c536844fe5894d7386ee927e5#file-dighazard-privacy-policy-md">Politique de confidentialité</a></li>
+      <li><a href="https://gist.github.com/nevranizamoglu/a995c11c536844fe5894d7386ee927e5#file-dighazard-terms-of-use-md">Conditions d'utilisation</a></li></ul></section>
+  </div>
+
+  <!-- DEUTSCH -->
+  <div data-lang="de">
+    <p class="tag">Grab tief und pass auf deinen Kopf auf. So bekommst du Hilfe zum Spiel.</p>
+    <section><h2>Kontakt</h2>
+      <p>Fragen, Fehler oder eine Grabungsstelle, an der du feststeckst — schreib uns, wir antworten innerhalb weniger Tage.</p>
+      <p><a class="mail" href="mailto:nevranizamoglu@gmail.com?subject=Dig%20Hazard%20Support">nevranizamoglu@gmail.com</a></p></section>
+    <section><h2>Was du angeben solltest</h2><ul>
+      <li>Dein Gerät und die Betriebssystemversion (z. B. iPhone 15, iOS 18)</li>
+      <li>Die Nummer der Grabungsstelle, falls es in einem Level passiert ist</li>
+      <li>Was du erwartet hast und was stattdessen passiert ist</li>
+      <li>Ein Screenshot, wenn man das Problem sehen kann</li></ul></section>
+    <section><h2>Häufige Fragen</h2><ul>
+      <li><strong>Kauf wiederherstellen:</strong> öffne den Shop und tippe auf <em>Käufe wiederherstellen</em>, mit derselben Apple-ID bzw. demselben Google-Konto wie beim Kauf.</li>
+      <li><strong>Grabpass verwalten oder kündigen:</strong> über deine Abo-Einstellungen im App Store oder bei Google Play — wir können das nicht für dich kündigen.</li>
+      <li><strong>Dublonen sind nicht angekommen:</strong> probiere zuerst <em>Käufe wiederherstellen</em>. Fehlen sie weiterhin, schreib uns mit dem Beleg aus dem Store.</li>
+      <li><strong>Nach dem Kauf immer noch Werbung:</strong> ein Paketkauf entfernt Werbung dauerhaft, aber das Spiel braucht die Bestätigung des Stores — starte die App neu und nutze <em>Käufe wiederherstellen</em>, falls sich nichts tut.</li>
+      <li><strong>Werbeeinstellung ändern:</strong> Einstellungen → <em>Datenschutzoptionen für Werbung</em>. Erscheint dort, wo Einwilligungsregeln gelten.</li>
+      <li><strong>Der Fortschritt liegt auf dem Gerät:</strong> Käufe lassen sich auf einem neuen Handy wiederherstellen, der Grabungsfortschritt zieht nicht mit um.</li></ul></section>
+    <section><h2>Rechtliches</h2><ul>
+      <li><a href="https://gist.github.com/nevranizamoglu/a995c11c536844fe5894d7386ee927e5#file-dighazard-privacy-policy-md">Datenschutzerklärung</a></li>
+      <li><a href="https://gist.github.com/nevranizamoglu/a995c11c536844fe5894d7386ee927e5#file-dighazard-terms-of-use-md">Nutzungsbedingungen</a></li></ul></section>
+  </div>
+
+  <!-- ITALIANO -->
+  <div data-lang="it">
+    <p class="tag">Scava a fondo e attenzione alla testa. Ecco come ricevere aiuto sul gioco.</p>
+    <section><h2>Contatti</h2>
+      <p>Domande, bug o uno scavo in cui sei bloccato — scrivici e rispondiamo in un paio di giorni.</p>
+      <p><a class="mail" href="mailto:nevranizamoglu@gmail.com?subject=Dig%20Hazard%20Supporto">nevranizamoglu@gmail.com</a></p></section>
+    <section><h2>Cosa includere</h2><ul>
+      <li>Il tuo dispositivo e la versione del sistema (es. iPhone 15, iOS 18)</li>
+      <li>Il numero dello scavo in cui eri, se è successo in un livello</li>
+      <li>Cosa ti aspettavi e cosa è successo invece</li>
+      <li>Uno screenshot, se il problema si vede</li></ul></section>
+    <section><h2>Domande frequenti</h2><ul>
+      <li><strong>Ripristinare un acquisto:</strong> apri il Negozio e tocca <em>Ripristina acquisti</em>, con lo stesso ID Apple o account Google usato per l'acquisto.</li>
+      <li><strong>Gestire o annullare il Pass della Tomba:</strong> dalle impostazioni di abbonamento di App Store o Google Play — non possiamo annullarlo noi per te.</li>
+      <li><strong>I dobloni non sono arrivati:</strong> prova prima <em>Ripristina acquisti</em>. Se mancano ancora, scrivici con la ricevuta del negozio.</li>
+      <li><strong>Ancora pubblicità dopo l'acquisto:</strong> comprare un pacchetto rimuove la pubblicità per sempre, ma il gioco deve ricevere conferma dal negozio — riapri l'app e usa <em>Ripristina acquisti</em> se non è cambiato nulla.</li>
+      <li><strong>Cambiare la scelta sulla pubblicità:</strong> Impostazioni → <em>Opzioni privacy per gli annunci</em>. Compare dove valgono le regole sul consenso.</li>
+      <li><strong>I progressi restano sul dispositivo:</strong> gli acquisti si ripristinano su un telefono nuovo, i progressi degli scavi no.</li></ul></section>
+    <section><h2>Note legali</h2><ul>
+      <li><a href="https://gist.github.com/nevranizamoglu/a995c11c536844fe5894d7386ee927e5#file-dighazard-privacy-policy-md">Informativa sulla privacy</a></li>
+      <li><a href="https://gist.github.com/nevranizamoglu/a995c11c536844fe5894d7386ee927e5#file-dighazard-terms-of-use-md">Condizioni d'uso</a></li></ul></section>
+  </div>
+
+  <!-- POLSKI -->
+  <div data-lang="pl">
+    <p class="tag">Kop głęboko i uważaj na głowę. Oto jak uzyskać pomoc w grze.</p>
+    <section><h2>Kontakt</h2>
+      <p>Pytania, błędy albo wykopalisko, na którym utknąłeś — napisz do nas, odpowiemy w ciągu kilku dni.</p>
+      <p><a class="mail" href="mailto:nevranizamoglu@gmail.com?subject=Dig%20Hazard%20Pomoc">nevranizamoglu@gmail.com</a></p></section>
+    <section><h2>Co napisać</h2><ul>
+      <li>Twoje urządzenie i wersja systemu (np. iPhone 15, iOS 18)</li>
+      <li>Numer wykopaliska, jeśli zdarzyło się to na poziomie</li>
+      <li>Czego się spodziewałeś i co stało się zamiast tego</li>
+      <li>Zrzut ekranu, jeśli problem da się zobaczyć</li></ul></section>
+    <section><h2>Częste pytania</h2><ul>
+      <li><strong>Przywracanie zakupu:</strong> otwórz Sklep i dotknij <em>Przywróć zakupy</em>, na tym samym Apple ID lub koncie Google, na którym kupowałeś.</li>
+      <li><strong>Zarządzanie Przepustką Grobowca lub jej anulowanie:</strong> w ustawieniach subskrypcji App Store albo Google Play — nie możemy anulować jej za Ciebie.</li>
+      <li><strong>Dublony nie dotarły:</strong> najpierw spróbuj <em>Przywróć zakupy</em>. Jeśli nadal ich nie ma, napisz do nas z potwierdzeniem zakupu.</li>
+      <li><strong>Reklamy mimo zakupu:</strong> zakup pakietu usuwa reklamy na stałe, ale gra potrzebuje potwierdzenia ze sklepu — uruchom aplikację ponownie i użyj <em>Przywróć zakupy</em>, jeśli nic się nie zmieniło.</li>
+      <li><strong>Zmiana wyboru dotyczącego reklam:</strong> Ustawienia → <em>Opcje prywatności reklam</em>. Pojawia się tam, gdzie obowiązują zasady zgody.</li>
+      <li><strong>Postęp zostaje na urządzeniu:</strong> zakupy przywrócisz na nowym telefonie, ale postęp wykopalisk nie przenosi się razem z nimi.</li></ul></section>
+    <section><h2>Informacje prawne</h2><ul>
+      <li><a href="https://gist.github.com/nevranizamoglu/a995c11c536844fe5894d7386ee927e5#file-dighazard-privacy-policy-md">Polityka prywatności</a></li>
+      <li><a href="https://gist.github.com/nevranizamoglu/a995c11c536844fe5894d7386ee927e5#file-dighazard-terms-of-use-md">Warunki korzystania</a></li></ul></section>
+  </div>
+
+  <!-- РУССКИЙ -->
+  <div data-lang="ru">
+    <p class="tag">Копай глубже и береги голову. Вот как получить помощь по игре.</p>
+    <section><h2>Связаться с нами</h2>
+      <p>Вопросы, ошибки или раскопки, на которых вы застряли — напишите нам, ответим в течение пары дней.</p>
+      <p><a class="mail" href="mailto:nevranizamoglu@gmail.com?subject=Dig%20Hazard%20Support">nevranizamoglu@gmail.com</a></p></section>
+    <section><h2>Что указать</h2><ul>
+      <li>Ваше устройство и версию системы (например, iPhone 15, iOS 18)</li>
+      <li>Номер раскопок, если это случилось на уровне</li>
+      <li>Что вы ожидали и что произошло вместо этого</li>
+      <li>Скриншот, если проблему видно</li></ul></section>
+    <section><h2>Частые вопросы</h2><ul>
+      <li><strong>Восстановить покупку:</strong> откройте Магазин и нажмите <em>Восстановить покупки</em>, используя тот же Apple ID или аккаунт Google, с которого покупали.</li>
+      <li><strong>Управление Пропуском гробницы или отмена:</strong> в настройках подписок App Store или Google Play — мы не можем отменить её за вас.</li>
+      <li><strong>Дублоны не пришли:</strong> сначала попробуйте <em>Восстановить покупки</em>. Если их всё ещё нет, напишите нам и приложите чек магазина.</li>
+      <li><strong>Реклама после покупки:</strong> покупка набора убирает рекламу навсегда, но игре нужно подтверждение магазина — перезапустите приложение и нажмите <em>Восстановить покупки</em>, если ничего не изменилось.</li>
+      <li><strong>Изменить выбор по рекламе:</strong> Настройки → <em>Настройки приватности рекламы</em>. Появляется там, где действуют правила согласия.</li>
+      <li><strong>Прогресс хранится на устройстве:</strong> покупки восстановятся на новом телефоне, а прогресс раскопок с ними не переносится.</li></ul></section>
+    <section><h2>Правовая информация</h2><ul>
+      <li><a href="https://gist.github.com/nevranizamoglu/a995c11c536844fe5894d7386ee927e5#file-dighazard-privacy-policy-md">Политика конфиденциальности</a></li>
+      <li><a href="https://gist.github.com/nevranizamoglu/a995c11c536844fe5894d7386ee927e5#file-dighazard-terms-of-use-md">Условия использования</a></li></ul></section>
+  </div>
+
+  <!-- BAHASA INDONESIA -->
+  <div data-lang="id">
+    <p class="tag">Gali dalam-dalam, awas kepalamu. Begini cara mendapat bantuan soal game ini.</p>
+    <section><h2>Kontak</h2>
+      <p>Pertanyaan, bug, atau situs galian yang bikin kamu mentok — email kami, kami balas dalam beberapa hari.</p>
+      <p><a class="mail" href="mailto:nevranizamoglu@gmail.com?subject=Dig%20Hazard%20Dukungan">nevranizamoglu@gmail.com</a></p></section>
+    <section><h2>Yang perlu disertakan</h2><ul>
+      <li>Perangkat dan versi sistem kamu (mis. iPhone 15, iOS 18)</li>
+      <li>Nomor situs galian tempat kejadian, kalau terjadi di dalam level</li>
+      <li>Apa yang kamu harapkan, dan apa yang terjadi</li>
+      <li>Tangkapan layar, kalau masalahnya terlihat</li></ul></section>
+    <section><h2>Pertanyaan umum</h2><ul>
+      <li><strong>Memulihkan pembelian:</strong> buka Toko lalu ketuk <em>Pulihkan Pembelian</em>, dengan Apple ID atau akun Google yang sama seperti saat membeli.</li>
+      <li><strong>Mengelola atau membatalkan Tiket Makam:</strong> lewat pengaturan langganan App Store atau Google Play — kami tidak bisa membatalkannya untukmu.</li>
+      <li><strong>Doubloon belum masuk:</strong> coba <em>Pulihkan Pembelian</em> dulu. Kalau masih belum ada, email kami dengan bukti pembelian dari toko.</li>
+      <li><strong>Iklan masih muncul setelah membeli:</strong> membeli paket menghapus iklan selamanya, tapi game perlu konfirmasi dari toko — buka ulang aplikasinya dan pakai <em>Pulihkan Pembelian</em> kalau belum berubah.</li>
+      <li><strong>Mengubah pilihan iklanmu:</strong> Pengaturan → <em>Opsi privasi iklan</em>. Muncul di wilayah yang menerapkan aturan persetujuan.</li>
+      <li><strong>Progres tersimpan di perangkatmu:</strong> pembelian bisa dipulihkan di ponsel baru, tapi progres galian tidak ikut pindah.</li></ul></section>
+    <section><h2>Legal</h2><ul>
+      <li><a href="https://gist.github.com/nevranizamoglu/a995c11c536844fe5894d7386ee927e5#file-dighazard-privacy-policy-md">Kebijakan Privasi</a></li>
+      <li><a href="https://gist.github.com/nevranizamoglu/a995c11c536844fe5894d7386ee927e5#file-dighazard-terms-of-use-md">Ketentuan Penggunaan</a></li></ul></section>
+  </div>
+
+  <!-- TIẾNG VIỆT -->
+  <div data-lang="vi">
+    <p class="tag">Đào thật sâu và coi chừng đầu. Đây là cách nhận trợ giúp về trò chơi.</p>
+    <section><h2>Liên hệ</h2>
+      <p>Câu hỏi, lỗi hoặc một khu khai quật khiến bạn mắc kẹt — hãy gửi email, chúng tôi trả lời trong vài ngày.</p>
+      <p><a class="mail" href="mailto:nevranizamoglu@gmail.com?subject=Dig%20Hazard%20Support">nevranizamoglu@gmail.com</a></p></section>
+    <section><h2>Nên nêu những gì</h2><ul>
+      <li>Thiết bị và phiên bản hệ điều hành của bạn (ví dụ iPhone 15, iOS 18)</li>
+      <li>Số khu khai quật lúc đó, nếu sự cố xảy ra trong màn chơi</li>
+      <li>Bạn mong đợi điều gì và thực tế đã xảy ra điều gì</li>
+      <li>Ảnh chụp màn hình, nếu nhìn thấy được vấn đề</li></ul></section>
+    <section><h2>Câu hỏi thường gặp</h2><ul>
+      <li><strong>Khôi phục giao dịch mua:</strong> mở Cửa hàng và chạm <em>Khôi phục giao dịch mua</em>, bằng chính Apple ID hoặc tài khoản Google đã dùng để mua.</li>
+      <li><strong>Quản lý hoặc hủy Thẻ Lăng Mộ:</strong> trong phần cài đặt đăng ký của App Store hoặc Google Play — chúng tôi không thể hủy thay bạn.</li>
+      <li><strong>Chưa nhận được doubloon:</strong> hãy thử <em>Khôi phục giao dịch mua</em> trước. Nếu vẫn thiếu, gửi email kèm biên nhận của cửa hàng.</li>
+      <li><strong>Vẫn thấy quảng cáo sau khi mua:</strong> mua một gói sẽ xóa quảng cáo vĩnh viễn, nhưng trò chơi cần xác nhận từ cửa hàng — mở lại ứng dụng và dùng <em>Khôi phục giao dịch mua</em> nếu chưa thay đổi.</li>
+      <li><strong>Đổi lựa chọn về quảng cáo:</strong> Cài đặt → <em>Tùy chọn quyền riêng tư quảng cáo</em>. Xuất hiện ở nơi áp dụng quy định về sự đồng ý.</li>
+      <li><strong>Tiến trình nằm trên thiết bị của bạn:</strong> giao dịch mua khôi phục được sang máy mới, còn tiến trình khai quật thì không đi theo.</li></ul></section>
+    <section><h2>Pháp lý</h2><ul>
+      <li><a href="https://gist.github.com/nevranizamoglu/a995c11c536844fe5894d7386ee927e5#file-dighazard-privacy-policy-md">Quyền riêng tư</a></li>
+      <li><a href="https://gist.github.com/nevranizamoglu/a995c11c536844fe5894d7386ee927e5#file-dighazard-terms-of-use-md">Điều khoản sử dụng</a></li></ul></section>
+  </div>
+
+  <footer>© 2026 Nevra Nizamoğlu</footer>
+</main>
+
+<script>
+(function(){
+  var LANGS = ['en','tr','es','pt','fr','de','it','pl','ru','id','vi'];
+  // The heading sits outside the language blocks, so it is swapped here.
+  // Left in English in the markup so it still reads without JavaScript.
+  var TITLES = {
+    en:'Dig Hazard Support',      tr:'Dig Hazard Destek',
+    es:'Soporte de Dig Hazard',   pt:'Suporte do Dig Hazard',
+    fr:'Assistance Dig Hazard',   de:'Dig Hazard Hilfe',
+    it:'Assistenza Dig Hazard',   pl:'Pomoc Dig Hazard',
+    ru:'Поддержка Dig Hazard',    id:'Dukungan Dig Hazard',
+    vi:'Hỗ trợ Dig Hazard'
+  };
+  function pick(){
+    var q = new URLSearchParams(location.search).get('lang');
+    var h = location.hash.replace('#','');
+    var cands = [q, h].concat(navigator.languages || [navigator.language || 'en']);
+    for (var i=0;i<cands.length;i++){
+      if(!cands[i]) continue;
+      var code = String(cands[i]).toLowerCase().split('-')[0];
+      if (LANGS.indexOf(code) > -1) return code;
+    }
+    return 'en';
+  }
+  function show(code){
+    LANGS.forEach(function(l){
+      var el = document.querySelector('[data-lang="'+l+'"]');
+      if (el) el.classList.toggle('on', l === code);
+    });
+    document.querySelectorAll('#langnav button').forEach(function(b){
+      b.setAttribute('aria-current', String(b.dataset.pick === code));
+    });
+    document.documentElement.lang = code;
+    var t = TITLES[code] || TITLES.en;
+    var h = document.getElementById('title');
+    if (h) h.textContent = t;
+    document.title = t;
+  }
+  document.querySelectorAll('#langnav button').forEach(function(b){
+    b.addEventListener('click', function(){ show(b.dataset.pick); });
+  });
+  show(pick());
+})();
+</script>
+<noscript><style>[data-lang]{display:block !important} #langnav{display:none}</style></noscript>
+</body>
+</html>
