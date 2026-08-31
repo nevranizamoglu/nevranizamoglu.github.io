@@ -24,6 +24,9 @@
   .mark{width:52px;height:52px;border-radius:13px;flex:none;display:block}
   h1{font-size:26px;margin:0 0 14px;letter-spacing:-.5px}
   header h1{margin:0}
+  /* The "Dig Hazard" word in the header is a brand mark, not the page
+     title — each translated block's <h1> is the real top heading. */
+  header .brand{font-size:26px;margin:0;font-weight:700;letter-spacing:-.5px}
   nav{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:24px}
   nav button{font:inherit;font-size:13px;font-weight:600;cursor:pointer;
              padding:7px 14px;border-radius:999px;border:1px solid var(--line);
@@ -54,7 +57,7 @@
 </head>
 <body>
 <main>
-  <header><img class="mark" src="../support/icon.png" alt="Dig Hazard" width="52" height="52"><h1>Dig Hazard</h1></header>
+  <header><img class="mark" src="../support/icon.png" alt="Dig Hazard" width="52" height="52"><div class="brand">Dig Hazard</div></header>
 
   <nav id="langnav" aria-label="Language">
     <button data-pick="en" type="button">English</button>
@@ -133,7 +136,7 @@
 <hr>
 <p><em>Apple is not a party to these terms and has no responsibility for the game. Where the game is obtained from the Apple App Store, Apple and its subsidiaries are third-party beneficiaries of these terms and may enforce them against you.</em></p>
   </article>
-  <footer><a href="../support/">Support</a> · © 2026 Nevra Nizamoğlu</footer></div>
+  <footer><a href="../support/">Support</a> · © <span class="year">2026</span> Nevra Nizamoğlu</footer></div>
   <div data-lang="tr"><article>
 <h1>Kullanım Koşulları</h1>
 <p><strong>Son güncelleme: 15 Ağustos 2026</strong></p>
@@ -197,7 +200,7 @@
 <hr>
 <p><em>Apple bu koşulların tarafı değildir ve oyuna ilişkin hiçbir sorumluluğu yoktur. Oyunun Apple App Store'dan edinildiği hâllerde Apple ve bağlı kuruluşları bu koşulların üçüncü taraf lehtarlarıdır ve koşulları size karşı ileri sürebilirler.</em></p>
   </article>
-  <footer><a href="../support/">Destek</a> · © 2026 Nevra Nizamoğlu</footer></div>
+  <footer><a href="../support/">Destek</a> · © <span class="year">2026</span> Nevra Nizamoğlu</footer></div>
   <div data-lang="es"><article>
 <h1>Condiciones de Uso</h1>
 <p><strong>Última actualización: 15 de agosto de 2026</strong></p>
@@ -261,7 +264,7 @@
 <hr>
 <p><em>Apple no es parte de estas condiciones y no tiene responsabilidad alguna sobre el juego. Cuando el juego se obtenga en la Apple App Store, Apple y sus filiales son terceros beneficiarios de estas condiciones y pueden hacerlas valer frente a ti.</em></p>
   </article>
-  <footer><a href="../support/">Soporte</a> · © 2026 Nevra Nizamoğlu</footer></div>
+  <footer><a href="../support/">Soporte</a> · © <span class="year">2026</span> Nevra Nizamoğlu</footer></div>
   <div data-lang="pt"><article>
 <h1>Termos de Uso</h1>
 <p><strong>Última atualização: 15 de agosto de 2026</strong></p>
@@ -325,7 +328,7 @@
 <hr>
 <p><em>A Apple não é parte destes termos e não tem responsabilidade sobre o jogo. Quando o jogo for obtido na Apple App Store, a Apple e suas subsidiárias são terceiros beneficiários destes termos e podem exigi-los de você.</em></p>
   </article>
-  <footer><a href="../support/">Suporte</a> · © 2026 Nevra Nizamoğlu</footer></div>
+  <footer><a href="../support/">Suporte</a> · © <span class="year">2026</span> Nevra Nizamoğlu</footer></div>
   <div data-lang="fr"><article>
 <h1>Conditions d'utilisation</h1>
 <p><strong>Dernière mise à jour : 15 août 2026</strong></p>
@@ -389,7 +392,7 @@
 <hr>
 <p><em>Apple n'est pas partie aux présentes conditions et n'assume aucune responsabilité concernant le jeu. Lorsque le jeu est obtenu sur l'Apple App Store, Apple et ses filiales sont tiers bénéficiaires des présentes conditions et peuvent les faire valoir à votre encontre.</em></p>
   </article>
-  <footer><a href="../support/">Assistance</a> · © 2026 Nevra Nizamoğlu</footer></div>
+  <footer><a href="../support/">Assistance</a> · © <span class="year">2026</span> Nevra Nizamoğlu</footer></div>
   <div data-lang="de"><article>
 <h1>Nutzungsbedingungen</h1>
 <p><strong>Zuletzt aktualisiert: 15. August 2026</strong></p>
@@ -453,7 +456,7 @@
 <hr>
 <p><em>Apple ist nicht Partei dieser Bedingungen und trägt keine Verantwortung für das Spiel. Wird das Spiel über den Apple App Store bezogen, sind Apple und seine Tochtergesellschaften Drittbegünstigte dieser Bedingungen und können sie dir gegenüber durchsetzen.</em></p>
   </article>
-  <footer><a href="../support/">Hilfe</a> · © 2026 Nevra Nizamoğlu</footer></div>
+  <footer><a href="../support/">Hilfe</a> · © <span class="year">2026</span> Nevra Nizamoğlu</footer></div>
   <div data-lang="it"><article>
 <h1>Condizioni d'uso</h1>
 <p><strong>Ultimo aggiornamento: 15 agosto 2026</strong></p>
@@ -517,7 +520,7 @@
 <hr>
 <p><em>Apple non è parte delle presenti condizioni e non ha alcuna responsabilità per il gioco. Ove il gioco sia ottenuto tramite l'Apple App Store, Apple e le sue controllate sono terzi beneficiari delle presenti condizioni e possono farle valere nei tuoi confronti.</em></p>
   </article>
-  <footer><a href="../support/">Assistenza</a> · © 2026 Nevra Nizamoğlu</footer></div>
+  <footer><a href="../support/">Assistenza</a> · © <span class="year">2026</span> Nevra Nizamoğlu</footer></div>
   <div data-lang="pl"><article>
 <h1>Warunki korzystania</h1>
 <p><strong>Ostatnia aktualizacja: 15 sierpnia 2026</strong></p>
@@ -581,7 +584,7 @@
 <hr>
 <p><em>Apple nie jest stroną niniejszych warunków i nie ponosi odpowiedzialności za grę. Jeśli gra została nabyta w Apple App Store, Apple i jego podmioty zależne są beneficjentami będącymi osobami trzecimi niniejszych warunków i mogą je wobec Ciebie egzekwować.</em></p>
   </article>
-  <footer><a href="../support/">Pomoc</a> · © 2026 Nevra Nizamoğlu</footer></div>
+  <footer><a href="../support/">Pomoc</a> · © <span class="year">2026</span> Nevra Nizamoğlu</footer></div>
   <div data-lang="ru"><article>
 <h1>Условия использования</h1>
 <p><strong>Последнее обновление: 15 августа 2026</strong></p>
@@ -645,7 +648,7 @@
 <hr>
 <p><em>Apple не является стороной настоящих условий и не несёт ответственности за игру. Если игра приобретена в Apple App Store, Apple и её дочерние компании являются третьими лицами-выгодоприобретателями настоящих условий и вправе требовать их исполнения от вас.</em></p>
   </article>
-  <footer><a href="../support/">Поддержка</a> · © 2026 Nevra Nizamoğlu</footer></div>
+  <footer><a href="../support/">Поддержка</a> · © <span class="year">2026</span> Nevra Nizamoğlu</footer></div>
   <div data-lang="id"><article>
 <h1>Ketentuan Penggunaan</h1>
 <p><strong>Terakhir diperbarui: 15 Agustus 2026</strong></p>
@@ -709,7 +712,7 @@
 <hr>
 <p><em>Apple bukan pihak dalam ketentuan ini dan tidak bertanggung jawab atas game. Bila game diperoleh dari Apple App Store, Apple dan anak perusahaannya adalah penerima manfaat pihak ketiga atas ketentuan ini dan dapat menegakkannya terhadapmu.</em></p>
   </article>
-  <footer><a href="../support/">Dukungan</a> · © 2026 Nevra Nizamoğlu</footer></div>
+  <footer><a href="../support/">Dukungan</a> · © <span class="year">2026</span> Nevra Nizamoğlu</footer></div>
   <div data-lang="vi"><article>
 <h1>Điều khoản sử dụng</h1>
 <p><strong>Cập nhật lần cuối: 15 tháng 8, 2026</strong></p>
@@ -773,7 +776,7 @@
 <hr>
 <p><em>Apple không phải là một bên của các điều khoản này và không chịu trách nhiệm về trò chơi. Khi trò chơi được tải từ Apple App Store, Apple và các công ty con là bên thứ ba thụ hưởng của các điều khoản này và có thể thực thi chúng đối với bạn.</em></p>
   </article>
-  <footer><a href="../support/">Hỗ trợ</a> · © 2026 Nevra Nizamoğlu</footer></div>
+  <footer><a href="../support/">Hỗ trợ</a> · © <span class="year">2026</span> Nevra Nizamoğlu</footer></div>
 </main>
 
 <script>
@@ -806,6 +809,10 @@
     b.addEventListener('click', function(){ show(b.dataset.pick); });
   });
   show(pick());
+  // Year shown in the per-language footers: filled in once on load.
+  // The "2026" already in the markup is the no-JS fallback.
+  var yr = String(new Date().getFullYear());
+  document.querySelectorAll('.year').forEach(function(el){ el.textContent = yr; });
 })();
 </script>
 <noscript><style>[data-lang]{display:block !important} #langnav{display:none}</style></noscript>

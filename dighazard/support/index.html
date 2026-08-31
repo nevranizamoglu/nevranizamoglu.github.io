@@ -322,7 +322,7 @@
       <li><a href="../terms/">Điều khoản sử dụng</a></li></ul></section>
   </div>
 
-  <footer>© 2026 Nevra Nizamoğlu</footer>
+  <footer>© <span class="year">2026</span> Nevra Nizamoğlu</footer>
 </main>
 
 <script>
@@ -367,6 +367,10 @@
     b.addEventListener('click', function(){ show(b.dataset.pick); });
   });
   show(pick());
+  // Year shown in the footer: filled in once on load.
+  // The "2026" already in the markup is the no-JS fallback.
+  var yr = String(new Date().getFullYear());
+  document.querySelectorAll('.year').forEach(function(el){ el.textContent = yr; });
 })();
 </script>
 <noscript><style>[data-lang]{display:block !important} #langnav{display:none}</style></noscript>

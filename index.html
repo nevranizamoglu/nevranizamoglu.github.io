@@ -19,11 +19,13 @@
     --bg:#E9EEF0; --card:#FFFFFF; --ink:#10243A; --muted:#556C81;
     --brand:#14497F; --line:#D3DEE4; --chip:#F1F5F7;
     --dayfeed:#4A1F7C; --lubunca:#C9256A; --dighazard:#9A6410;
+    --teencolor:#722F37; --kimo:#E61E8B;
   }
   @media (prefers-color-scheme: dark){
     :root{ --bg:#0B1620; --card:#12222E; --ink:#E4ECF1; --muted:#8FA6B5;
            --brand:#6FC2D4; --line:#24394A; --chip:#1A2E3D;
-           --dayfeed:#A88CF5; --lubunca:#FF7FAC; --dighazard:#E8B54A; }
+           --dayfeed:#A88CF5; --lubunca:#FF7FAC; --dighazard:#E8B54A;
+           --teencolor:#E8B4BC; --kimo:#FF8DC1; }
   }
   *{box-sizing:border-box}
   body{margin:0;background:var(--bg);color:var(--ink);
@@ -50,6 +52,8 @@
   .app.dayfeed{--accent:var(--dayfeed)}
   .app.lubunca{--accent:var(--lubunca)}
   .app.dighazard{--accent:var(--dighazard)}
+  .app.teencolor{--accent:var(--teencolor)}
+  .app.kimo{--accent:var(--kimo)}
 
   .app img{width:60px;height:60px;border-radius:15px;flex:none;
            border:1px solid var(--line)}
@@ -134,10 +138,37 @@
     </div>
   </div>
 
+  <div class="app teencolor">
+    <img src="teencolor/icon.png" alt="" width="60" height="60">
+    <div class="body">
+      <div class="name"><h2 class="display">TeenColor</h2><span class="status">Coming soon</span></div>
+      <p class="desc">The glam book for fashion girls — runways, rooftops,
+         NYC lofts, yacht weekends, NYFW. Color your dream life.</p>
+    </div>
+  </div>
+
+  <div class="app kimo">
+    <img src="kimo/icon.png" alt="" width="60" height="60">
+    <div class="body">
+      <div class="name"><h2 class="display">Kimo</h2><span class="status">Coming soon</span></div>
+      <p class="desc">Caller ID and spam protection for Türkiye. Look up an
+         unknown number, see how others rated it, stop the spammers before
+         they stop you.</p>
+    </div>
+  </div>
+
   <footer>
     Questions about any of these? <a href="mailto:nevranizamoglu@gmail.com">nevranizamoglu@gmail.com</a><br>
-    © 2026 Nevra Nizamoğlu
+    © <span class="year">2026</span> Nevra Nizamoğlu
   </footer>
 </main>
+<script>
+  // Year shown in the footer: filled in once on load.
+  // The "2026" already in the markup is the no-JS fallback.
+  (function(){
+    var yr = String(new Date().getFullYear());
+    document.querySelectorAll('.year').forEach(function(el){ el.textContent = yr; });
+  })();
+</script>
 </body>
 </html>
