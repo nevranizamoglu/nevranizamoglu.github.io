@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — Kimo</title>
+<meta name="description" content="Privacy Policy for Kimo (Arayan Kim?), the Turkish caller-ID and spam-protection app.">
+<link rel="icon" href="../support/icon.png" type="image/png">
+<style>
+  :root{
+    --bg:#F8EEF4; --card:#FFFFFF; --ink:#2A0F1A; --muted:#7A5F6E;
+    --brand:#E61E8B; --line:#E5D6E0; --chip:#F0E0EA;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{ --bg:#1F0F1A; --card:#2F1A28; --ink:#F8EEF4; --muted:#B08FA0;
+           --brand:#FF8DC1; --line:#5A3645; --chip:#4A2A3A; }
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);
+       font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
+       padding:32px 20px}
+  main{max-width:720px;margin:0 auto}
+  header{display:flex;align-items:center;gap:14px;margin-bottom:18px}
+  .mark{width:52px;height:52px;border-radius:13px;flex:none;display:block}
+  .brand{font-size:26px;margin:0;font-weight:700;letter-spacing:-.5px}
+  article{background:var(--card);border:1px solid var(--line);
+          border-radius:16px;padding:22px 24px}
+  h1{font-size:24px;margin:0 0 14px;letter-spacing:-.5px}
+  h3{font-size:15px;text-transform:uppercase;letter-spacing:.8px;
+     color:var(--muted);margin:22px 0 8px}
+  a{color:var(--brand);text-decoration:none;font-weight:600}
+  a:hover{text-decoration:underline}
+  ul{margin:0 0 12px;padding-left:20px} li{margin-bottom:6px}
+  p{margin:0 0 12px}
+  hr{border:0;border-top:1px solid var(--line);margin:22px 0}
+  code{background:var(--chip);padding:1px 5px;border-radius:5px;font-size:13px}
+  .wrap{overflow-x:auto;margin:0 0 14px}
+  table{border-collapse:collapse;width:100%;font-size:14px}
+  th,td{border:1px solid var(--line);padding:7px 9px;text-align:left;vertical-align:top}
+  th{color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.5px}
+  a:focus-visible{outline:2px solid var(--brand);outline-offset:2px}
+  footer{color:var(--muted);font-size:13px;text-align:center;margin-top:28px}
+  @media (prefers-reduced-motion:reduce){ *{transition:none !important} }
+</style>
+</head>
+<body>
+<main>
+  <header><img class="mark" src="../support/icon.png" alt="Kimo" width="52" height="52"><div class="brand">Kimo</div></header>
+
+  <article>
+<h1>Privacy Policy</h1>
+<p><strong>Last updated: 31 August 2026</strong></p>
+
+<hr>
+<p><strong>Short version:</strong> Kimo is built around phone numbers, so it has to be careful by default. We process the number you look up, your own number (on Android, to detect it; not on iOS), and only the contacts you choose to let us read — and we process them so the service works, not to build advertising profiles. Spam scores are community-driven and stored against the number, not against you. We do not sell your data.</p>
+
+<p><em>This is the public Privacy Policy for Kimo. If you live in Türkiye, your rights under the KVKK are detailed below and override any less-protective statement here.</em></p>
+
+<h3>1. Who we are (the data controller)</h3>
+<p>Kimo (package <code>com.nevranizamoglu.kimo</code>) is made and operated by Nevra Nizamoğlu, based in Türkiye. We act as the data controller for the personal data described in this policy under the <strong>KVKK</strong> (the Turkish Personal Data Protection Law, 6698 sayılı Kanun), and as controller (or co-controller where required) under the <strong>GDPR</strong> for users in the EEA and the United Kingdom.</p>
+<p>For any privacy question, complaint, or rights request, contact <strong>nevranizamoglu@gmail.com</strong>. We respond within 30 days at the latest.</p>
+
+<h3>2. What we collect and why</h3>
+<p>Kimo runs without an account. There is no email, no phone-number-as-identity, and no login. The data the app handles falls into a small number of buckets, each used only to deliver a specific feature:</p>
+
+<h3>3. Phone numbers you look up</h3>
+<p>When you type a Turkish phone number into the app, we send that number to our backend (a self-hosted PocketBase instance) and return whatever we know about it — a label, a community spam score, a category. We log the lookup event with a <em>hashed, rotated, anonymous identifier</em> for your device so we can enforce daily limits (e.g. ten free lookups a day on the free tier) and tell abuse patterns from genuine mistakes.</p>
+<p>We never ask for or store your phone number as part of the lookup unless you look up <em>your own number</em>, which the app can detect automatically on Android.</p>
+
+<h3>4. Crowdsourced spam data</h3>
+<p>When a user reports a number as spam, the report is stored against the number, not the reporter. A report bundles the number, a category (e.g. <em>insurance scam</em>, <em>sales call</em>, <em>market survey</em>), an optional short note, the current community score, and a count. We do not attach the reporter's identity to a report.</p>
+<p>If you would like your number hidden from Kimo's public record entirely, see §10.</p>
+
+<h3>5. Your own number (Android only)</h3>
+<p>On Android, the app asks for the <em>phone state</em> permission (READ_PHONE_STATE) only to read your own number, so you don't have to type it in and so the app can recognise when an incoming call is from yourself. We read the number once, on first launch, store a hash of it locally, and use it only to suppress the "is this you?" prompt. We do not transmit your own phone number to our backend.</p>
+<p>iOS does not expose the device's own number through public APIs, so the iOS version never reads it.</p>
+
+<h3>6. Your address book (only if you grant access)</h3>
+<p>With your explicit consent, the app reads your address book so it can show you which numbers in a search result are already in your contacts versus unknown. We process the contact list on the device to produce this in-app overlay; <strong>your contacts are not uploaded to our backend</strong> in identifiable form. You can revoke this at any time in your device settings, and Kimo will continue to work for one-off lookups.</p>
+
+<h3>7. Call log (Android, deferred)</h3>
+<p>Kimo's Android manifest declares the call-log permission so a future version can mark unknown numbers directly in your recent-calls list. The current public release does <em>not</em> request or read the call log, and the permission is not used. We will update this section before any version that does.</p>
+
+<h3>8. Purchases</h3>
+<p>If you subscribe, payment is handled entirely by <strong>Apple</strong> or <strong>Google</strong>. We never see your card number, billing address, or full name on the receipt. We use <strong>RevenueCat</strong> to verify subscriptions across reinstalls — it receives an anonymous install identifier, the product identifier, transaction identifier and date, and your store country. We do not pass your name, email, or contacts to RevenueCat.</p>
+
+<h3>9. Analytics</h3>
+<p>The public release ships without third-party analytics. If we add analytics later, this section will be updated before they ship, and an in-app notice will announce the change.</p>
+
+<h3>10. Your rights (KVKK and beyond)</h3>
+<p>Depending on where you live, you have the right to:</p>
+<ul>
+<li>Learn what we hold about you and how we use it (Articles 11 of the KVKK; GDPR Art. 15).</li>
+<li>Have inaccurate data corrected (KVKK Art. 12; GDPR Art. 16).</li>
+<li>Have your data deleted where our legal basis no longer applies (KVKK Art. 7; GDPR Art. 17). For Kimo this means your lookup history and your hashed identifier.</li>
+<li>Stop direct marketing — we do not do direct marketing; this is automatic.</li>
+<li>Object to processing based on "legitimate interest" (GDPR Art. 21).</li>
+<li>Receive a portable copy of your data (GDPR Art. 20).</li>
+<li>Withdraw consent at any time, where processing is based on consent (KVKK Art. 7; GDPR Art. 7).</li>
+</ul>
+<p>To exercise any of these, email <strong>nevranizamoglu@gmail.com</strong> with the address or number the request concerns. We will acknowledge within 30 days and complete the request or explain why a particular right does not apply.</p>
+<p><strong>If you want your phone number hidden from Kimo's public record:</strong> email us from a verifiable address with the number. We will add it to an internal suppression list; new spam reports against it will not be published, and existing score data for the number will be hidden.</p>
+<p><strong>Complaints.</strong> You also have the right to complain to the <strong>Kişisel Verileri Koruma Kurumu</strong> (Turkish Personal Data Protection Board, <a href="https://www.kvkk.gov.tr" target="_blank" rel="noopener">kvkk.gov.tr</a>), or to your local supervisory authority under the GDPR.</p>
+
+<h3>11. Legal basis for processing</h3>
+<p>Where the KVKK or GDPR applies, our legal bases are:</p>
+<ul>
+<li><strong>Service delivery:</strong> phone number lookups, spam scoring, daily-limit enforcement — based on the proper functioning of the Service (KVKK Art. 5/2-d; GDPR Art. 6/1-b).</li>
+<li><strong>Spam-score publishing:</strong> based on the legitimate interest of Kimo users in knowing who is calling them (KVKK Art. 5/2-f; GDPR Art. 6/1-f). You can object at any time — see §10.</li>
+<li><strong>Subscription verification:</strong> based on the performance of the subscription contract you accepted (KVKK Art. 5/2-c; GDPR Art. 6/1-b).</li>
+<li><strong>Address-book overlay:</strong> based on your explicit consent, given in the iOS / Android permission dialog (KVKK Art. 5/1; GDPR Art. 6/1-a). You can withdraw it at any time.</li>
+</ul>
+
+<h3>12. International transfers</h3>
+<p>Kimo's primary backend lives in Türkiye. The third-party providers named in §14 process data globally — including the United States and the EEA — under their own standard contractual clauses or equivalent safeguards.</p>
+
+<h3>13. Security</h3>
+<ul>
+<li>All network connections use HTTPS/TLS.</li>
+<li>Anonymous identifiers are hashed and rotated; we never link them to a phone number in storage.</li>
+<li>We never store payment information — Apple and Google handle every transaction.</li>
+<li>Backend access is protected by role-based accounts; keys are rotated regularly.</li>
+</ul>
+<p>No system is perfectly secure. If you have a security concern, please email <strong>nevranizamoglu@gmail.com</strong> with "security" in the subject.</p>
+
+<h3>14. Third-party services</h3>
+<div class="wrap"><table><thead><tr><th>Service</th><th>Purpose</th><th>Privacy policy</th></tr></thead><tbody>
+<tr><td>Apple App Store</td><td>iOS payment processing</td><td>https://www.apple.com/legal/privacy</td></tr>
+<tr><td>Google Play</td><td>Android payment processing</td><td>https://policies.google.com/privacy</td></tr>
+<tr><td>RevenueCat</td><td>Subscription verification</td><td>https://www.revenuecat.com/privacy</td></tr>
+<tr><td>PocketBase</td><td>Self-hosted lookup and spam-score backend</td><td>https://pocketbase.io/docs/</td></tr>
+</tbody></table></div>
+
+<h3>15. Children</h3>
+<p>Kimo is intended for users 13 and over. We do not knowingly collect personal information from children. If you are a parent with a concern, please email <strong>nevranizamoglu@gmail.com</strong>.</p>
+
+<h3>16. Changes</h3>
+<p>If we change this policy we will update the date at the top and publish the new version at this address. Significant changes will be announced in the app and via the same email contact above.</p>
+
+<h3>17. Contact</h3>
+<p>Nevra Nizamoğlu — Türkiye <strong>nevranizamoglu@gmail.com</strong></p>
+<p>For KVKK-specific requests, write <em>"KVKK request"</em> in the subject line — that flags it as a formal data-subject request.</p>
+  </article>
+  <footer><a href="../support/">Support</a> · © <span class="year">2026</span> Nevra Nizamoğlu</footer>
+</main>
+<script>
+  (function(){
+    var yr = String(new Date().getFullYear());
+    document.querySelectorAll('.year').forEach(function(el){ el.textContent = yr; });
+  })();
+</script>
+</body>
+</html>

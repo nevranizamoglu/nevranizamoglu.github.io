@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TeenColor — Support</title>
+<meta name="description" content="Help and contact for TeenColor, the glam-book fashion coloring app. POC, pre-launch.">
+<link rel="icon" href="icon.png" type="image/png">
+<link rel="apple-touch-icon" href="icon.png">
+<style>
+  :root{
+    --bg:#F5EEF0; --card:#FFFFFF; --ink:#2A1018; --muted:#7A5F66;
+    --brand:#722F37; --line:#E5D6DC; --chip:#EFE0E5;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{ --bg:#2A1018; --card:#3A1F2A; --ink:#F5EEF0; --muted:#A88F94;
+           --brand:#E8B4BC; --line:#5A3640; --chip:#4A2A36; }
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);
+       font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
+       padding:32px 20px}
+  main{max-width:660px;margin:0 auto}
+  header{display:flex;align-items:center;gap:14px;margin-bottom:18px}
+  .mark{width:52px;height:52px;border-radius:13px;flex:none;display:block}
+  /* "TeenColor" in the header is a brand mark, not a heading. */
+  .brand{font-size:26px;margin:0;font-weight:700;letter-spacing:-.5px}
+  .tag{color:var(--muted);margin:0 0 24px}
+  section{background:var(--card);border:1px solid var(--line);
+          border-radius:16px;padding:20px 22px;margin-bottom:16px}
+  h2{font-size:15px;text-transform:uppercase;letter-spacing:.8px;
+     color:var(--muted);margin:0 0 12px}
+  a{color:var(--brand);text-decoration:none;font-weight:600}
+  a:hover{text-decoration:underline}
+  ul{margin:0;padding-left:20px} li{margin-bottom:6px}
+  p{margin:0 0 12px} p:last-child{margin-bottom:0}
+  .mail{display:inline-block;background:var(--brand);color:#F5EAEC;
+        padding:11px 18px;border-radius:12px;font-weight:700}
+  @media (prefers-color-scheme: dark){ .mail{color:#2A1018} }
+  a:focus-visible{outline:2px solid var(--brand);outline-offset:2px}
+  footer{color:var(--muted);font-size:13px;text-align:center;margin-top:28px}
+  @media (prefers-reduced-motion:reduce){ *{transition:none !important} }
+</style>
+</head>
+<body>
+<main>
+  <header><img class="mark" src="icon.png" alt="TeenColor" width="52" height="52"><div class="brand">TeenColor</div></header>
+
+  <p class="tag">Color your dream life — currently in pre-launch testing.</p>
+
+  <section><h2>Contact</h2>
+    <p>Questions, bugs, or a dream page we should know about — email us and we'll reply within a couple of days.</p>
+    <p><a class="mail" href="mailto:nevranizamoglu@gmail.com?subject=TeenColor%20Support">nevranizamoglu@gmail.com</a></p></section>
+
+  <section><h2>What to include</h2><ul>
+    <li>Your device and OS version (e.g. iPhone 15, iOS 18)</li>
+    <li>The app version, from Settings → About</li>
+    <li>What you expected, and what happened instead</li>
+    <li>A screenshot, if the problem is something you can see</li></ul></section>
+
+  <section><h2>Common questions</h2><ul>
+    <li><strong>The app isn't released yet.</strong> If you reached this page from a store listing, you're looking at the public support URL ahead of launch — there's nothing to download yet.</li>
+    <li><strong>A picture won't load:</strong> pages stream from a content CDN. Check your connection, then pull to refresh on the home screen.</li>
+    <li><strong>Progress didn't carry over:</strong> your finished pages, palettes, and shade picks live on the device only — uninstalling the app removes them. There is no account system.</li>
+    <li><strong>Got a dream page in mind?</strong> new collections are picked from trends, but a note in the email above with the kind of scene you're after is always welcome.</li>
+    <li><strong>Report a problem with a page:</strong> if a region looks off (wrong outline, mismatched number, missing area), tell us the collection name — fixes can ship over the air without an app update.</li>
+    <li><strong>Change your ad privacy choice:</strong> when ads are enabled, Settings → <em>Ad privacy options</em>. It appears where consent rules apply.</li>
+    <li><strong>Purchases live on your account:</strong> once the paid tier exists, things you've bought restore to a new phone through the App Store / Play Store — your colored pages themselves don't travel with them.</li></ul></section>
+
+  <section><h2>Legal</h2><ul>
+    <li><a href="../privacy/">Privacy Policy</a></li>
+    <li><a href="../terms/">Terms of Service</a></li></ul></section>
+
+  <footer><a href="../support/">Support</a> · © <span class="year">2026</span> Nevra Nizamoğlu</footer>
+</main>
+<script>
+  // Year shown in the footer: filled in once on load.
+  // The "2026" already in the markup is the no-JS fallback.
+  (function(){
+    var yr = String(new Date().getFullYear());
+    document.querySelectorAll('.year').forEach(function(el){ el.textContent = yr; });
+  })();
+</script>
+</body>
+</html>
