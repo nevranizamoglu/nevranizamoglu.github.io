@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — Dayfeed</title>
+<meta name="description" content="Privacy Policy for Dayfeed, the special-days discovery and poster app, in 5 languages.">
+<link rel="icon" href="../support/icon.png" type="image/png">
+<style>
+  :root{
+    --bg:#F7F4FC; --card:#FFFFFF; --ink:#2A1B3D; --muted:#6B5F7A;
+    --brand:#4A1F7C; --line:#DDD6F3; --chip:#EDE7F6;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{ --bg:#2A1B3D; --card:#3A2255; --ink:#F7F4FC; --muted:#B9AECB;
+           --brand:#A88CF5; --line:#5A3A78; --chip:#4A2E6A; }
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);
+       font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
+       padding:32px 20px}
+  main{max-width:720px;margin:0 auto}
+  header{display:flex;align-items:center;gap:14px;margin-bottom:18px}
+  .mark{width:52px;height:52px;border-radius:13px;flex:none;display:block}
+  /* "Dayfeed" in the header is a brand mark, not a heading. */
+  .brand{font-size:26px;margin:0;font-weight:700;letter-spacing:-.5px}
+  nav{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:24px}
+  nav button{font:inherit;font-size:13px;font-weight:600;cursor:pointer;
+             padding:7px 14px;border-radius:999px;border:1px solid var(--line);
+             background:var(--chip);color:var(--ink);transition:.15s}
+  nav button:hover{border-color:var(--brand)}
+  nav button[aria-current="true"]{background:var(--brand);color:#FFF;border-color:var(--brand)}
+  @media (prefers-color-scheme: dark){ nav button[aria-current="true"]{color:#2A1B3D} }
+  nav button:focus-visible,a:focus-visible{outline:2px solid var(--brand);outline-offset:2px}
+  article{background:var(--card);border:1px solid var(--line);
+          border-radius:16px;padding:22px 24px}
+  h1{font-size:24px;margin:0 0 14px;letter-spacing:-.5px}
+  h3{font-size:15px;text-transform:uppercase;letter-spacing:.8px;
+     color:var(--muted);margin:22px 0 8px}
+  a{color:var(--brand);text-decoration:none;font-weight:600}
+  a:hover{text-decoration:underline}
+  ul{margin:0 0 12px;padding-left:20px} li{margin-bottom:6px}
+  p{margin:0 0 12px}
+  hr{border:0;border-top:1px solid var(--line);margin:22px 0}
+  code{background:var(--chip);padding:1px 5px;border-radius:5px;font-size:13px}
+  .wrap{overflow-x:auto;margin:0 0 14px}
+  table{border-collapse:collapse;width:100%;font-size:14px}
+  th,td{border:1px solid var(--line);padding:7px 9px;text-align:left;vertical-align:top}
+  th{color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.5px}
+  [data-lang]{display:none} [data-lang].on{display:block}
+  footer{color:var(--muted);font-size:13px;text-align:center;margin-top:28px}
+  @media (prefers-reduced-motion:reduce){ *{transition:none !important} }
+</style>
+</head>
+<body>
+<main>
+  <header><img class="mark" src="../support/icon.png" alt="Dayfeed" width="52" height="52"><div class="brand">Dayfeed</div></header>
+
+  <nav id="langnav" aria-label="Language">
+    <button data-pick="en" type="button">English</button>
+    <button data-pick="tr" type="button">Türkçe</button>
+    <button data-pick="de" type="button">Deutsch</button>
+    <button data-pick="es" type="button">Español</button>
+    <button data-pick="fr" type="button">Français</button>
+  </nav>
+
+  <div data-lang="en"><article>
+<h1>Privacy Policy</h1>
+<p><strong>Last updated: 9 August 2026</strong></p>
+<hr>
+<p><strong>Short version:</strong> Dayfeed does not require you to create an account. Almost all data stays on your device. Free users see short video ads served by Google AdMob — these ads are how Dayfeed earns revenue without charging for the app. You can remove ads entirely with a Dayfeed Pro subscription. We do not sell your data.</p>
+
+<h3>What Data We Collect</h3>
+
+<h3>1. Data Stored Locally on Your Device</h3>
+<p>All personal preferences and user-created content are stored locally using the device's secure storage (SharedPreferences). This data never leaves your device unless you explicitly share it:</p>
+<ul>
+<li><strong>Favorites:</strong> Days you have bookmarked</li>
+<li><strong>Custom Days:</strong> Personal celebration days you create (name, date, emoji, color, optional photo)</li>
+<li><strong>App Settings:</strong> Language, theme (light/dark), notification time, country preference</li>
+<li><strong>Search History:</strong> Your last 8 search queries (stored locally, cleared on app uninstall)</li>
+<li><strong>Streak Counter:</strong> Number of consecutive daily app opens</li>
+</ul>
+
+<h3>2. Notification Permissions</h3>
+<p>If you enable notifications, the app schedules local notifications on your device. These are processed entirely on-device. We do not have access to your notification data and do not send push notifications through external servers.</p>
+<ul>
+<li><strong>What:</strong> Daily reminders and yearly reminders for specific days</li>
+<li><strong>Why:</strong> To notify you about today's special days at your chosen time</li>
+<li><strong>Who:</strong> No third party receives this data</li>
+</ul>
+
+<h3>3. Photo Library Access</h3>
+<p>The app requests access to your photo library when you use photo backgrounds for posters or save created posters to your device.</p>
+<ul>
+<li><strong>What:</strong> Reading/writing images from/to your photo library</li>
+<li><strong>Why:</strong> To let you use personal photos as poster backgrounds and save your finished posters</li>
+<li><strong>Who:</strong> No third party receives your photos. Photos are processed entirely on-device.</li>
+</ul>
+
+<h3>4. App Tracking Transparency (iOS only)</h3>
+<p>On iOS, we display Apple's App Tracking Transparency (ATT) prompt before initializing RevenueCat or loading ads. If you allow tracking, the device's advertising identifier (IDFA) may be used to improve subscription analytics and ad relevance.</p>
+<ul>
+<li><strong>What:</strong> Device advertising identifier (IDFA), only if you grant permission</li>
+<li><strong>Why:</strong> To help RevenueCat measure subscription conversion and serve relevant ads</li>
+<li><strong>Who:</strong> RevenueCat, Inc. (<a href="https://www.revenuecat.com/privacy">revenuecat.com/privacy</a>) and Google LLC (AdMob — see section 6 below)</li>
+</ul>
+<p>If you deny ATT permission, the app works fully — neither RevenueCat nor AdMob will use your IDFA.</p>
+
+<h3>5. Subscription &amp; Purchase Data (RevenueCat)</h3>
+<p>If you purchase a Dayfeed Pro subscription, the transaction is processed by Apple App Store or Google Play. We use RevenueCat to manage subscription status.</p>
+<ul>
+<li><strong>What:</strong> Purchase receipts, subscription status, device identifiers (anonymous)</li>
+<li><strong>Why:</strong> To verify your subscription and unlock Pro features</li>
+<li><strong>Who:</strong> RevenueCat, Inc. (<a href="https://www.revenuecat.com/privacy">revenuecat.com/privacy</a>). Apple or Google process payment — we never see your payment card details.</li>
+</ul>
+
+<h3>6. Advertising (Google AdMob)</h3>
+<p>To support Dayfeed without charging for the app, free users see short video ads served by Google AdMob. You can remove all ads by subscribing to Dayfeed Pro.</p>
+<p><strong>When ads appear:</strong> Ads appear when you take certain "free" actions on a poster, a notification, or a new entry in your collection — for example sharing a poster, adding custom text, scheduling an extra advance alert, saving with a premium template, or adding a second day, journey, or countdown. You'll see at most <strong>one rewarded ad per local day</strong> across all of these actions; after that, gated actions route to the paywall until the next day.</p>
+<p><strong>Consent:</strong></p>
+<ul>
+<li><strong>iOS:</strong> The first time you take a gated action after your first poster share, Apple's App Tracking Transparency (ATT) prompt asks if we may track you. You can answer Yes or No — your choice is remembered.</li>
+<li><strong>Android (EU / UK):</strong> Google's User Messaging Platform (UMP) shows a consent dialog asking whether you want personalised or non-personalised ads. You can change your choice any time in <em>Settings → Reset ad consent</em>.</li>
+<li><strong>Android (everywhere else):</strong> Non-personalised ads are served by default.</li>
+</ul>
+<p><strong>What AdMob collects:</strong></p>
+<ul>
+<li><strong>Device advertising identifier</strong> (IDFA on iOS, Advertising ID on Android) — only if you grant consent</li>
+<li><strong>Device information:</strong> model, OS version, screen size, language, time zone</li>
+<li><strong>Ad interaction events:</strong> when an ad is requested, shown, watched to completion, or clicked</li>
+<li><strong>Coarse location</strong> (country/region level) inferred from IP address — for ad relevance</li>
+<li><strong>Ad performance metrics:</strong> fill rate, viewability, latency</li>
+</ul>
+<p><strong>What AdMob does NOT collect through Dayfeed:</strong></p>
+<ul>
+<li>Your name, email, or any contact information</li>
+<li>Your custom days, favourites, search history, or any user-generated content</li>
+<li>Your photos or poster designs</li>
+<li>Dayfeed cannot match ad identifiers to your Dayfeed account because you don't have one</li>
+</ul>
+<p><strong>Children:</strong> Dayfeed is rated 4+. AdMob does not serve personalised ads to users flagged as under 13 under Google's policies. If you believe a child is seeing personalised ads, please contact us.</p>
+
+<h3>What We Do Not Collect</h3>
+<ul>
+<li>We do not collect your name, email address, or any account information (no sign-in required)</li>
+<li>We do not collect your precise location (only coarse country/region inferred by AdMob for ad relevance)</li>
+<li>We do not sell your data to advertisers</li>
+<li>We do not use third-party analytics (no Firebase, Mixpanel, or similar)</li>
+<li>We do not collect crash reports automatically (no Crashlytics or Sentry)</li>
+<li>We do not access your contacts, microphone, or camera</li>
+</ul>
+
+<h3>Data Retention</h3>
+<p>All locally stored data (favorites, custom days, settings) is retained on your device until you uninstall the app or clear app data. You can delete custom days individually from within the app.</p>
+<p>Subscription data managed by RevenueCat is retained according to RevenueCat's data retention policy.</p>
+<p>Ad-related identifiers (Advertising ID, ATT consent state, UMP consent state, AdMob's own cookies) are retained per Google's policies — typically 13 months maximum for advertising identifiers, after which they are reset.</p>
+
+<h3>Children's Privacy</h3>
+<p>Dayfeed is rated 4+ and is suitable for all ages. We do not knowingly collect personal information from children under 13 (or the applicable age in your jurisdiction). Since we do not require account creation and store data locally, no personal information is transmitted from any user, including children. AdMob is configured to treat traffic from this app as non-personalised for users flagged as under 13.</p>
+
+<h3>Your Rights (GDPR &amp; applicable laws)</h3>
+<p>If you are located in the European Union or another jurisdiction with data protection laws, you have the right to:</p>
+<ul>
+<li><strong>Access:</strong> Know what personal data is held about you</li>
+<li><strong>Deletion:</strong> Request deletion of your data</li>
+<li><strong>Portability:</strong> Receive your data in a portable format</li>
+<li><strong>Object:</strong> Object to certain data processing</li>
+<li><strong>Opt out of personalised ads:</strong> Decline consent when prompted, or change it any time in <em>Settings → Reset ad consent</em> (Android) / through iOS Settings → Privacy → Tracking (iOS)</li>
+<li><strong>Reset your advertising identifier:</strong> Android Settings → Google → Ads → Reset advertising ID; iOS Settings → Privacy → Tracking → toggle off</li>
+</ul>
+<p>Since virtually all Dayfeed data is stored locally on your device, you can exercise these rights directly:</p>
+<ul>
+<li><strong>Delete custom days</strong> from the app's custom days management screen</li>
+<li><strong>Clear all app data</strong> via your device's Settings → Apps → Dayfeed → Clear Data</li>
+<li><strong>Revoke permissions</strong> (photos, notifications, tracking) via your device's Settings</li>
+</ul>
+<p>For RevenueCat subscription data, contact RevenueCat at <a href="mailto:privacy@revenuecat.com">privacy@revenuecat.com</a>. For AdMob data, see <a href="https://support.google.com/admob/answer/9561028">support.google.com/admob/answer/9561028</a> or Google's Ads Help at <a href="https://support.google.com/ads/answer/2662856">support.google.com/ads/answer/2662856</a>.</p>
+
+<h3>Security</h3>
+<p>We use industry-standard practices:</p>
+<ul>
+<li>All data is stored locally using the platform's secure storage APIs</li>
+<li>Network connections use HTTPS/TLS</li>
+<li>We do not store your payment information — Apple and Google handle all transactions</li>
+</ul>
+
+<h3>Third-Party Services</h3>
+<div class="wrap"><table><thead><tr><th>Service</th><th>Purpose</th><th>Privacy policy</th></tr></thead><tbody>
+<tr><td>Google AdMob</td><td>Ad serving and measurement</td><td><a href="https://policies.google.com/privacy">policies.google.com/privacy</a></td></tr>
+<tr><td>RevenueCat</td><td>Subscription management</td><td><a href="https://www.revenuecat.com/privacy">revenuecat.com/privacy</a></td></tr>
+<tr><td>Apple App Store</td><td>iOS payment processing</td><td><a href="https://www.apple.com/legal/privacy">apple.com/legal/privacy</a></td></tr>
+<tr><td>Google Play</td><td>Android payment processing</td><td><a href="https://policies.google.com/privacy">policies.google.com/privacy</a></td></tr>
+</tbody></table></div>
+
+<h3>Changes to This Policy</h3>
+<p>We may update this policy from time to time. If we make significant changes, we will update the date at the top of this document. Continued use of the app after changes constitutes acceptance of the updated policy.</p>
+
+<h3>Contact</h3>
+<p>If you have questions about this privacy policy, contact us at:</p>
+<p><strong>Email:</strong> <a href="mailto:nevranizamoglu@gmail.com">nevranizamoglu@gmail.com</a></p>
+  </article>
+  <footer><a href="../support/">Support</a> · <a href="../terms/">Terms</a> · © <span class="year">2026</span> Nevra Nizamoğlu</footer></div>
+
+  <div data-lang="tr"><article>
+<h1>Gizlilik Politikası</h1>
+<p><strong>Son güncelleme: 9 Ağustos 2026</strong></p>
+<hr>
+<p><strong>Kısaca:</strong> Dayfeed için hesap oluşturmanız gerekmez. Neredeyse tüm veriler cihazınızda kalır. Ücretsiz kullanıcılar Google AdMob tarafından sunulan kısa video reklamlar görür — bu reklamlar Dayfeed'in uygulamayı ücretli yapmadan gelir elde etme şeklidir. Dayfeed Pro aboneliği ile tüm reklamları kaldırabilirsiniz. Verilerinizi satmıyoruz.</p>
+
+<h3>Hangi Verileri Topluyoruz</h3>
+
+<h3>1. Cihazınızda Yerel Olarak Saklanan Veriler</h3>
+<p>Tüm kişisel tercihler ve kullanıcı tarafından oluşturulan içerikler, cihazın güvenli depolama alanında (SharedPreferences) yerel olarak saklanır. Bu veriler, siz açıkça paylaşmadıkça cihazınızı terk etmez:</p>
+<ul>
+<li><strong>Favoriler:</strong> Yer imlerine eklediğiniz günler</li>
+<li><strong>Özel Günler:</strong> Oluşturduğunuz kişisel kutlama günleri (ad, tarih, emoji, renk, isteğe bağlı fotoğraf)</li>
+<li><strong>Uygulama Ayarları:</strong> Dil, tema (açık/koyu), bildirim saati, ülke tercihi</li>
+<li><strong>Arama Geçmişi:</strong> Son 8 arama sorgunuz (yerel olarak saklanır, uygulama kaldırıldığında silinir)</li>
+<li><strong>Seri Sayacı:</strong> Ardışık günlük uygulama açılış sayısı</li>
+</ul>
+
+<h3>2. Bildirim İzinleri</h3>
+<p>Bildirimleri etkinleştirirseniz, uygulama cihazınızda yerel bildirimler planlar. Bunlar tamamen cihaz üzerinde işlenir. Bildirim verilerinize erişimimiz yoktur ve harici sunucular aracılığıyla push bildirimi göndermiyoruz.</p>
+<ul>
+<li><strong>Ne:</strong> Günlük hatırlatmalar ve belirli günler için yıllık hatırlatmalar</li>
+<li><strong>Neden:</strong> Sizi seçtiğiniz saatte bugünün özel günleri hakkında bilgilendirmek için</li>
+<li><strong>Kim:</strong> Hiçbir üçüncü taraf bu verileri almaz</li>
+</ul>
+
+<h3>3. Fotoğraf Kitaplığı Erişimi</h3>
+<p>Posterler için fotoğraf arka planı kullandığınızda veya oluşturduğunuz posterleri cihazınıza kaydettiğinizde uygulama fotoğraf kitaplığınıza erişim ister.</p>
+<ul>
+<li><strong>Ne:</strong> Fotoğraf kitaplığınızdan görüntü okuma/yazma</li>
+<li><strong>Neden:</strong> Kişisel fotoğraflarınızı poster arka planı olarak kullanmanıza ve bitmiş posterlerinizi kaydetmenize olanak tanımak için</li>
+<li><strong>Kim:</strong> Fotoğraflarınızı hiçbir üçüncü taraf almaz. Fotoğraflar tamamen cihaz üzerinde işlenir.</li>
+</ul>
+
+<h3>4. Uygulama Takip Şeffaflığı — Yalnızca iOS</h3>
+<p>iOS'ta RevenueCat'i başlatmadan ve reklamları yüklemeden önce Apple'ın Uygulama Takip Şeffaflığı (ATT) istemini gösteririz. Takibe izin verirseniz, cihazınızın reklam tanımlayıcısı (IDFA) abonelik analizlerini iyileştirmek ve reklam uygunluğu için kullanılabilir.</p>
+<ul>
+<li><strong>Ne:</strong> Cihaz reklam tanımlayıcısı (IDFA), yalnızca izin verirseniz</li>
+<li><strong>Neden:</strong> RevenueCat'in abonelik dönüşümünü ölçmes ve uygun reklamlar sunmasına yardımcı olmak için</li>
+<li><strong>Kim:</strong> RevenueCat, Inc. (<a href="https://www.revenuecat.com/privacy">revenuecat.com/privacy</a>) ve Google LLC (AdMob — aşağıdaki bölüm 6'ya bakın)</li>
+</ul>
+<p>ATT iznini reddederseniz uygulama tam olarak çalışır — ne RevenueCat ne de AdMob IDFA'nızı kullanmaz.</p>
+
+<h3>5. Abonelik ve Satın Alma Verileri (RevenueCat)</h3>
+<p>Dayfeed Pro aboneliği satın alırsanız, işlem Apple App Store veya Google Play tarafından gerçekleştirilir. Abonelik durumunu yönetmek için RevenueCat kullanıyoruz.</p>
+<ul>
+<li><strong>Ne:</strong> Satın alma makbuzları, abonelik durumu, cihaz tanımlayıcıları (anonim)</li>
+<li><strong>Neden:</strong> Aboneliğinizi doğrulamak ve Pro özelliklerin kilidini açmak için</li>
+<li><strong>Kim:</strong> RevenueCat, Inc. (<a href="https://www.revenuecat.com/privacy">revenuecat.com/privacy</a>). Ödemeyi Apple veya Google işler — ödeme kartı bilgilerinizi görmeyiz.</li>
+</ul>
+
+<h3>6. Reklamlar (Google AdMob)</h3>
+<p>Uygulamayı ücretli yapmadan destekleyebilmek için ücretsiz kullanıcılar Google AdMob tarafından sunulan kısa video reklamlar görür. Dayfeed Pro'ya abone olarak tüm reklamları kaldırabilirsiniz.</p>
+<p><strong>Reklamlar ne zaman görünür:</strong> Bir posterde, bildirimde veya koleksiyonunuzdaki yeni bir kayıtta belirli "ücretsiz" işlemler yaptığınızda reklam görünür — örneğin poster paylaşma, özel metin ekleme, ek bir erken uyarı zamanlama, premium şablonla kaydetme veya ikinci bir gün/yolculuk/geri sayım ekleme. Bu işlemlerin tümünde <strong>günde en fazla bir ödüllü reklam</strong> görürsünüz; sonrasında o gün kalan işlemler doğrudan ödeme duvarına yönlendirilir.</p>
+<p><strong>Onay:</strong></p>
+<ul>
+<li><strong>iOS:</strong> İlk poster paylaşımınızdan sonra ilk kısıtlı işlemi yaptığınızda Apple'ın Uygulama Takip Şeffaflığı (ATT) istemi sizi takip edip edemeyeceğimizi sorar. Evet veya Hayır yanıtını verebilirsiniz — seçiminiz hatırlanır.</li>
+<li><strong>Android (AB / BK):</strong> Google'ın User Messaging Platform (UMP) sistemi, kişiselleştirilmiş veya kişiselleştirilmemiş reklamlar istediğinizi soran bir onay iletişim kutusu gösterir. Seçiminizi istediğiniz zaman <em>Ayarlar → Reklam onayını sıfırla</em> üzerinden değiştirebilirsiniz.</li>
+<li><strong>Android (diğer tüm bölgeler):</strong> Varsayılan olarak kişiselleştirilmemiş reklamlar gösterilir.</li>
+</ul>
+<p><strong>AdMob'un topladığı veriler:</strong></p>
+<ul>
+<li><strong>Cihaz reklam tanımlayıcısı</strong> (iOS'ta IDFA, Android'de Advertising ID) — yalnızca onay verirseniz</li>
+<li><strong>Cihaz bilgileri:</strong> model, işletim sistemi sürümü, ekran boyutu, dil, saat dilimi</li>
+<li><strong>Reklam etkileşim olayları:</strong> reklamın istendiği, gösterildiği, tamamına kadar izlendiği veya tıklandığı anlar</li>
+<li><strong>Yaklaşık konum</strong> (IP adresinden çıkarılan ülke/bölge düzeyinde) — reklam uygunluğu için</li>
+<li><strong>Reklam performans ölçümleri:</strong> doluluk oranı, görünürlük, gecikme</li>
+</ul>
+<p><strong>AdMob'un Dayfeed aracılığıyla TOPLAMADIĞI veriler:</strong></p>
+<ul>
+<li>Adınız, e-postanız veya iletişim bilgileriniz</li>
+<li>Özel günleriniz, favorileriniz, arama geçmişiniz veya kullanıcı tarafından oluşturulan içerik</li>
+<li>Fotoğraflarınız veya poster tasarımlarınız</li>
+<li>Dayfeed hesabınız olmadığı için AdMob reklam tanımlayıcılarını sizinle eşleştiremez</li>
+</ul>
+<p><strong>Çocuklar:</strong> Dayfeed 4+ olarak derecelendirilmiştir. AdMob, Google politikaları kapsamında 13 yaşından küçük olarak işaretlenen kullanıcılara kişiselleştirilmiş reklam göstermez. Bir çocuğun kişiselleştirilmiş reklam gördüğünü düşünüyorsanız lütfen bizimle iletişime geçin.</p>
+
+<h3>Toplamadıklarımız</h3>
+<ul>
+<li>Ad, e-posta adresi veya hesap bilgisi toplamıyoruz (giriş gerekmez)</li>
+<li>Konumunuzu toplamıyoruz (yalnızca AdMob'un reklam uygunluğu için IP'den çıkardığı ülke/bölge)</li>
+<li>Verileri reklamcılara satmıyoruz</li>
+<li>Üçüncü taraf analitik kullanmıyoruz (Firebase, Mixpanel vb. yok)</li>
+<li>Çökme raporlarını otomatik olarak toplamıyoruz</li>
+<li>Kişilerinize, mikrofonunuza veya kameranıza erişmiyoruz</li>
+</ul>
+
+<h3>Veri Saklama</h3>
+<p>Yerel olarak saklanan tüm veriler (favoriler, özel günler, ayarlar), uygulamayı kaldırana veya uygulama verilerini temizleyene kadar cihazınızda saklanır. Özel günleri uygulama içinden tek tek silebilirsiniz.</p>
+<p>RevenueCat tarafından yönetilen abonelik verileri, RevenueCat'in veri saklama politikasına göre saklanır.</p>
+<p>Reklamla ilgili tanımlayıcılar (Advertising ID, ATT onay durumu, UMP onay durumu, AdMob'un kendi çerezleri) Google politikalarını şekilde saklanır — reklam tanımlayıcıları için tipik olarak en fazla 13 ay, ardından sıfırlanır.</p>
+
+<h3>Çocukların Gizliliği</h3>
+<p>Dayfeed 4+ olarak derecelendirilmiştir ve tüm yaşlar için uygundur. 13 yaşın altındaki çocuklardan bilerek kişisel bilgi toplamıyoruz. Hesap oluşturma gerektirmediğimiz ve verileri yerel olarak sakladığımız için herhangi bir kullanıcıdan kişisel bilgi iletilmez. AdMob, bu uygulamadan gelen trafiği 13 yaşın altında olarak işaretlenen kullanıcılar için kişiselleştirilmemiş olarak işlemek üzere yapılandırılmıştır.</p>
+
+<h3>Haklarınız (KVKK ve GDPR)</h3>
+<p>Türkiye'deyseniz KVKK kapsamında; AB'deyseniz GDPR kapsamında şu haklarınız bulunmaktadır:</p>
+<ul>
+<li><strong>Erişim:</strong> Hakkınızda tutulan kişisel verileri öğrenme</li>
+<li><strong>Silme:</strong> Verilerinizin silinmesini talep etme</li>
+<li><strong>Taşınabilirlik:</strong> Verilerinizi taşınabilir bir formatta alma</li>
+<li><strong>İtiraz:</strong> Belirli veri işlemelerine itiraz etme</li>
+<li><strong>Kişiselleştirilmiş reklamlardan vazgeçme:</strong> Sorulduğunda onayı reddedin veya <em>Ayarlar → Reklam onayını sıfırla</em> (Android) / iOS Ayarlar → Gizlilik → Takip (iOS) üzerinden istediğiniz zaman değiştirin</li>
+<li><strong>Reklam tanımlayıcınızı sıfırlama:</strong> Android Ayarlar → Google → Reklamlar → Reklam kimliğini sıfırlama; iOS Ayarlar → Gizlilik → Takip → kapatın</li>
+</ul>
+<p>Dayfeed verilerinin neredeyse tamamı cihazınızda yerel olarak saklandığından bu hakları doğrudan kullanabilirsiniz:</p>
+<ul>
+<li>Özel günleri uygulama içinden silin</li>
+<li>Cihaz Ayarları → Uygulamalar → Dayfeed → Verileri Tiyele ile tüm uygulama verilerini silin</li>
+<li>Cihaz Ayarları'ndan izinleri (fotoğraf, bildirimler, takip) iptal edin</li>
+</ul>
+<p>RevenueCat abonelik verileri için <a href="mailto:privacy@revenuecat.com">privacy@revenuecat.com</a> ile iletişime geçin. AdMob verileri için <a href="https://support.google.com/admob/answer/9561028">support.google.com/admob/answer/9561028</a> adresini ziyaret edin.</p>
+
+<h3>Güvenlik</h3>
+<p>Endüstri standardı uygulamaları kullanıyoruz:</p>
+<ul>
+<li>Tüm veriler platformun güvenli depolama API'leri kullanılarak yerel olarak saklanır</li>
+<li>Ağ bağlantıları HTTPS/TLS kullanır</li>
+<li>Ödeme bilgilerinizi saklamıyoruz — Apple ve Google tüm işlemleri gerçekleştirir</li>
+</ul>
+
+<h3>Üçüncü Taraf Hizmetler</h3>
+<div class="wrap"><table><thead><tr><th>Hizmet</th><th>Amaç</th><th>Gizlilik Politikası</th></tr></thead><tbody>
+<tr><td>Google AdMob</td><td>Reklam sunma ve ölçümleme</td><td><a href="https://policies.google.com/privacy">policies.google.com/privacy</a></td></tr>
+<tr><td>RevenueCat</td><td>Abonelik yönetimi</td><td><a href="https://www.revenuecat.com/privacy">revenuecat.com/privacy</a></td></tr>
+<tr><td>Apple App Store</td><td>iOS ödeme işlemleri</td><td><a href="https://www.apple.com/legal/privacy">apple.com/legal/privacy</a></td></tr>
+<tr><td>Google Play</td><td>Android ödeme işlemleri</td><td><a href="https://policies.google.com/privacy">policies.google.com/privacy</a></td></tr>
+</tbody></table></div>
+
+<h3>Bu Politikadaki Değişiklikler</h3>
+<p>Bu politikayı zaman zaman güncelleyebiliriz. Önemli değişiklikler yaparsak, belgenin üstündeki tarihi güncelleriz. Değişikliklerden sonra uygulamayı kullanmaya devam etmek, güncellenen politikanın kabul edildiği anlamına gelir.</p>
+
+<h3>İletişim</h3>
+<p>Gizlilik politikası hakkında sorularınız için:</p>
+<p><strong>E-posta:</strong> <a href="mailto:nevranizamoglu@gmail.com">nevranizamoglu@gmail.com</a></p>
+  </article>
+  <footer><a href="../support/">Destek</a> · <a href="../terms/">Koşullar</a> · © <span class="year">2026</span> Nevra Nizamoğlu</footer></div>
+
+  <div data-lang="de"><article>
+<h1>Datenschutzerklärung</h1>
+<p><strong>Zuletzt aktualisiert: 9. August 2026</strong></p>
+<hr>
+<p><strong>Kurzfassung:</strong> Dayfeed erfordert kein Benutzerkonto. Nahezu alle Daten verbleiben auf Ihrem Gerät. Kostenlose Nutzer sehen kurze Videoanzeigen von Google AdMob — so finanziert sich Dayfeed, ohne die App kostenpflichtig zu machen. Mit einem Dayfeed-Pro-Abonnement entfernen Sie alle Anzeigen. Wir verkaufen Ihre Daten nicht.</p>
+
+<h3>Welche Daten Wir Erheben</h3>
+
+<h3>1. Lokal auf Ihrem Gerät Gespeicherte Daten</h3>
+<p>Alle persönlichen Einstellungen und nutzererstellte Inhalte werden lokal im sicheren Speicher des Geräts (SharedPreferences) abgelegt. Diese Daten verlassen Ihr Gerät nicht, es sei denn, Sie teilen sie ausdrücklich:</p>
+<ul>
+<li><strong>Favoriten:</strong> Von Ihnen gespeicherte Tage</li>
+<li><strong>Eigene Tage:</strong> Von Ihnen erstellte persönliche Feiertage (Name, Datum, Emoji, Farbe, optionales Foto)</li>
+<li><strong>App-Einstellungen:</strong> Sprache, Design (hell/dunkel), Benachrichtigungszeit, Länderpräferenz</li>
+<li><strong>Suchverlauf:</strong> Ihre letzten 8 Suchanfragen (lokal gespeichert, beim Deinstallieren gelöscht)</li>
+<li><strong>Streak-Zähler:</strong> Anzahl aufeinanderfolgender täglicher App-Öffnungen</li>
+</ul>
+
+<h3>2. Benachrichtigungsberechtigungen</h3>
+<p>Wenn Sie Benachrichtigungen aktivieren, plant die App lokale Benachrichtigungen auf Ihrem Gerät. Diese werden vollständig auf dem Gerät verarbeitet. Wir haben keinen Zugriff auf Ihre Benachrichtigungsdaten und senden keine Push-Benachrichtigungen über externe Server.</p>
+<ul>
+<li><strong>Was:</strong> Tägliche Erinnerungen und jährliche Erinnerungen für bestimmte Tage</li>
+<li><strong>Warum:</strong> Um Sie zur gewählten Zeit über die heutigen besonderen Tage zu informieren</li>
+<li><strong>Wer:</strong> Kein Dritter erhält diese Daten</li>
+</ul>
+
+<h3>3. Zugriff auf die Fotobibliothek</h3>
+<p>Die App fordert Zugriff auf Ihre Fotobibliothek an, wenn Sie Fotos als Posterhintergründe verwenden oder erstellte Poster auf Ihrem Gerät speichern.</p>
+<ul>
+<li><strong>Was:</strong> Lesen/Schreiben von Bildern aus/in Ihre Fotobibliothek</li>
+<li><strong>Warum:</strong> Um persönliche Fotos als Posterhintergründe zu verwenden und fertige Poster zu speichern</li>
+<li><strong>Wer:</strong> Kein Dritter erhält Ihre Fotos. Fotos werden vollständig auf dem Gerät verarbeitet.</li>
+</ul>
+
+<h3>4. App-Tracking-Transparenz — Nur iOS</h3>
+<p>Unter iOS zeigen wir vor der Initialisierung von RevenueCat und vor dem Laden von Anzeigen Apples App-Tracking-Transparenz-(ATT-)Aufforderung an. Wenn Sie Tracking erlauben, kann die Werbe-ID (IDFA) Ihres Geräts zur Verbesserung der Abonnementanalyse und Anzeigenrelevanz verwendet werden.</p>
+<ul>
+<li><strong>Was:</strong> Geräte-Werbe-ID (IDFA), nur bei Ihrer Zustimmung</li>
+<li><strong>Warum:</strong> RevenueCat bei der Messung von Abonnement-Conversions und relevanteren Anzeigen zu unterstützen</li>
+<li><strong>Wer:</strong> RevenueCat, Inc. (<a href="https://www.revenuecat.com/privacy">revenuecat.com/privacy</a>) und Google LLC (AdMob — siehe Abschnitt 6)</li>
+</ul>
+<p>Wenn Sie die ATT-Berechtigung verweigern, funktioniert die App vollständig — weder RevenueCat noch AdMob verwenden Ihre IDFA.</p>
+
+<h3>5. Abonnement- und Kaufdaten (RevenueCat)</h3>
+<p>Beim Kauf eines Dayfeed-Pro-Abonnements wird die Transaktion vom Apple App Store oder Google Play abgewickelt. Wir verwenden RevenueCat zur Verwaltung des Abonnementstatus.</p>
+<ul>
+<li><strong>Was:</strong> Kaufbelege, Abonnementstatus, Gerätekennungen (anonym)</li>
+<li><strong>Warum:</strong> Ihr Abonnement zur verifizieren und Pro-Funktionen freizuschalten</li>
+<li><strong>Wer:</strong> RevenueCat, Inc. (<a href="https://www.revenuecat.com/privacy">revenuecat.com/privacy</a>). Zahlungen werden von Apple oder Google verarbeitet — wir sehen Ihre Zahlungskartendaten nicht.</li>
+</ul>
+
+<h3>6. Werbung (Google AdMob)</h3>
+<p>Um Dayfeed zu unterstützen, ohne die App kostenpflichtig zu machen, sehen kostenlose Nutzer kurze Videoanzeigen von Google AdMob. Mit einem Dayfeed-Pro-Abonnement entfernen Sie alle Anzeigen.</p>
+<p><strong>Wann Anzeigen erscheinen:</strong> Anzeigen erscheinen, wenn Sie bestimmte „kostenlose" Aktionen ausführen — zum Beispiel ein Poster teilen, individuellen Text hinzufügen, eine zusätzliche Vorlaufbenachrichtigung planen, mit einer Premium-Vorlage speichern oder einen zweiten Tag, eine Reise oder einen Countdown hinzufügen. Insgesamt sehen Sie <strong>maximal eine belohnte Anzeige pro lokalem Tag</strong>; danach werden weitere Aktionen am selben Tag direkt zur Bezahlseite weitergeleitet.</p>
+<p><strong>Einwilligung:</strong></p>
+<ul>
+<li><strong>iOS:</strong> Bei der ersten gesperrten Aktion nach Ihrer ersten Posterfreigabe fragt Apples ATT-Dialog, ob wir Sie tracken dürfen. Sie können Ja oder Nein antworten — Ihre Wahl wird gespeichert.</li>
+<li><strong>Android (EU / UK):</strong> Googles User Messaging Platform (UMP) zeigt einen Einwilligungsdialog, in dem Sie personalisierte oder nicht-personalisierte Anzeigen wählen. Sie können Ihre Wahl jederzeit unter <em>Einstellungen → Anzeigeneinwilligung zurücksetzen</em> ändern.</li>
+<li><strong>Android (überall sonst):</strong> Nicht-personalisierte Anzeigen werden standardmäßig gezeigt.</li>
+</ul>
+<p><strong>Was AdMob erhebt:</strong></p>
+<ul>
+<li><strong>Geräte-Werbe-ID</strong> (IDFA unter iOS, Advertising ID unter Android) — nur mit Ihrer Einwilligung</li>
+<li><strong>Geräteinformationen:</strong> Modell, Betriebssystemversion, Bildschirmgröße, Sprache, Zeitzone</li>
+<li><strong>Anzeigeninteraktionsereignisse:</strong> wann eine Anzeige angefordert, angezeigt, vollständig angesehen oder angeklickt wurde</li>
+<li><strong>Ungefähre Standortinformation</strong> (Land/Region, aus der IP-Adresse abgeleitet) — für Anzeigenrelevanz</li>
+<li><strong>Anzeigenleistungsmetriken:</strong> Füllrate, Sichtbarkeit, Latenz</li>
+</ul>
+<p><strong>Was AdMob über Dayfeed NICHT erhebt:</strong></p>
+<ul>
+<li>Ihren Namen, Ihre E-Mail-Adresse oder Kontaktinformationen</li>
+<li>Ihre eigenen Tage, Favoriten, den Suchverlauf oder andere nutzergenerierte Inhalte</li>
+<li>Ihre Fotos oder Posterentwürfe</li>
+<li>Dayfeed kann Anzeigen-IDs nicht mit einem Dayfeed-Konto verknüpfen, da Sie keines haben</li>
+</ul>
+<p><strong>Kinder:</strong> Dayfeed ist ab 4 Jahren freigegeben. AdMob liefert keine personalisierten Anzeigen an Nutzer, die gemäß Googles Richtlinien als unter 13 Jahre alt gekennzeichnet sind. Wenn Sie glauben, dass ein Kind personalisierte Anzeigen sieht, kontaktieren Sie uns bitte.</p>
+
+<h3>Was Wir Nicht Erheben</h3>
+<ul>
+<li>Wir erheben keine Namen, E-Mail-Adressen oder Kontoinformationen (keine Anmeldung erforderlich)</li>
+<li>Wir erheben keinen präzisen Standort (nur Land/Region, von AdMob für Anzeigenrelevanz abgeleitet)</li>
+<li>Wir verkaufen keine Daten an Werbetreibende</li>
+<li>Wir verwenden keine Drittanbieter-Analysen (kein Firebase, Mixpanel oder Ähnliches)</li>
+<li>Wir erheben keine Absturzberichte automatisch (kein Crashlytics oder Sentry)</li>
+<li>Wir greifen nicht auf Ihre Kontakte, Ihr Mikrofon oder Ihre Kamera zu</li>
+</ul>
+
+<h3>Datenspeicherung</h3>
+<p>Alle lokal gespeicherten Daten (Favoriten, eigene Tage, Einstellungen) bleiben auf Ihrem Gerät, bis Sie die App deinstallieren oder App-Daten löschen. Eigene Tage können Sie einzeln in der App löschen.</p>
+<p>Von RevenueCat verwaltete Abonnementdaten werden gemäß der Datenspeicherrichtlinie von RevenueCat aufbewahrt.</p>
+<p>Anzeigenbezogene Kennungen (Advertising ID, ATT-Einwilligungsstatus, UMP-Einwilligungsstatus, AdMob-eigene Cookies) werden gemäß den Google-Richtlinien aufbewahrt — typischerweise maximal 13 Monate für Werbekennungen, danach werden sie zurückgesetzt.</p>
+
+<h3>Datenschutz für Kinder</h3>
+<p>Dayfeed ist ab 4 Jahren freigegeben und für alle Altersgruppen geeignet. Wir erheben wissentlich keine personenbezogenen Daten von Kindern unter 13 Jahren (oder dem in Ihrer Rechtsordnung geltenden Alter). Da wir keine Kontoerstellung erfordern und Daten lokal speichern, werden von keinem Nutzer personenbezogene Daten übermittelt, auch nicht von Kindern. AdMob ist so konfiguriert, dass der Datenverkehr aus dieser App für als unter 13 markierte Nutzer als nicht-personalisierte Anzeigen behandelt wird.</p>
+
+<h3>Ihre Rechte (DSGVO)</h3>
+<p>Wenn Sie in der EU oder einer anderen Rechtsordnung mit Datenschutzgesetzen ansässig sind, haben Sie das Recht auf Auskunft, Löschung, Datenübertragbarkeit und Widerspruch. Sie können außerdem:</p>
+<ul>
+<li><strong>Personalisierte Anzeigen ablehnen:</strong> die Einwilligung verweigern, wenn sie abgefragt wird, oder sie jederzeit unter <em>Einstellungen → Anzeigeneinwilligung zurücksetzen</em> (Android) bzw. iOS-Einstellungen → Datenschutz → Tracking (iOS) ändern</li>
+<li><strong>Ihre Werbe-ID zurücksetzen:</strong> Android Einstellungen → Google → Anzeigen → Werbe-ID zurücksetzen; iOS Einstellungen → Datenschutz → Tracking ausschalten</li>
+</ul>
+<p>Da nahezu alle Dayfeed-Daten lokal auf Ihrem Gerät gespeichert sind, können Sie diese Rechte direkt ausüben:</p>
+<ul>
+<li>Eigene Tage in der App löschen</li>
+<li>Gerät → Einstellungen → Apps → Dayfeed → Daten löschen</li>
+<li>Berechtigungen (Fotos, Benachrichtigungen, Tracking) in den Geräteeinstellungen widerrufen</li>
+</ul>
+<p>Für RevenueCat-Abonnementdaten kontaktieren Sie bitte <a href="mailto:privacy@revenuecat.com">privacy@revenuecat.com</a>. Für AdMob-Daten siehe <a href="https://support.google.com/admob/answer/9561028">support.google.com/admob/answer/9561028</a>.</p>
+
+<h3>Sicherheit</h3>
+<p>Wir verwenden branchenübliche Praktiken:</p>
+<ul>
+<li>Alle Daten werden lokal über die Speicher-APIs der Plattform gespeichert</li>
+<li>Netzwerkverbindungen nutzen HTTPS/TLS</li>
+<li>Wir speichern keine Zahlungsinformationen — Apple und Google wickeln alle Transaktionen ab</li>
+</ul>
+
+<h3>Drittanbieterdienste</h3>
+<div class="wrap"><table><thead><tr><th>Dienst</th><th>Zweck</th><th>Datenschutzerklärung</th></tr></thead><tbody>
+<tr><td>Google AdMob</td><td>Anzeigenauslieferung und Messung</td><td><a href="https://policies.google.com/privacy">policies.google.com/privacy</a></td></tr>
+<tr><td>RevenueCat</td><td>Abonnementverwaltung</td><td><a href="https://www.revenuecat.com/privacy">revenuecat.com/privacy</a></td></tr>
+<tr><td>Apple App Store</td><td>iOS-Zahlungsabwicklung</td><td><a href="https://www.apple.com/legal/privacy">apple.com/legal/privacy</a></td></tr>
+<tr><td>Google Play</td><td>Android-Zahlungsabwicklung</td><td><a href="https://policies.google.com/privacy">policies.google.com/privacy</a></td></tr>
+</tbody></table></div>
+
+<h3>Änderungen an dieser Richtlinie</h3>
+<p>Wir können diese Richtlinie von Zeit zu Zeit aktualisieren. Bei wesentlichen Änderungen aktualisieren wir das Datum oben in diesem Dokument. Die weitere Nutzung der App nach Änderungen gilt als Zustimmung zur aktualisierten Richtlinie.</p>
+
+<h3>Kontakt</h3>
+<p>Bei Fragen zu dieser Datenschutzerklärung kontaktieren Sie uns unter:</p>
+<p><strong>E-Mail:</strong> <a href="mailto:nevranizamoglu@gmail.com">nevranizamoglu@gmail.com</a></p>
+  </article>
+  <footer><a href="../support/">Hilfe</a> · <a href="../terms/">Bedingungen</a> · © <span class="year">2026</span> Nevra Nizamoğlu</footer></div>
+
+  <div data-lang="es"><article>
+<h1>Política de Privacidad</h1>
+<p><strong>Última actualización: 9 de agosto de 2026</strong></p>
+<hr>
+<p><strong>Resumen:</strong> Dayfeed no requiere que crees una cuenta. Casi todos los datos permanecen en tu dispositivo. Los usuarios gratuitos ven anuncios cortos en vídeo servidos por Google AdMob — así es como Dayfeed se financia sin cobrar por la app. Puedes eliminar todos los anuncios con una suscripción Dayfeed Pro. No vendemos tus datos.</p>
+
+<h3>Qué Datos Recopilamos</h3>
+
+<h3>1. Datos Almacenados Localmente en Tu Dispositivo</h3>
+<p>Todas las preferencias personales y el contenido creado por el usuario se almacenan localmente en el almacenamiento seguro del dispositivo (SharedPreferences). Estos datos nunca salen de tu dispositivo a menos que los compartas explícitamente:</p>
+<ul>
+<li><strong>Favoritos:</strong> Días que has marcado</li>
+<li><strong>Días Personalizados:</strong> Días de celebración personal que creas (nombre, fecha, emoji, color, foto opcional)</li>
+<li><strong>Configuración de la App:</strong> Idioma, tema (claro/oscuro), hora de notificación, preferencia de país</li>
+<li><strong>Historial de Búsqueda:</strong> Tus últimas 8 consultas de búsqueda (almacenadas localmente, eliminadas al desinstalar)</li>
+<li><strong>Contador de Racha:</strong> Número de aperturas diarias consecutivas de la app</li>
+</ul>
+
+<h3>2. Permisos de Notificación</h3>
+<p>Si activas las notificaciones, la app programa notificaciones locales en tu dispositivo. Se procesan completamente en el dispositivo. No tenemos acceso a tus datos de notificación ni enviamos notificaciones push a través de servidores externos.</p>
+<ul>
+<li><strong>Qué:</strong> Recordatorios diarios y anuales para días específicos</li>
+<li><strong>Por qué:</strong> Para informarte sobre los días especiales de hoy a la hora elegida</li>
+<li><strong>Quién:</strong> Ningún tercero recibe estos datos</li>
+</ul>
+
+<h3>3. Acceso a la Biblioteca de Fotos</h3>
+<p>La app solicita acceso a tu biblioteca de fotos cuando usas fondos de fotos para pósters o guardas pósters creados en tu dispositivo.</p>
+<ul>
+<li><strong>Qué:</strong> Leer/escribir imágenes desde/hacia tu biblioteca de fotos</li>
+<li><strong>Por qué:</strong> Para usar fotos personales como fondos de póster y guardar tus pósters terminados</li>
+<li><strong>Quién:</strong> Ningún tercero recibe tus fotos. Las fotos se procesan completamente en el dispositivo.</li>
+</ul>
+
+<h3>4. Transparencia de Seguimiento de Apps — Solo iOS</h3>
+<p>En iOS, mostramos el aviso de Transparencia de Seguimiento de Apps (ATT) de Apple antes de inicializar RevenueCat y cargar anuncios. Si permites el seguimiento, el identificador publicitario (IDFA) de tu dispositivo puede usarse para mejorar las analíticas de suscripción y la relevancia de los anuncios.</p>
+<ul>
+<li><strong>Qué:</strong> Identificador publicitario del dispositivo (IDFA), solo si otorgas permiso</li>
+<li><strong>Por qué:</strong> Para ayudar a RevenueCat a medir la conversión de suscripción y mostrar anuncios relevantes</li>
+<li><strong>Quién:</strong> RevenueCat, Inc. (<a href="https://www.revenuecat.com/privacy">revenuecat.com/privacy</a>) y Google LLC (AdMob — ver sección 6)</li>
+</ul>
+<p>Si deniegas el permiso ATT, la app funciona por completo — ni RevenueCat ni AdMob usarán tu IDFA.</p>
+
+<h3>5. Datos de Suscripción y Compra (RevenueCat)</h3>
+<p>Si compras una suscripción Dayfeed Pro, la transacción es procesada por Apple App Store o Google Play. Usamos RevenueCat para gestionar el estado de la suscripción.</p>
+<ul>
+<li><strong>Qué:</strong> Recibos de compra, estado de suscripción, identificadores del dispositivo (anónimos)</li>
+<li><strong>Por qué:</strong> Para verificar tu suscripción y desbloquear las funciones Pro</li>
+<li><strong>Quién:</strong> RevenueCat, Inc. (<a href="https://www.revenuecat.com/privacy">revenuecat.com/privacy</a>). Apple o Google procesan el pago — nunca vemos los detalles de tu tarjeta.</li>
+</ul>
+
+<h3>6. Publicidad (Google AdMob)</h3>
+<p>Para mantener Dayfeed sin cobrar por la app, los usuarios gratuitos ven anuncios cortos en vídeo servidos por Google AdMob. Puedes eliminar todos los anuncios suscribiéndote a Dayfeed Pro.</p>
+<p><strong>Cuándo aparecen los anuncios:</strong> Aparecen al realizar ciertas acciones "gratuitas" — por ejemplo, compartir un póster, añadir texto personalizado, programar una alerta anticipada adicional, guardar con una plantilla premium, o añadir un segundo día, viaje o cuenta atrás. Verás <strong>como máximo un anuncio con recompensa por día local</strong>; después, las acciones restantes ese día van directamente al muro de pago.</p>
+<p><strong>Consentimiento:</strong></p>
+<ul>
+<li><strong>iOS:</strong> La primera vez que realices una acción bloqueada tras tu primer póster compartido, el diálogo ATT de Apple pregunta si podemos rastrearte. Puedes responder Sí o No — tu elección queda guardada.</li>
+<li><strong>Android (UE / Reino Unido):</strong> La plataforma User Messaging Platform (UMP) de Google muestra un diálogo de consentimiento donde eliges entre anuncios personalizados o no personalizados. Puedes cambiar tu elección en cualquier momento en <em>Ajustes → Restablecer consentimiento de anuncios</em>.</li>
+<li><strong>Android (resto del mundo):</strong> Por defecto se muestran anuncios no personalizados.</li>
+</ul>
+<p><strong>Qué recopila AdMob:</strong></p>
+<ul>
+<li><strong>Identificador publicitario del dispositivo</strong> (IDFA en iOS, Advertising ID en Android) — solo si otorgas consentimiento</li>
+<li><strong>Información del dispositivo:</strong> modelo, versión del sistema operativo, tamaño de pantalla, idioma, zona horaria</li>
+<li><strong>Eventos de interacción con anuncios:</strong> cuándo se solicita, muestra, ve completa o se hace clic en un anuncio</li>
+<li><strong>Ubicación aproximada</strong> (país/región, inferida desde la IP) — para relevancia de anuncios</li>
+<li><strong>Métricas de rendimiento de anuncios:</strong> tasa de relleno, visibilidad, latencia</li>
+</ul>
+<p><strong>Qué NO recopila AdMob a través de Dayfeed:</strong></p>
+<ul>
+<li>Tu nombre, correo electrónico ni información de contacto</li>
+<li>Tus días personalizados, favoritos, historial de búsqueda ni contenido generado por el usuario</li>
+<li>Tus fotos o diseños de pósters</li>
+<li>Dayfeed no puede vincular identificadores publicitarios con una cuenta Dayfeed porque no tienes una</li>
+</ul>
+<p><strong>Niños:</strong> Dayfeed está clasificado para 4+ años. AdMob no muestra anuncios personalizados a usuarios marcados como menores de 13 años según las políticas de Google. Si crees que un niño está viendo anuncios personalizados, contáctanos.</p>
+
+<h3>Qué No Recopilamos</h3>
+<ul>
+<li>No recopilamos nombre, dirección de correo electrónico ni información de cuenta (no se requiere inicio de sesión)</li>
+<li>No recopilamos tu ubicación precisa (solo país/región aproximada inferida por AdMob para relevancia publicitaria)</li>
+<li>No vendemos datos a anunciantes</li>
+<li>No usamos análisis de terceros (sin Firebase, Mixpanel ni similares)</li>
+<li>No recopilamos informes de fallos automáticamente (sin Crashlytics ni Sentry)</li>
+<li>No accedemos a tus contactos, micrófono ni cámara</li>
+</ul>
+
+<h3>Retención de Datos</h3>
+<p>Todos los datos almacenados localmente (favoritos, días personalizados, configuración) se conservan en tu dispositivo hasta que desinstales la app o borres los datos de la app. Puedes eliminar días personalizados individualmente desde la app.</p>
+<p>Los datos de suscripción gestionados por RevenueCat se conservan según la política de retención de datos de RevenueCat.</p>
+<p>Los identificadores relacionados con anuncios (Advertising ID, estado de consentimiento ATT, estado de consentimiento UMP, cookies propias de AdMob) se conservan según las políticas de Google — normalmente un máximo de 13 meses para identificadores publicitarios, tras los cuales se restablecen.</p>
+
+<h3>Privacidad de los Menores</h3>
+<p>Dayfeed está clasificado para 4+ años y es apto para todas las edades. No recopilamos conscientemente información personal de menores de 13 años (o la edad aplicable en tu jurisdicción). Como no requerimos creación de cuenta y almacenamos los datos localmente, no se transmite información personal de ningún usuario, incluidos los menores. AdMob está configurado para tratar el tráfico de esta app como no personalizado para los usuarios marcados como menores de 13 años.</p>
+
+<h3>Tus Derechos (RGPD y legislación aplicable)</h3>
+<p>Si resides en la Unión Europea u otra jurisdicción con leyes de protección de datos, tienes derecho a acceder, eliminar, portabilidad y oponerte al tratamiento de tus datos. También puedes:</p>
+<ul>
+<li><strong>Excluirte de anuncios personalizados:</strong> rechaza el consentimiento cuando se solicite, o cámbialo en <em>Ajustes → Restablecer consentimiento de anuncios</em> (Android) / Ajustes de iOS → Privacidad → Seguimiento (iOS)</li>
+<li><strong>Restablecer tu identificador publicitario:</strong> Android Ajustes → Google → Anuncios → Restablecer ID de publicidad; iOS Ajustes → Privacidad → Seguimiento → desactivar</li>
+</ul>
+<p>Dado que casi todos los datos de Dayfeed se almacenan localmente en tu dispositivo, puedes ejercer estos derechos directamente:</p>
+<ul>
+<li>Eliminar días personalizados desde la app</li>
+<li>Ajustes del dispositivo → Apps → Dayfeed → Borrar datos</li>
+<li>Revocar permisos (fotos, notificaciones, seguimiento) en la configuración del dispositivo</li>
+</ul>
+<p>Para datos de suscripción de RevenueCat, contacta con RevenueCat en <a href="mailto:privacy@revenuecat.com">privacy@revenuecat.com</a>. Para datos de AdMob, consulta <a href="https://support.google.com/admob/answer/9561028">support.google.com/admob/answer/9561028</a>.</p>
+
+<h3>Seguridad</h3>
+<p>Usamos prácticas estándar del sector:</p>
+<ul>
+<li>Todos los datos se almacenan localmente usando las APIs de almacenamiento seguro de la plataforma</li>
+<li>Las conexiones de red usan HTTPS/TLS</li>
+<li>No almacenamos información de pago — Apple y Google gestionan todas las transacciones</li>
+</ul>
+
+<h3>Servicios de Terceros</h3>
+<div class="wrap"><table><thead><tr><th>Servicio</th><th>Propósito</th><th>Política de privacidad</th></tr></thead><tbody>
+<tr><td>Google AdMob</td><td>Publicación y medición de anuncios</td><td><a href="https://policies.google.com/privacy">policies.google.com/privacy</a></td></tr>
+<tr><td>RevenueCat</td><td>Gestión de suscripciones</td><td><a href="https://www.revenuecat.com/privacy">revenuecat.com/privacy</a></td></tr>
+<tr><td>Apple App Store</td><td>Procesamiento de pagos iOS</td><td><a href="https://www.apple.com/legal/privacy">apple.com/legal/privacy</a></td></tr>
+<tr><td>Google Play</td><td>Procesamiento de pagos Android</td><td><a href="https://policies.google.com/privacy">policies.google.com/privacy</a></td></tr>
+</tbody></table></div>
+
+<h3>Cambios en Esta Política</h3>
+<p>Es posible que actualicemos esta política de vez en cuando. Si realizamos cambios significativos, actualizaremos la fecha en la parte superior de este documento. El uso continuado de la app después de los cambios constituye la aceptación de la política actualizada.</p>
+
+<h3>Contacto</h3>
+<p>Si tienes preguntas sobre esta política de privacidad, contáctanos en:</p>
+<p><strong>Correo electrónico:</strong> <a href="mailto:nevranizamoglu@gmail.com">nevranizamoglu@gmail.com</a></p>
+  </article>
+  <footer><a href="../support/">Soporte</a> · <a href="../terms/">Términos</a> · © <span class="year">2026</span> Nevra Nizamoğlu</footer></div>
+
+  <div data-lang="fr"><article>
+<h1>Politique de confidentialité</h1>
+<p><strong>Dernière mise à jour : 9 août 2026</strong></p>
+<hr>
+<p><strong>En bref :</strong> Dayfeed ne nécessite pas de création de compte. Presque toutes les données restent sur votre appareil. Les utilisateurs gratuits voient de courtes annonces vidéo diffusées par Google AdMob — c'est ainsi que Dayfeed se finance sans faire payer l'application. Vous pouvez supprimer toutes les annonces avec un abonnement Dayfeed Pro. Nous ne vendons pas vos données.</p>
+
+<h3>Quelles Données Nous Collectons</h3>
+
+<h3>1. Données Stockées Localement sur Votre Appareil</h3>
+<p>Toutes les préférences personnelles et le contenu créé par l'utilisateur sont stockés localement dans le stockage sécurisé de l'appareil (SharedPreferences). Ces données ne quittent jamais votre appareil sauf si vous les partagez explicitement :</p>
+<ul>
+<li><strong>Favoris :</strong> Jours que vous avez mis en signet</li>
+<li><strong>Jours Personnalisés :</strong> Jours de célébration personnels que vous créez (nom, date, emoji, couleur, photo optionnelle)</li>
+<li><strong>Paramètres de l'App :</strong> Langue, thème (clair/sombre), heure de notification, préférence de pays</li>
+<li><strong>Historique de Recherche :</strong> Vos 8 dernières requêtes de recherche (stockées localement, effacées à la désinstallation)</li>
+<li><strong>Compteur de Série :</strong> Nombre d'ouvertures quotidiennes consécutives de l'app</li>
+</ul>
+
+<h3>2. Autorisations de Notification</h3>
+<p>Si vous activez les notifications, l'application planifie des notifications locales sur votre appareil. Celles-ci sont entièrement traitées sur l'appareil. Nous n'avons pas accès à vos données de notification et n'envoyons pas de notifications push via des serveurs externes.</p>
+<ul>
+<li><strong>Quoi :</strong> Rappels quotidiens et annuels pour des jours spécifiques</li>
+<li><strong>Pourquoi :</strong> Pour vous informer des jours spéciaux du jour à l'heure choisie</li>
+<li><strong>Qui :</strong> Aucun tiers ne reçoit ces données</li>
+</ul>
+
+<h3>3. Accès à la Bibliothèque de Photos</h3>
+<p>L'app demande l'accès à votre bibliothèque de photos lorsque vous utilisez des photos comme arrière-plans d'affiche ou enregistrez des affiches créées sur votre appareil.</p>
+<ul>
+<li><strong>Quoi :</strong> Lecture/écriture d'images depuis/vers votre bibliothèque de photos</li>
+<li><strong>Pourquoi :</strong> Pour utiliser des photos personnelles comme arrière-plans d'affiche et enregistrer vos affiches terminées</li>
+<li><strong>Qui :</strong> Aucun tiers ne reçoit vos photos. Les photos sont traitées entièrement sur l'appareil.</li>
+</ul>
+
+<h3>4. Transparence du Suivi des Apps — iOS uniquement</h3>
+<p>Sur iOS, nous affichons l'invite de Transparence du Suivi des Apps (ATT) d'Apple avant d'initialiser RevenueCat et de charger les annonces. Si vous autorisez le suivi, l'identifiant publicitaire (IDFA) de votre appareil peut être utilisé pour améliorer les analyses d'abonnement et la pertinence des annonces.</p>
+<ul>
+<li><strong>Quoi :</strong> Identifiant publicitaire de l'appareil (IDFA), uniquement si vous accordez la permission</li>
+<li><strong>Pourquoi :</strong> Pour aider RevenueCat à mesurer la conversion d'abonnement et à servir des annonces pertinentes</li>
+<li><strong>Qui :</strong> RevenueCat, Inc. (<a href="https://www.revenuecat.com/privacy">revenuecat.com/privacy</a>) et Google LLC (AdMob — voir section 6)</li>
+</ul>
+<p>Si vous refusez la permission ATT, l'application fonctionne pleinement — ni RevenueCat ni AdMob n'utiliseront votre IDFA.</p>
+
+<h3>5. Données d'Abonnement et d'Achat (RevenueCat)</h3>
+<p>Si vous achetez un abonnement Dayfeed Pro, la transaction est traitée par l'App Store Apple ou Google Play. Nous utilisons RevenueCat pour gérer le statut de l'abonnement.</p>
+<ul>
+<li><strong>Quoi :</strong> Reçus d'achat, statut d'abonnement, identifiants de l'appareil (anonymes)</li>
+<li><strong>Pourquoi :</strong> Pour vérifier votre abonnement et débloquer les fonctionnalités Pro</li>
+<li><strong>Qui :</strong> RevenueCat, Inc. (<a href="https://www.revenuecat.com/privacy">revenuecat.com/privacy</a>). Apple ou Google traitent le paiement — nous ne voyons jamais les détails de votre carte.</li>
+</ul>
+
+<h3>6. Publicité (Google AdMob)</h3>
+<p>Pour soutenir Dayfeed sans faire payer l'application, les utilisateurs gratuits voient de courtes annonces vidéo diffusées par Google AdMob. Vous pouvez supprimer toutes les annonces en souscrivant à Dayfeed Pro.</p>
+<p><strong>Quand les annonces apparaissent :</strong> Les annonces apparaissent lorsque vous effectuez certaines actions « gratuites » — par exemple partager une affiche, ajouter du texte personnalisé, programmer une alerte anticipée supplémentaire, enregistrer avec un modèle premium, ou ajouter un second jour, voyage ou compte à rebours. Vous verrez <strong>au plus une annonce rewarded par jour local</strong> ; ensuite, les actions restantes ce jour-là sont redirigées directement vers le mur de paiement.</p>
+<p><strong>Consentement :</strong></p>
+<ul>
+<li><strong>iOS :</strong> La première fois que vous effectuez une action bloquée après votre premier partage d'affiche, l'invite ATT d'Apple vous demande si nous pouvons vous suivre. Vous pouvez répondre Oui ou Non — votre choix est mémorisé.</li>
+<li><strong>Android (UE / Royaume-Uni) :</strong> La plateforme User Messaging Platform (UMP) de Google affiche une boîte de dialogue de consentement où vous choisissez entre annonces personnalisées ou non personnalisées. Vous pouvez modifier votre choix à tout moment dans <em>Paramètres → Réinitialiser le consentement publicitaire</em>.</li>
+<li><strong>Android (partout ailleurs) :</strong> Les annonces non personnalisées sont diffusées par défaut.</li>
+</ul>
+<p><strong>Ce qu'AdMob collecte :</strong></p>
+<ul>
+<li><strong>Identifiant publicitaire de l'appareil</strong> (IDFA sur iOS, Advertising ID sur Android) — uniquement si vous accordez votre consentement</li>
+<li><strong>Informations sur l'appareil :</strong> modèle, version du système d'exploitation, taille d'écran, langue, fuseau horaire</li>
+<li><strong>Événements d'interaction avec les annonces :</strong> quand une annonce est demandée, affichée, regardée jusqu'au bout ou cliquée</li>
+<li><strong>Localisation approximative</strong> (pays/région, déduite de l'adresse IP) — pour la pertinence des annonces</li>
+<li><strong>Métriques de performance publicitaire :</strong> taux de remplissage, visibilité, latence</li>
+</ul>
+<p><strong>Ce qu'AdMob ne collecte PAS via Dayfeed :</strong></p>
+<ul>
+<li>Votre nom, e-mail ou informations de contact</li>
+<li>Vos jours personnalisés, favoris, historique de recherche ou contenu généré par l'utilisateur</li>
+<li>Vos photos ou créations d'affiches</li>
+<li>Dayfeed ne peut pas lier les identifiants publicitaires à un compte Dayfeed car vous n'en avez pas</li>
+</ul>
+<p><strong>Enfants :</strong> Dayfeed est classé 4+. AdMob ne diffuse pas d'annonces personnalisées aux utilisateurs identifiés comme ayant moins de 13 ans selon les politiques de Google. Si vous pensez qu'un enfant voit des annonces personnalisées, veuillez nous contacter.</p>
+
+<h3>Ce Que Nous Ne Collectons Pas</h3>
+<ul>
+<li>Nous ne collectons pas de nom, d'adresse e-mail ou d'informations de compte (aucune connexion requise)</li>
+<li>Nous ne collectons pas votre localisation précise (seulement le pays/la région approximative déduite par AdMob pour la pertinence publicitaire)</li>
+<li>Nous ne vendons pas de données aux annonceurs</li>
+<li>Nous n'utilisons pas d'analyses tierces (pas de Firebase, Mixpanel ou similaire)</li>
+<li>Nous ne collectons pas automatiquement de rapports de plantage (pas de Crashlytics ou Sentry)</li>
+<li>Nous n'accédons pas à vos contacts, microphone ou caméra</li>
+</ul>
+
+<h3>Conservation des Données</h3>
+<p>Toutes les données stockées localement (favoris, jours personnalisés, paramètres) sont conservées sur votre appareil jusqu'à ce que vous désinstalliez l'application ou effaciez les données de l'application. Vous pouvez supprimer les jours personnalisés individuellement depuis l'application.</p>
+<p>Les données d'abonnement gérées par RevenueCat sont conservées conformément à la politique de conservation des données de RevenueCat.</p>
+<p>Les identifiants liés aux annonces (Advertising ID, état de consentement ATT, état de consentement UMP, cookies propres à AdMob) sont conservés selon les politiques de Google — généralement 13 mois maximum pour les identifiants publicitaires, après quoi ils sont réinitialisés.</p>
+
+<h3>Vie Privée des Enfants</h3>
+<p>Dayfeed est classé 4+ et convient à tous les âges. Nous ne collectons pas sciemment d'informations personnelles auprès d'enfants de moins de 13 ans (ou de l'âge applicable dans votre juridiction). Comme nous n'exigeons pas de création de compte et stockons les données localement, aucune information personnelle n'est transmise par aucun utilisateur, y compris les enfants. AdMob est configuré pour traiter le trafic de cette application comme non personnalisé pour les utilisateurs identifiés comme ayant moins de 13 ans.</p>
+
+<h3>Vos Droits (RGPD)</h3>
+<p>Si vous résidez dans l'Union européenne ou dans une autre juridiction disposant de lois sur la protection des données, vous avez le droit d'accéder, de supprimer, de porter et de vous opposer au traitement de vos données. Vous pouvez également :</p>
+<ul>
+<li><strong>Refuser les annonces personnalisées :</strong> refusez le consentement lorsqu'il vous est demandé, ou modifiez-le dans <em>Paramètres → Réinitialiser le consentement publicitaire</em> (Android) / Réglages iOS → Confidentialité → Suivi (iOS)</li>
+<li><strong>Réinitialiser votre identifiant publicitaire :</strong> Android Réglages → Google → Annonces → Réinitialiser l'identifiant publicitaire ; iOS Réglages → Confidentialité → Suivi → désactiver</li>
+</ul>
+<p>Étant donné que pratiquement toutes les données Dayfeed sont stockées localement sur votre appareil, vous pouvez exercer ces droits directement :</p>
+<ul>
+<li>Supprimer les jours personnalisés depuis l'app</li>
+<li>Paramètres de l'appareil → Applications → Dayfeed → Effacer les données</li>
+<li>Révoquer les autorisations (photos, notifications, suivi) dans les paramètres de l'appareil</li>
+</ul>
+<p>Pour les données d'abonnement RevenueCat, contactez RevenueCat à <a href="mailto:privacy@revenuecat.com">privacy@revenuecat.com</a>. Pour les données AdMob, consultez <a href="https://support.google.com/admob/answer/9561028">support.google.com/admob/answer/9561028</a>.</p>
+
+<h3>Sécurité</h3>
+<p>Nous utilisons des pratiques standard du secteur :</p>
+<ul>
+<li>Toutes les données sont stockées localement via les API de stockage sécurisé de la plateforme</li>
+<li>Les connexions réseau utilisent HTTPS/TLS</li>
+<li>Nous ne stockons pas d'informations de paiement — Apple et Google traitent toutes les transactions</li>
+</ul>
+
+<h3>Services Tiers</h3>
+<div class="wrap"><table><thead><tr><th>Service</th><th>Finalité</th><th>Politique de confidentialité</th></tr></thead><tbody>
+<tr><td>Google AdMob</td><td>Diffusion et mesure publicitaires</td><td><a href="https://policies.google.com/privacy">policies.google.com/privacy</a></td></tr>
+<tr><td>RevenueCat</td><td>Gestion des abonnements</td><td><a href="https://www.revenuecat.com/privacy">revenuecat.com/privacy</a></td></tr>
+<tr><td>Apple App Store</td><td>Traitement des paiements iOS</td><td><a href="https://www.apple.com/legal/privacy">apple.com/legal/privacy</a></td></tr>
+<tr><td>Google Play</td><td>Traitement des paiements Android</td><td><a href="https://policies.google.com/privacy">policies.google.com/privacy</a></td></tr>
+</tbody></table></div>
+
+<h3>Modifications de Cette Politique</h3>
+<p>Nous pouvons mettre à jour cette politique de temps à autre. Si nous apportons des modifications importantes, nous mettrons à jour la date en haut de ce document. L'utilisation continue de l'application après les modifications vaut acceptation de la politique mise à jour.</p>
+
+<h3>Contact</h3>
+<p>Pour toute question concernant cette politique de confidentialité, contactez-nous à :</p>
+<p><strong>E-mail :</strong> <a href="mailto:nevranizamoglu@gmail.com">nevranizamoglu@gmail.com</a></p>
+  </article>
+  <footer><a href="../support/">Assistance</a> · <a href="../terms/">Conditions</a> · © <span class="year">2026</span> Nevra Nizamoğlu</footer></div>
+</main>
+<script>
+(function(){
+  var LANGS = ['en','tr','de','es','fr'];
+  function pick(){
+    var q = new URLSearchParams(location.search).get('lang');
+    var h = location.hash.replace('#','');
+    var cands = [q, h].concat(navigator.languages || [navigator.language || 'en']);
+    for (var i=0;i<cands.length;i++){
+      if(!cands[i]) continue;
+      var code = String(cands[i]).toLowerCase().split('-')[0];
+      if (LANGS.indexOf(code) > -1) return code;
+    }
+    return 'en';
+  }
+  function show(code){
+    LANGS.forEach(function(l){
+      var el = document.querySelector('[data-lang="'+l+'"]');
+      if (el) el.classList.toggle('on', l === code);
+    });
+    document.querySelectorAll('#langnav button').forEach(function(b){
+      b.setAttribute('aria-current', String(b.dataset.pick === code));
+    });
+    document.documentElement.lang = code;
+  }
+  document.querySelectorAll('#langnav button').forEach(function(b){
+    b.addEventListener('click', function(){ show(b.dataset.pick); });
+  });
+  show(pick());
+  // Year shown in the footer: filled in once on load.
+  // The "2026" already in the markup is the no-JS fallback.
+  var yr = String(new Date().getFullYear());
+  document.querySelectorAll('.year').forEach(function(el){ el.textContent = yr; });
+})();
+</script>
+<noscript><style>[data-lang]{display:block !important} #langnav{display:none}</style></noscript>
+</body>
+</html>
