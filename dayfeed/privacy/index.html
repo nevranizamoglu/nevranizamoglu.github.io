@@ -66,7 +66,7 @@
 
   <div data-lang="en"><article>
 <h1>Privacy Policy</h1>
-<p><strong>Last updated: 9 August 2026</strong></p>
+<p><strong>Last updated: 10 September 2026</strong></p>
 <hr>
 <p><strong>Short version:</strong> Dayfeed does not require you to create an account. Almost all data stays on your device. Free users see short video ads served by Google AdMob — these ads are how Dayfeed earns revenue without charging for the app. You can remove ads entirely with a Dayfeed Pro subscription. We do not sell your data.</p>
 
@@ -141,12 +141,23 @@
 </ul>
 <p><strong>Children:</strong> Dayfeed is rated 4+. AdMob does not serve personalised ads to users flagged as under 13 under Google's policies. If you believe a child is seeing personalised ads, please contact us.</p>
 
+<h3>7. Product Analytics (PostHog)</h3>
+<p>To understand how Dayfeed is used and where it can be improved, the app records a small, fixed set of interaction events. This is first-party product analytics — it is not advertising, and it is not shared with advertisers.</p>
+<ul>
+<li><strong>What:</strong> A closed set of 14 interaction events — onboarding steps viewed, completed or skipped; paywall viewed; a gated action shown and the choice made; a rewarded ad result; an item created (day, journey or countdown); a poster saved; a share succeeded or failed; a notification opened; and a search that returned no results.</li>
+<li><strong>Search terms:</strong> The only free text ever sent is the text of a search that returned <em>no results</em>, trimmed and truncated to 64 characters. Searches that return results are never sent.</li>
+<li><strong>Identity:</strong> A randomly generated, opaque identifier created on your device — the same one used for subscription management. It is not your name, email, device ID or advertising ID, and it cannot be traced back to you.</li>
+<li><strong>Who:</strong> PostHog, hosted in the European Union (Frankfurt) — <a href="https://posthog.com/privacy">posthog.com/privacy</a>. PostHog acts as our data processor.</li>
+<li><strong>Opt out:</strong> <em>Settings → Privacy → Share anonymous usage data</em>. Turning this off stops all analytics immediately, and the choice persists until you change it.</li>
+</ul>
+<p><strong>What product analytics never records:</strong> the names of your custom days, journeys or countdowns; poster captions or any text you write on a poster; your photos, brand-kit logos or uploads; your favourites; and any search that returned results. None of these ever leave your device.</p>
+
 <h3>What We Do Not Collect</h3>
 <ul>
 <li>We do not collect your name, email address, or any account information (no sign-in required)</li>
 <li>We do not collect your precise location (only coarse country/region inferred by AdMob for ad relevance)</li>
 <li>We do not sell your data to advertisers</li>
-<li>We do not use third-party analytics (no Firebase, Mixpanel, or similar)</li>
+<li>We do not use advertising or cross-app tracking analytics (no Firebase, Mixpanel, or similar). We do use PostHog for first-party product analytics, limited to the closed event set described in section 7 — you can turn it off in Settings.</li>
 <li>We do not collect crash reports automatically (no Crashlytics or Sentry)</li>
 <li>We do not access your contacts, microphone, or camera</li>
 </ul>
@@ -154,6 +165,7 @@
 <h3>Data Retention</h3>
 <p>All locally stored data (favorites, custom days, settings) is retained on your device until you uninstall the app or clear app data. You can delete custom days individually from within the app.</p>
 <p>Subscription data managed by RevenueCat is retained according to RevenueCat's data retention policy.</p>
+<p>Analytics events held by PostHog are stored on EU infrastructure and deleted automatically at the end of the retention period configured for our project. If you opt out, no further events are recorded; events already collected are anonymous and cannot be linked back to you individually.</p>
 <p>Ad-related identifiers (Advertising ID, ATT consent state, UMP consent state, AdMob's own cookies) are retained per Google's policies — typically 13 months maximum for advertising identifiers, after which they are reset.</p>
 
 <h3>Children's Privacy</h3>
@@ -189,6 +201,7 @@
 <div class="wrap"><table><thead><tr><th>Service</th><th>Purpose</th><th>Privacy policy</th></tr></thead><tbody>
 <tr><td>Google AdMob</td><td>Ad serving and measurement</td><td><a href="https://policies.google.com/privacy">policies.google.com/privacy</a></td></tr>
 <tr><td>RevenueCat</td><td>Subscription management</td><td><a href="https://www.revenuecat.com/privacy">revenuecat.com/privacy</a></td></tr>
+<tr><td>PostHog (EU)</td><td>First-party product analytics</td><td><a href="https://posthog.com/privacy">posthog.com/privacy</a></td></tr>
 <tr><td>Apple App Store</td><td>iOS payment processing</td><td><a href="https://www.apple.com/legal/privacy">apple.com/legal/privacy</a></td></tr>
 <tr><td>Google Play</td><td>Android payment processing</td><td><a href="https://policies.google.com/privacy">policies.google.com/privacy</a></td></tr>
 </tbody></table></div>
@@ -204,7 +217,7 @@
 
   <div data-lang="tr"><article>
 <h1>Gizlilik Politikası</h1>
-<p><strong>Son güncelleme: 9 Ağustos 2026</strong></p>
+<p><strong>Son güncelleme: 10 Eylül 2026</strong></p>
 <hr>
 <p><strong>Kısaca:</strong> Dayfeed için hesap oluşturmanız gerekmez. Neredeyse tüm veriler cihazınızda kalır. Ücretsiz kullanıcılar Google AdMob tarafından sunulan kısa video reklamlar görür — bu reklamlar Dayfeed'in uygulamayı ücretli yapmadan gelir elde etme şeklidir. Dayfeed Pro aboneliği ile tüm reklamları kaldırabilirsiniz. Verilerinizi satmıyoruz.</p>
 
@@ -279,12 +292,23 @@
 </ul>
 <p><strong>Çocuklar:</strong> Dayfeed 4+ olarak derecelendirilmiştir. AdMob, Google politikaları kapsamında 13 yaşından küçük olarak işaretlenen kullanıcılara kişiselleştirilmiş reklam göstermez. Bir çocuğun kişiselleştirilmiş reklam gördüğünü düşünüyorsanız lütfen bizimle iletişime geçin.</p>
 
+<h3>7. Ürün Analitiği (PostHog)</h3>
+<p>Dayfeed'in nasıl kullanıldığını ve nerede geliştirilebileceğini anlamak için uygulama, küçük ve sabit bir etkileşim olayı kümesini kaydeder. Bu, birinci taraf ürün analitiğidir — reklamcılık değildir ve reklamverenlerle paylaşılmaz.</p>
+<ul>
+<li><strong>Ne:</strong> Kapalı bir 14 olaylık küme — görüntülenen, tamamlanan veya atlanan tanıtım adımları; ödeme duvarının görüntülenmesi; kapılı bir eylemin gösterilmesi ve yapılan seçim; ödüllü reklam sonucu; oluşturulan bir öğe (gün, yolculuk veya geri sayım); kaydedilen poster; başarılı veya başarısız paylaşım; açılan bildirim; ve sonuç döndürmeyen bir arama.</li>
+<li><strong>Arama terimleri:</strong> Gönderilen tek serbest metin, <em>sonuç döndürmeyen</em> bir aramanın metnidir; kırpılır ve 64 karaktere kısaltılır. Sonuç döndüren aramalar asla gönderilmez.</li>
+<li><strong>Kimlik:</strong> Cihazınızda oluşturulan rastgele, anonim bir tanımlayıcı — abonelik yönetiminde kullanılanın aynısı. Adınız, e-postanız, cihaz kimliğiniz veya reklam kimliğiniz değildir ve size kadar izlenemez.</li>
+<li><strong>Kim:</strong> Avrupa Birliği'nde (Frankfurt) barındırılan PostHog — <a href="https://posthog.com/privacy">posthog.com/privacy</a>. PostHog veri işleyicimiz olarak hareket eder.</li>
+<li><strong>Devre dışı bırakma:</strong> <em>Ayarlar → Gizlilik → Anonim kullanım verilerini paylaş</em>. Bunu kapatmak tüm analitiği anında durdurur ve tercihiniz siz değiştirene kadar korunur.</li>
+</ul>
+<p><strong>Ürün analitiğinin asla kaydetmedikleri:</strong> özel günlerinizin, yolculuklarınızın veya geri sayımlarınızın adları; poster yazıları veya bir postere yazdığınız herhangi bir metin; fotoğraflarınız, marka kiti logolarınız veya yüklemeleriniz; favorileriniz; ve sonuç döndüren her arama. Bunların hiçbiri cihazınızdan ayrılmaz.</p>
+
 <h3>Toplamadıklarımız</h3>
 <ul>
 <li>Ad, e-posta adresi veya hesap bilgisi toplamıyoruz (giriş gerekmez)</li>
 <li>Konumunuzu toplamıyoruz (yalnızca AdMob'un reklam uygunluğu için IP'den çıkardığı ülke/bölge)</li>
 <li>Verileri reklamcılara satmıyoruz</li>
-<li>Üçüncü taraf analitik kullanmıyoruz (Firebase, Mixpanel vb. yok)</li>
+<li>Reklam veya uygulamalar arası takip analitiği kullanmıyoruz (Firebase, Mixpanel vb. yok). Bölüm 7'de açıklanan kapalı olay kümesiyle sınırlı olmak üzere, birinci taraf ürün analitiği için PostHog kullanıyoruz — Ayarlar'dan kapatabilirsiniz.</li>
 <li>Çökme raporlarını otomatik olarak toplamıyoruz</li>
 <li>Kişilerinize, mikrofonunuza veya kameranıza erişmiyoruz</li>
 </ul>
@@ -292,6 +316,7 @@
 <h3>Veri Saklama</h3>
 <p>Yerel olarak saklanan tüm veriler (favoriler, özel günler, ayarlar), uygulamayı kaldırana veya uygulama verilerini temizleyene kadar cihazınızda saklanır. Özel günleri uygulama içinden tek tek silebilirsiniz.</p>
 <p>RevenueCat tarafından yönetilen abonelik verileri, RevenueCat'in veri saklama politikasına göre saklanır.</p>
+<p>PostHog tarafından tutulan analitik olayları AB altyapısında saklanır ve projemiz için yapılandırılan saklama süresinin sonunda otomatik olarak silinir. Devre dışı bırakırsanız başka olay kaydedilmez; halihazırda toplanmış olaylar anonimdir ve size bağlanamaz.</p>
 <p>Reklamla ilgili tanımlayıcılar (Advertising ID, ATT onay durumu, UMP onay durumu, AdMob'un kendi çerezleri) Google politikalarını şekilde saklanır — reklam tanımlayıcıları için tipik olarak en fazla 13 ay, ardından sıfırlanır.</p>
 
 <h3>Çocukların Gizliliği</h3>
@@ -327,6 +352,7 @@
 <div class="wrap"><table><thead><tr><th>Hizmet</th><th>Amaç</th><th>Gizlilik Politikası</th></tr></thead><tbody>
 <tr><td>Google AdMob</td><td>Reklam sunma ve ölçümleme</td><td><a href="https://policies.google.com/privacy">policies.google.com/privacy</a></td></tr>
 <tr><td>RevenueCat</td><td>Abonelik yönetimi</td><td><a href="https://www.revenuecat.com/privacy">revenuecat.com/privacy</a></td></tr>
+<tr><td>PostHog (AB)</td><td>Birinci taraf ürün analitiği</td><td><a href="https://posthog.com/privacy">posthog.com/privacy</a></td></tr>
 <tr><td>Apple App Store</td><td>iOS ödeme işlemleri</td><td><a href="https://www.apple.com/legal/privacy">apple.com/legal/privacy</a></td></tr>
 <tr><td>Google Play</td><td>Android ödeme işlemleri</td><td><a href="https://policies.google.com/privacy">policies.google.com/privacy</a></td></tr>
 </tbody></table></div>
@@ -342,7 +368,7 @@
 
   <div data-lang="de"><article>
 <h1>Datenschutzerklärung</h1>
-<p><strong>Zuletzt aktualisiert: 9. August 2026</strong></p>
+<p><strong>Zuletzt aktualisiert: 10. September 2026</strong></p>
 <hr>
 <p><strong>Kurzfassung:</strong> Dayfeed erfordert kein Benutzerkonto. Nahezu alle Daten verbleiben auf Ihrem Gerät. Kostenlose Nutzer sehen kurze Videoanzeigen von Google AdMob — so finanziert sich Dayfeed, ohne die App kostenpflichtig zu machen. Mit einem Dayfeed-Pro-Abonnement entfernen Sie alle Anzeigen. Wir verkaufen Ihre Daten nicht.</p>
 
@@ -417,12 +443,23 @@
 </ul>
 <p><strong>Kinder:</strong> Dayfeed ist ab 4 Jahren freigegeben. AdMob liefert keine personalisierten Anzeigen an Nutzer, die gemäß Googles Richtlinien als unter 13 Jahre alt gekennzeichnet sind. Wenn Sie glauben, dass ein Kind personalisierte Anzeigen sieht, kontaktieren Sie uns bitte.</p>
 
+<h3>7. Produktanalyse (PostHog)</h3>
+<p>Um zu verstehen, wie Dayfeed genutzt wird und wo es verbessert werden kann, erfasst die App eine kleine, feste Menge von Interaktionsereignissen. Das ist First-Party-Produktanalyse — keine Werbung, und sie wird nicht an Werbetreibende weitergegeben.</p>
+<ul>
+<li><strong>Was:</strong> Eine geschlossene Menge von 14 Ereignissen — angesehene, abgeschlossene oder übersprungene Onboarding-Schritte; Paywall angesehen; eine gesperrte Aktion angezeigt und die getroffene Wahl; Ergebnis eines belohnten Videos; ein erstelltes Element (Tag, Reise oder Countdown); ein gespeichertes Poster; ein erfolgreiches oder fehlgeschlagenes Teilen; eine geöffnete Benachrichtigung; und eine Suche ohne Treffer.</li>
+<li><strong>Suchbegriffe:</strong> Der einzige jemals gesendete Freitext ist der Text einer Suche <em>ohne Treffer</em>, gekürzt auf 64 Zeichen. Suchen mit Treffern werden nie gesendet.</li>
+<li><strong>Identität:</strong> Eine zufällig erzeugte, undurchsichtige Kennung, die auf Ihrem Gerät erstellt wird — dieselbe wie für die Abonnementverwaltung. Sie ist weder Ihr Name, Ihre E-Mail, Ihre Geräte- noch Ihre Werbekennung und lässt sich nicht auf Sie zurückführen.</li>
+<li><strong>Wer:</strong> PostHog, gehostet in der Europäischen Union (Frankfurt) — <a href="https://posthog.com/privacy">posthog.com/privacy</a>. PostHog handelt als unser Auftragsverarbeiter.</li>
+<li><strong>Widerspruch:</strong> <em>Einstellungen → Datenschutz → Anonyme Nutzungsdaten teilen</em>. Das Ausschalten stoppt jede Analyse sofort, und die Wahl bleibt bestehen, bis Sie sie ändern.</li>
+</ul>
+<p><strong>Was die Produktanalyse nie erfasst:</strong> die Namen Ihrer eigenen Tage, Reisen oder Countdowns; Poster-Texte oder irgendeinen Text, den Sie auf ein Poster schreiben; Ihre Fotos, Brand-Kit-Logos oder Uploads; Ihre Favoriten; und jede Suche mit Treffern. Nichts davon verlässt jemals Ihr Gerät.</p>
+
 <h3>Was Wir Nicht Erheben</h3>
 <ul>
 <li>Wir erheben keine Namen, E-Mail-Adressen oder Kontoinformationen (keine Anmeldung erforderlich)</li>
 <li>Wir erheben keinen präzisen Standort (nur Land/Region, von AdMob für Anzeigenrelevanz abgeleitet)</li>
 <li>Wir verkaufen keine Daten an Werbetreibende</li>
-<li>Wir verwenden keine Drittanbieter-Analysen (kein Firebase, Mixpanel oder Ähnliches)</li>
+<li>Wir verwenden keine Werbe- oder App-übergreifende Tracking-Analyse (kein Firebase, Mixpanel oder Ähnliches). Wir nutzen PostHog für First-Party-Produktanalyse, beschränkt auf die in Abschnitt 7 beschriebene geschlossene Ereignismenge — in den Einstellungen abschaltbar.</li>
 <li>Wir erheben keine Absturzberichte automatisch (kein Crashlytics oder Sentry)</li>
 <li>Wir greifen nicht auf Ihre Kontakte, Ihr Mikrofon oder Ihre Kamera zu</li>
 </ul>
@@ -430,6 +467,7 @@
 <h3>Datenspeicherung</h3>
 <p>Alle lokal gespeicherten Daten (Favoriten, eigene Tage, Einstellungen) bleiben auf Ihrem Gerät, bis Sie die App deinstallieren oder App-Daten löschen. Eigene Tage können Sie einzeln in der App löschen.</p>
 <p>Von RevenueCat verwaltete Abonnementdaten werden gemäß der Datenspeicherrichtlinie von RevenueCat aufbewahrt.</p>
+<p>Von PostHog gehaltene Analyseereignisse werden auf EU-Infrastruktur gespeichert und am Ende des für unser Projekt konfigurierten Aufbewahrungszeitraums automatisch gelöscht. Nach einem Widerspruch werden keine weiteren Ereignisse erfasst; bereits erfasste Ereignisse sind anonym und nicht mit Ihnen verknüpfbar.</p>
 <p>Anzeigenbezogene Kennungen (Advertising ID, ATT-Einwilligungsstatus, UMP-Einwilligungsstatus, AdMob-eigene Cookies) werden gemäß den Google-Richtlinien aufbewahrt — typischerweise maximal 13 Monate für Werbekennungen, danach werden sie zurückgesetzt.</p>
 
 <h3>Datenschutz für Kinder</h3>
@@ -461,6 +499,7 @@
 <div class="wrap"><table><thead><tr><th>Dienst</th><th>Zweck</th><th>Datenschutzerklärung</th></tr></thead><tbody>
 <tr><td>Google AdMob</td><td>Anzeigenauslieferung und Messung</td><td><a href="https://policies.google.com/privacy">policies.google.com/privacy</a></td></tr>
 <tr><td>RevenueCat</td><td>Abonnementverwaltung</td><td><a href="https://www.revenuecat.com/privacy">revenuecat.com/privacy</a></td></tr>
+<tr><td>PostHog (EU)</td><td>First-Party-Produktanalyse</td><td><a href="https://posthog.com/privacy">posthog.com/privacy</a></td></tr>
 <tr><td>Apple App Store</td><td>iOS-Zahlungsabwicklung</td><td><a href="https://www.apple.com/legal/privacy">apple.com/legal/privacy</a></td></tr>
 <tr><td>Google Play</td><td>Android-Zahlungsabwicklung</td><td><a href="https://policies.google.com/privacy">policies.google.com/privacy</a></td></tr>
 </tbody></table></div>
@@ -476,7 +515,7 @@
 
   <div data-lang="es"><article>
 <h1>Política de Privacidad</h1>
-<p><strong>Última actualización: 9 de agosto de 2026</strong></p>
+<p><strong>Última actualización: 10 de septiembre de 2026</strong></p>
 <hr>
 <p><strong>Resumen:</strong> Dayfeed no requiere que crees una cuenta. Casi todos los datos permanecen en tu dispositivo. Los usuarios gratuitos ven anuncios cortos en vídeo servidos por Google AdMob — así es como Dayfeed se financia sin cobrar por la app. Puedes eliminar todos los anuncios con una suscripción Dayfeed Pro. No vendemos tus datos.</p>
 
@@ -551,12 +590,23 @@
 </ul>
 <p><strong>Niños:</strong> Dayfeed está clasificado para 4+ años. AdMob no muestra anuncios personalizados a usuarios marcados como menores de 13 años según las políticas de Google. Si crees que un niño está viendo anuncios personalizados, contáctanos.</p>
 
+<h3>7. Analítica de Producto (PostHog)</h3>
+<p>Para entender cómo se usa Dayfeed y dónde puede mejorar, la app registra un conjunto pequeño y fijo de eventos de interacción. Es analítica de producto propia — no es publicidad y no se comparte con anunciantes.</p>
+<ul>
+<li><strong>Qué:</strong> Un conjunto cerrado de 14 eventos — pasos de bienvenida vistos, completados u omitidos; muro de pago visto; una acción restringida mostrada y la elección tomada; resultado de un anuncio recompensado; un elemento creado (día, trayecto o cuenta atrás); un póster guardado; una compartición con éxito o fallida; una notificación abierta; y una búsqueda sin resultados.</li>
+<li><strong>Términos de búsqueda:</strong> El único texto libre que se envía es el de una búsqueda <em>sin resultados</em>, recortado a 64 caracteres. Las búsquedas con resultados nunca se envían.</li>
+<li><strong>Identidad:</strong> Un identificador opaco generado aleatoriamente en tu dispositivo — el mismo que se usa para la gestión de suscripciones. No es tu nombre, correo, ID de dispositivo ni ID publicitario, y no puede rastrearse hasta ti.</li>
+<li><strong>Quién:</strong> PostHog, alojado en la Unión Europea (Fráncfort) — <a href="https://posthog.com/privacy">posthog.com/privacy</a>. PostHog actúa como nuestro encargado del tratamiento.</li>
+<li><strong>Cómo desactivarlo:</strong> <em>Ajustes → Privacidad → Compartir datos de uso anónimos</em>. Desactivarlo detiene toda la analítica de inmediato, y la elección se mantiene hasta que la cambies.</li>
+</ul>
+<p><strong>Lo que la analítica de producto nunca registra:</strong> los nombres de tus días personalizados, trayectos o cuentas atrás; los textos de los pósteres o cualquier texto que escribas en uno; tus fotos, logotipos de kit de marca o subidas; tus favoritos; y cualquier búsqueda con resultados. Nada de esto sale nunca de tu dispositivo.</p>
+
 <h3>Qué No Recopilamos</h3>
 <ul>
 <li>No recopilamos nombre, dirección de correo electrónico ni información de cuenta (no se requiere inicio de sesión)</li>
 <li>No recopilamos tu ubicación precisa (solo país/región aproximada inferida por AdMob para relevancia publicitaria)</li>
 <li>No vendemos datos a anunciantes</li>
-<li>No usamos análisis de terceros (sin Firebase, Mixpanel ni similares)</li>
+<li>No usamos analítica publicitaria ni de seguimiento entre apps (sin Firebase, Mixpanel ni similares). Sí usamos PostHog para analítica de producto propia, limitada al conjunto cerrado de eventos descrito en la sección 7 — puedes desactivarlo en Ajustes.</li>
 <li>No recopilamos informes de fallos automáticamente (sin Crashlytics ni Sentry)</li>
 <li>No accedemos a tus contactos, micrófono ni cámara</li>
 </ul>
@@ -564,6 +614,7 @@
 <h3>Retención de Datos</h3>
 <p>Todos los datos almacenados localmente (favoritos, días personalizados, configuración) se conservan en tu dispositivo hasta que desinstales la app o borres los datos de la app. Puedes eliminar días personalizados individualmente desde la app.</p>
 <p>Los datos de suscripción gestionados por RevenueCat se conservan según la política de retención de datos de RevenueCat.</p>
+<p>Los eventos de analítica en poder de PostHog se almacenan en infraestructura de la UE y se eliminan automáticamente al final del período de retención configurado para nuestro proyecto. Si te das de baja, no se registran más eventos; los ya recogidos son anónimos y no pueden vincularse contigo.</p>
 <p>Los identificadores relacionados con anuncios (Advertising ID, estado de consentimiento ATT, estado de consentimiento UMP, cookies propias de AdMob) se conservan según las políticas de Google — normalmente un máximo de 13 meses para identificadores publicitarios, tras los cuales se restablecen.</p>
 
 <h3>Privacidad de los Menores</h3>
@@ -595,6 +646,7 @@
 <div class="wrap"><table><thead><tr><th>Servicio</th><th>Propósito</th><th>Política de privacidad</th></tr></thead><tbody>
 <tr><td>Google AdMob</td><td>Publicación y medición de anuncios</td><td><a href="https://policies.google.com/privacy">policies.google.com/privacy</a></td></tr>
 <tr><td>RevenueCat</td><td>Gestión de suscripciones</td><td><a href="https://www.revenuecat.com/privacy">revenuecat.com/privacy</a></td></tr>
+<tr><td>PostHog (UE)</td><td>Analítica de producto propia</td><td><a href="https://posthog.com/privacy">posthog.com/privacy</a></td></tr>
 <tr><td>Apple App Store</td><td>Procesamiento de pagos iOS</td><td><a href="https://www.apple.com/legal/privacy">apple.com/legal/privacy</a></td></tr>
 <tr><td>Google Play</td><td>Procesamiento de pagos Android</td><td><a href="https://policies.google.com/privacy">policies.google.com/privacy</a></td></tr>
 </tbody></table></div>
@@ -610,7 +662,7 @@
 
   <div data-lang="fr"><article>
 <h1>Politique de confidentialité</h1>
-<p><strong>Dernière mise à jour : 9 août 2026</strong></p>
+<p><strong>Dernière mise à jour : 10 septembre 2026</strong></p>
 <hr>
 <p><strong>En bref :</strong> Dayfeed ne nécessite pas de création de compte. Presque toutes les données restent sur votre appareil. Les utilisateurs gratuits voient de courtes annonces vidéo diffusées par Google AdMob — c'est ainsi que Dayfeed se finance sans faire payer l'application. Vous pouvez supprimer toutes les annonces avec un abonnement Dayfeed Pro. Nous ne vendons pas vos données.</p>
 
@@ -685,12 +737,23 @@
 </ul>
 <p><strong>Enfants :</strong> Dayfeed est classé 4+. AdMob ne diffuse pas d'annonces personnalisées aux utilisateurs identifiés comme ayant moins de 13 ans selon les politiques de Google. Si vous pensez qu'un enfant voit des annonces personnalisées, veuillez nous contacter.</p>
 
+<h3>7. Analyse Produit (PostHog)</h3>
+<p>Pour comprendre comment Dayfeed est utilisé et où il peut être amélioré, l'application enregistre un petit ensemble fixe d'événements d'interaction. Il s'agit d'analyse produit propriétaire — ce n'est pas de la publicité, et ce n'est pas partagé avec des annonceurs.</p>
+<ul>
+<li><strong>Quoi :</strong> Un ensemble fermé de 14 événements — étapes d'accueil vues, terminées ou passées ; page d'abonnement vue ; une action restreinte affichée et le choix effectué ; résultat d'une vidéo récompensée ; un élément créé (jour, parcours ou compte à rebours) ; une affiche enregistrée ; un partage réussi ou échoué ; une notification ouverte ; et une recherche sans résultat.</li>
+<li><strong>Termes de recherche :</strong> Le seul texte libre jamais envoyé est celui d'une recherche <em>sans résultat</em>, tronqué à 64 caractères. Les recherches avec résultats ne sont jamais envoyées.</li>
+<li><strong>Identité :</strong> Un identifiant opaque généré aléatoirement sur votre appareil — le même que pour la gestion des abonnements. Ce n'est ni votre nom, ni votre e-mail, ni un identifiant d'appareil ou publicitaire, et il ne permet pas de remonter jusqu'à vous.</li>
+<li><strong>Qui :</strong> PostHog, hébergé dans l'Union européenne (Francfort) — <a href="https://posthog.com/privacy">posthog.com/privacy</a>. PostHog agit en tant que sous-traitant.</li>
+<li><strong>Désactivation :</strong> <em>Réglages → Confidentialité → Partager les données d'usage anonymes</em>. La désactivation arrête immédiatement toute analyse, et le choix persiste jusqu'à ce que vous le changiez.</li>
+</ul>
+<p><strong>Ce que l'analyse produit n'enregistre jamais :</strong> les noms de vos jours personnalisés, parcours ou comptes à rebours ; les légendes d'affiche ou tout texte que vous y écrivez ; vos photos, logos de kit de marque ou téléversements ; vos favoris ; et toute recherche ayant donné des résultats. Rien de tout cela ne quitte jamais votre appareil.</p>
+
 <h3>Ce Que Nous Ne Collectons Pas</h3>
 <ul>
 <li>Nous ne collectons pas de nom, d'adresse e-mail ou d'informations de compte (aucune connexion requise)</li>
 <li>Nous ne collectons pas votre localisation précise (seulement le pays/la région approximative déduite par AdMob pour la pertinence publicitaire)</li>
 <li>Nous ne vendons pas de données aux annonceurs</li>
-<li>Nous n'utilisons pas d'analyses tierces (pas de Firebase, Mixpanel ou similaire)</li>
+<li>Nous n'utilisons pas d'analyse publicitaire ou de suivi inter-applications (pas de Firebase, Mixpanel ou similaire). Nous utilisons PostHog pour l'analyse produit propriétaire, limitée à l'ensemble fermé d'événements décrit en section 7 — désactivable dans les Réglages.</li>
 <li>Nous ne collectons pas automatiquement de rapports de plantage (pas de Crashlytics ou Sentry)</li>
 <li>Nous n'accédons pas à vos contacts, microphone ou caméra</li>
 </ul>
@@ -698,6 +761,7 @@
 <h3>Conservation des Données</h3>
 <p>Toutes les données stockées localement (favoris, jours personnalisés, paramètres) sont conservées sur votre appareil jusqu'à ce que vous désinstalliez l'application ou effaciez les données de l'application. Vous pouvez supprimer les jours personnalisés individuellement depuis l'application.</p>
 <p>Les données d'abonnement gérées par RevenueCat sont conservées conformément à la politique de conservation des données de RevenueCat.</p>
+<p>Les événements d'analyse détenus par PostHog sont stockés sur une infrastructure européenne et supprimés automatiquement à la fin de la période de conservation configurée pour notre projet. En cas de désactivation, aucun autre événement n'est enregistré ; ceux déjà collectés sont anonymes et ne peuvent pas vous être rattachés.</p>
 <p>Les identifiants liés aux annonces (Advertising ID, état de consentement ATT, état de consentement UMP, cookies propres à AdMob) sont conservés selon les politiques de Google — généralement 13 mois maximum pour les identifiants publicitaires, après quoi ils sont réinitialisés.</p>
 
 <h3>Vie Privée des Enfants</h3>
@@ -729,6 +793,7 @@
 <div class="wrap"><table><thead><tr><th>Service</th><th>Finalité</th><th>Politique de confidentialité</th></tr></thead><tbody>
 <tr><td>Google AdMob</td><td>Diffusion et mesure publicitaires</td><td><a href="https://policies.google.com/privacy">policies.google.com/privacy</a></td></tr>
 <tr><td>RevenueCat</td><td>Gestion des abonnements</td><td><a href="https://www.revenuecat.com/privacy">revenuecat.com/privacy</a></td></tr>
+<tr><td>PostHog (UE)</td><td>Analyse produit propriétaire</td><td><a href="https://posthog.com/privacy">posthog.com/privacy</a></td></tr>
 <tr><td>Apple App Store</td><td>Traitement des paiements iOS</td><td><a href="https://www.apple.com/legal/privacy">apple.com/legal/privacy</a></td></tr>
 <tr><td>Google Play</td><td>Traitement des paiements Android</td><td><a href="https://policies.google.com/privacy">policies.google.com/privacy</a></td></tr>
 </tbody></table></div>
