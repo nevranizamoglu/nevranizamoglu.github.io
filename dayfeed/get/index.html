@@ -26,7 +26,7 @@
   .badges{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
   .badge{display:inline-block;transition:transform .15s}
   .badge:hover{transform:translateY(-2px)}
-  .badge img{height:52px;display:block}
+  .badge img{height:52px;width:auto;display:block}
   hr{border:0;border-top:1px solid var(--line);margin:24px auto;max-width:280px}
   footer{color:var(--muted);font-size:13px;margin-top:24px}
   a{color:var(--brand);text-decoration:none;font-weight:600}
@@ -40,10 +40,12 @@
   <p>Daily reminders, beautiful posters, and 927 special days from around the world. Free on the App Store and Google Play.</p>
   <div class="badges">
     <a class="badge" id="badge-appstore" href="https://apps.apple.com/app/id6778334948?ct=web&mt=8">
-      <img src="appstore.svg" alt="Download on the App Store">
+      <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg"
+           alt="Download on the App Store" height="52">
     </a>
     <a class="badge" id="badge-playstore" href="https://play.google.com/store/apps/details?id=com.nevranizamoglu.dayfeed">
-      <img src="playstore.svg" alt="Get it on Google Play">
+      <img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png"
+           alt="Get it on Google Play" height="52">
     </a>
   </div>
   <noscript>
