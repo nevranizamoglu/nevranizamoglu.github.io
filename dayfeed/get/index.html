@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Get Dayfeed</title>
+<meta name="robots" content="noindex">
+<link rel="icon" href="../support/icon.png" type="image/png">
+<style>
+  :root{
+    --bg:#F7F4FC; --card:#FFFFFF; --ink:#2A1B3D; --muted:#6B5F7A;
+    --brand:#4A1F7C; --line:#DDD6F3; --chip:#EDE7F6;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{ --bg:#2A1B3D; --card:#3A2255; --ink:#F7F4FC; --muted:#B9AECB;
+           --brand:#A88CF5; --line:#5A3A78; --chip:#4A2E6A; }
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);
+       font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
+       padding:32px 20px;display:flex;min-height:100vh;align-items:center;justify-content:center}
+  main{max-width:480px;margin:0 auto;text-align:center}
+  .mark{width:96px;height:96px;border-radius:24px;display:block;margin:0 auto 18px}
+  h1{font-size:26px;margin:0 0 6px;letter-spacing:-.5px}
+  p{margin:0 0 24px;color:var(--muted)}
+  .badges{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+  .badge{display:inline-block;transition:transform .15s}
+  .badge:hover{transform:translateY(-2px)}
+  .badge img{height:52px;display:block}
+  hr{border:0;border-top:1px solid var(--line);margin:24px auto;max-width:280px}
+  footer{color:var(--muted);font-size:13px;margin-top:24px}
+  a{color:var(--brand);text-decoration:none;font-weight:600}
+  a:hover{text-decoration:underline}
+</style>
+</head>
+<body>
+<main>
+  <img class="mark" src="../support/icon.png" alt="Dayfeed" width="96" height="96">
+  <h1>Dayfeed — every day is a celebration</h1>
+  <p>Daily reminders, beautiful posters, and 927 special days from around the world. Free on the App Store and Google Play.</p>
+  <div class="badges">
+    <a class="badge" id="badge-appstore" href="https://apps.apple.com/app/id6778334948?ct=web&mt=8">
+      <img src="appstore.svg" alt="Download on the App Store">
+    </a>
+    <a class="badge" id="badge-playstore" href="https://play.google.com/store/apps/details?id=com.nevranizamoglu.dayfeed">
+      <img src="playstore.svg" alt="Get it on Google Play">
+    </a>
+  </div>
+  <noscript>
+    <hr>
+    <p><strong>JavaScript is off.</strong> Open the store directly:</p>
+    <p><a href="https://apps.apple.com/app/id6778334948?ct=web&mt=8">App Store</a> &middot; <a href="https://play.google.com/store/apps/details?id=com.nevranizamoglu.dayfeed">Google Play</a></p>
+  </noscript>
+  <footer><a href="../privacy/">Privacy</a> &middot; <a href="../support/">Support</a> &middot; &copy; <span class="year">2026</span> Nevra Nizamoğlu</footer>
+</main>
+<script>
+  // Read query string. `src` = attribution source (pinterest, web, etc.).
+  // `d` = optional Dayfeed day id (e.g. "national-sup-day") for content
+  // attribution in App Store Connect / Play Console.
+  (function () {
+    var sp = new URLSearchParams(location.search);
+    var src = (sp.get("src") || "web").replace(/[^a-z0-9_-]/gi, "");
+    var day = (sp.get("d") || "").replace(/[^a-z0-9_-]/gi, "");
+
+    var ua = navigator.userAgent || "";
+    var appStore = "https://apps.apple.com/app/id6778334948?ct=" + encodeURIComponent(src) + (day ? "&at=" + encodeURIComponent(day) : "") + "&mt=8";
+    var playStore = "https://play.google.com/store/apps/details?id=com.nevranizamoglu.dayfeed&referrer=" + encodeURIComponent("utm_source=" + src + (day ? "&utm_content=" + day : "") + "&utm_medium=social");
+    document.getElementById("badge-appstore").href = appStore;
+    document.getElementById("badge-playstore").href = playStore;
+
+    if (/android/i.test(ua)) {
+      location.replace(playStore);
+    } else if (/iphone|ipad|ipod/i.test(ua)) {
+      location.replace(appStore);
+    }
+    // Otherwise: stay on the page; the user lands on the two-badge UI.
+  })();
+</script>
+</body>
+</html>
