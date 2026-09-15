@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Dig Hazard — Support</title>
-<meta name="description" content="Help and contact for Dig Hazard: Tomb Miner, the Boulder Dash-style digging game. In 18 languages.">
+<meta name="description" content="Help and contact for Dig Hazard: Tomb Miner, the Boulder Dash-style digging game. In 19 languages.">
 <link rel="icon" href="icon.png" type="image/png">
 <link rel="apple-touch-icon" href="icon.png">
 <style>
@@ -74,6 +74,7 @@
     <button data-pick="zh_Hant" type="button">繁體中文</button>
     <button data-pick="zh_Hans" type="button">简体中文</button>
     <button data-pick="ar" type="button">العربية</button>
+    <button data-pick="uk" type="button">Українська</button>
   </nav>
 
   <!-- ENGLISH -->
@@ -490,12 +491,35 @@
       <li><a href="../terms/">شروط الاستخدام</a></li></ul></section>
   </div>
 
+  <!-- УКРАЇНСЬКА -->
+  <div data-lang="uk">
+    <p class="tag">Копайте глибше й бережіть голову. Ось як отримати допомогу з грою.</p>
+    <section><h2>Контакт</h2>
+      <p>Запитання, помилки чи сайт, на якому ви застрягли — напишіть нам, і ми відповімо протягом кількох днів.</p>
+      <p><a class="mail" href="mailto:nevranizamoglu@gmail.com?subject=Dig%20Hazard%20Support">nevranizamoglu@gmail.com</a></p></section>
+    <section><h2>Що зазначити</h2><ul>
+      <li>Ваш пристрій і версію системи (наприклад, iPhone 15, iOS 18)</li>
+      <li>Номер сайту, який ви копали, якщо це сталося в рівні</li>
+      <li>Що ви очікували і що сталося натомість</li>
+      <li>Знімок екрана, якщо проблему видно</li></ul></section>
+    <section><h2>Поширені запитання</h2><ul>
+      <li><strong>Відновити покупку:</strong> відкрийте Крамницю й натисніть <em>Відновити покупки</em> з тим самим Apple ID або обліковим записом Google, з якого купували.</li>
+      <li><strong>Керувати Перепусткою гробниці або скасувати її:</strong> у налаштуваннях підписок App Store чи Google Play — ми не можемо скасувати її за вас.</li>
+      <li><strong>Дублони не надійшли:</strong> спершу спробуйте <em>Відновити покупки</em>. Якщо їх досі немає, напишіть нам із чеком магазину, і ми все владнаємо.</li>
+      <li><strong>Реклама показується після покупки:</strong> покупка набору прибирає рекламу назавжди, але гра має отримати відповідь від магазину — перезапустіть застосунок і скористайтеся <em>Відновити покупки</em>, якщо нічого не змінилося.</li>
+      <li><strong>Змінити вибір щодо реклами:</strong> Налаштування → <em>Параметри конфіденційності реклами</em>. З’являється там, де діють правила згоди.</li>
+      <li><strong>Прогрес зберігається на вашому пристрої:</strong> покупки відновлюються на новому телефоні, але прогрес розкопок разом із ними не переноситься.</li></ul></section>
+    <section><h2>Правова інформація</h2><ul>
+      <li><a href="../privacy/">Політика конфіденційності</a></li>
+      <li><a href="../terms/">Умови використання</a></li></ul></section>
+  </div>
+
   <footer>© <span class="year">2026</span> Nevra Nizamoğlu</footer>
 </main>
 
 <script>
 (function(){
-  var LANGS = ['en','tr','es','pt','fr','de','it','pl','ru','id','vi','hi','ja','ko','th','zh_Hant','zh_Hans','ar'];
+  var LANGS = ['en','tr','es','pt','fr','de','it','pl','ru','id','vi','hi','ja','ko','th','zh_Hant','zh_Hans','ar','uk'];
   var RTL = ['ar'];
   // The heading sits outside the language blocks, so it is swapped here.
   // Left in English in the markup so it still reads without JavaScript.
@@ -508,7 +532,8 @@
     vi:'Hỗ trợ Dig Hazard',        hi:'Dig Hazard सहायता',
     ja:'Dig Hazard サポート',      ko:'Dig Hazard 지원',
     th:'ฝ่ายสนับสนุน Dig Hazard',   zh_Hant:'Dig Hazard 支援',
-    zh_Hans:'Dig Hazard 支持',     ar:'دعم Dig Hazard'
+    zh_Hans:'Dig Hazard 支持',     ar:'دعم Dig Hazard',
+    uk:'Підтримка Dig Hazard'
   };
   function pick(){
     var q = new URLSearchParams(location.search).get('lang');
