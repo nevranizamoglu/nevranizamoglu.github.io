@@ -63,7 +63,7 @@
     <button data-pick="en" type="button">English</button>
     <button data-pick="tr" type="button">Türkçe</button>
     <button data-pick="es" type="button">Español</button>
-    <button data-pick="pt" type="button">Português</button>
+    <button data-pick="pt_BR" type="button">Português (Brasil)</button>
     <button data-pick="fr" type="button">Français</button>
     <button data-pick="de" type="button">Deutsch</button>
     <button data-pick="it" type="button">Italiano</button>
@@ -274,7 +274,7 @@
 <p><em>Apple no es parte de estas condiciones y no tiene responsabilidad alguna sobre el juego. Cuando el juego se obtenga en la Apple App Store, Apple y sus filiales son terceros beneficiarios de estas condiciones y pueden hacerlas valer frente a ti.</em></p>
   </article>
   <footer><a href="../support/">Soporte</a> · © <span class="year">2026</span> Nevra Nizamoğlu</footer></div>
-  <div data-lang="pt" dir="ltr"><article>
+  <div data-lang="pt_BR" dir="ltr"><article>
 <h1>Termos de Uso</h1>
 <p><strong>Última atualização: 13 de setembro de 2026</strong></p>
 <p><em>Este documento é publicado em 20 idiomas. A versão <strong>em inglês</strong> é a autoritativa: se uma tradução divergir em significado, prevalece a inglesa.</em></p>
@@ -1369,9 +1369,9 @@
 
 <script>
 (function(){
-  var LANGS = ['en', 'tr', 'es', 'pt', 'fr', 'de', 'it', 'nl', 'ja', 'ko', 'pl', 'ru', 'th', 'zh_Hant', 'id', 'vi', 'hi', 'zh_Hans', 'ar', 'uk'];
+  var LANGS = ['en', 'tr', 'es', 'pt_BR', 'fr', 'de', 'it', 'nl', 'ja', 'ko', 'pl', 'ru', 'th', 'zh_Hant', 'id', 'vi', 'hi', 'zh_Hans', 'ar', 'uk'];
   var RTL = ['ar'];
-  var TITLES = {en:"Terms of Use",tr:"Kullanım Koşulları",es:"Condiciones de Uso",pt:"Termos de Uso",fr:"Conditions d'utilisation",de:"Nutzungsbedingungen",it:"Condizioni d'uso",nl:"Gebruiksvoorwaarden",ja:"利用規約",ko:"이용약관",pl:"Warunki korzystania",ru:"Условия использования",th:"ข้อกำหนดการใช้งาน",zh_Hant:"使用條款",id:"Ketentuan Penggunaan",vi:"Điều khoản sử dụng",hi:"उपयोग की शर्तें",zh_Hans:"使用条款",ar:"شروط الاستخدام",uk:"Умови використання"};
+  var TITLES = {en:"Terms of Use",tr:"Kullanım Koşulları",es:"Condiciones de Uso",pt_BR:"Termos de Uso",fr:"Conditions d'utilisation",de:"Nutzungsbedingungen",it:"Condizioni d'uso",nl:"Gebruiksvoorwaarden",ja:"利用規約",ko:"이용약관",pl:"Warunki korzystania",ru:"Условия использования",th:"ข้อกำหนดการใช้งาน",zh_Hant:"使用條款",id:"Ketentuan Penggunaan",vi:"Điều khoản sử dụng",hi:"उपयोग की शर्तें",zh_Hans:"使用条款",ar:"شروط الاستخدام",uk:"Умови використання"};
   function pick(){
     var q = new URLSearchParams(location.search).get('lang');
     var h = location.hash.replace('#','');
@@ -1389,6 +1389,11 @@
         code = hant ? 'zh_Hant' : 'zh_Hans';
       }
       if (LANGS.indexOf(code) > -1) return code;
+      // A bare language whose only shipped form is region-qualified
+      // (pt → pt_BR): take that form.
+      for (var j=0;j<LANGS.length;j++) {
+        if (LANGS[j].indexOf(code + '_') === 0) return LANGS[j];
+      }
     }
     return 'en';
   }

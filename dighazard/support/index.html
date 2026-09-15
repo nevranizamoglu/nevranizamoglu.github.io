@@ -59,7 +59,7 @@
     <button data-pick="en" type="button">English</button>
     <button data-pick="tr" type="button">Türkçe</button>
     <button data-pick="es" type="button">Español</button>
-    <button data-pick="pt" type="button">Português</button>
+    <button data-pick="pt_BR" type="button">Português (Brasil)</button>
     <button data-pick="fr" type="button">Français</button>
     <button data-pick="de" type="button">Deutsch</button>
     <button data-pick="it" type="button">Italiano</button>
@@ -148,7 +148,7 @@
   </div>
 
   <!-- PORTUGUÊS -->
-  <div data-lang="pt">
+  <div data-lang="pt_BR">
     <p class="tag">Cave fundo e cuidado com a cabeça. Veja como obter ajuda com o jogo.</p>
     <section><h2>Contato</h2>
       <p>Dúvidas, erros ou uma escavação em que você travou — mande um e-mail e respondemos em alguns dias.</p>
@@ -543,13 +543,13 @@
 
 <script>
 (function(){
-  var LANGS = ['en','tr','es','pt','fr','de','it','nl','pl','ru','id','vi','hi','ja','ko','th','zh_Hant','zh_Hans','ar','uk'];
+  var LANGS = ['en','tr','es','pt_BR','fr','de','it','nl','pl','ru','id','vi','hi','ja','ko','th','zh_Hant','zh_Hans','ar','uk'];
   var RTL = ['ar'];
   // The heading sits outside the language blocks, so it is swapped here.
   // Left in English in the markup so it still reads without JavaScript.
   var TITLES = {
     en:'Dig Hazard Support',      tr:'Dig Hazard Destek',
-    es:'Soporte de Dig Hazard',   pt:'Suporte do Dig Hazard',
+    es:'Soporte de Dig Hazard',   pt_BR:'Suporte do Dig Hazard',
     fr:'Assistance Dig Hazard',   de:'Dig Hazard Hilfe',
     it:'Assistenza Dig Hazard',   nl:'Dig Hazard Ondersteuning',
     pl:'Pomoc Dig Hazard',
@@ -577,6 +577,11 @@
         code = hant ? 'zh_Hant' : 'zh_Hans';
       }
       if (LANGS.indexOf(code) > -1) return code;
+      // A bare language whose only shipped form is region-qualified
+      // (pt → pt_BR): take that form.
+      for (var j=0;j<LANGS.length;j++) {
+        if (LANGS[j].indexOf(code + '_') === 0) return LANGS[j];
+      }
     }
     return 'en';
   }
