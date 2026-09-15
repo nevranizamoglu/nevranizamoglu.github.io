@@ -1246,7 +1246,16 @@
     var cands = [q, h].concat(navigator.languages || [navigator.language || 'en']);
     for (var i=0;i<cands.length;i++){
       if(!cands[i]) continue;
-      var code = String(cands[i]).toLowerCase().split('-')[0];
+      // Chinese is two pages: a script tag decides, else the region does
+      // (TW/HK/MO read Traditional), else Simplified. Other languages
+      // match on the bare language code.
+      var parts = String(cands[i]).toLowerCase().replace(/_/g,'-').split('-');
+      var code = parts[0];
+      if (code === 'zh') {
+        var hant = parts.indexOf('hant') > -1 ||
+                   ['tw','hk','mo'].indexOf(parts[parts.length-1]) > -1;
+        code = hant ? 'zh_Hant' : 'zh_Hans';
+      }
       if (LANGS.indexOf(code) > -1) return code;
     }
     return 'en';
@@ -1259,7 +1268,7 @@
     document.querySelectorAll('#langnav button').forEach(function(b){
       b.setAttribute('aria-current', String(b.dataset.pick === code));
     });
-    document.documentElement.lang = code;
+    document.documentElement.lang = code.replace('_','-');
     document.documentElement.dir = RTL.indexOf(code) > -1 ? 'rtl' : 'ltr';
     document.title = (TITLES[code] || TITLES.en) + ' — Dig Hazard';
   }
