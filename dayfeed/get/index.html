@@ -39,7 +39,7 @@
   <h1>Dayfeed — every day is a celebration</h1>
   <p>Daily reminders, beautiful posters, and 927 special days from around the world. Free on the App Store and Google Play.</p>
   <div class="badges">
-    <a class="badge" id="badge-appstore" href="https://apps.apple.com/app/id6778334948?ct=web&mt=8">
+    <a class="badge" id="badge-appstore" href="https://apps.apple.com/app/apple-store/id6778334948?pt=124095771&ct=web&mt=8">
       <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg"
            alt="Download on the App Store" height="52">
     </a>
@@ -51,7 +51,7 @@
   <noscript>
     <hr>
     <p><strong>JavaScript is off.</strong> Open the store directly:</p>
-    <p><a href="https://apps.apple.com/app/id6778334948?ct=web&mt=8">App Store</a> &middot; <a href="https://play.google.com/store/apps/details?id=com.nevranizamoglu.dayfeed">Google Play</a></p>
+    <p><a href="https://apps.apple.com/app/apple-store/id6778334948?pt=124095771&ct=web&mt=8">App Store</a> &middot; <a href="https://play.google.com/store/apps/details?id=com.nevranizamoglu.dayfeed">Google Play</a></p>
   </noscript>
   <footer><a href="../privacy/">Privacy</a> &middot; <a href="../support/">Support</a> &middot; &copy; <span class="year">2026</span> Nevra Nizamoğlu</footer>
 </main>
@@ -65,7 +65,13 @@
     var day = (sp.get("d") || "").replace(/[^a-z0-9_-]/gi, "");
 
     var ua = navigator.userAgent || "";
-    var appStore = "https://apps.apple.com/app/id6778334948?ct=" + encodeURIComponent(src) + (day ? "&at=" + encodeURIComponent(day) : "") + "&mt=8";
+    // App Store Connect campaign link: `pt` is the account's provider token
+    // (Analytics → Acquisition → Campaigns); `ct` is the channel and becomes
+    // one row per value there (pinterest / instagram / tiktok / web). `ct`
+    // without `pt` is ignored by Apple, and `at` is the affiliate token, not
+    // a content tag — so the day id is not sent to the App Store; Play still
+    // gets it via utm_content.
+    var appStore = "https://apps.apple.com/app/apple-store/id6778334948?pt=124095771&ct=" + encodeURIComponent(src) + "&mt=8";
     var playStore = "https://play.google.com/store/apps/details?id=com.nevranizamoglu.dayfeed&referrer=" + encodeURIComponent("utm_source=" + src + (day ? "&utm_content=" + day : "") + "&utm_medium=social");
     document.getElementById("badge-appstore").href = appStore;
     document.getElementById("badge-playstore").href = playStore;
