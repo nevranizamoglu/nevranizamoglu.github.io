@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Get Dig Hazard</title>
+<meta name="robots" content="noindex">
+<!--
+  Pre-order / pre-registration links do not exist yet — until they do,
+  the badges point at the store search pages instead of the app's
+  product page. Swap the badge hrefs (and the JS-computed appStore /
+  playStore variables) once the listings go live.
+
+  Attribution model mirrors dayfeed/get: `src` from the short-video
+  clip's bio link becomes `ct` (Apple) and `utm_source` (Play) so App
+  Store Connect / Play Console can attribute installs to the platform
+  that produced them. `utm_medium=social` tags all installs from this
+  funnel.
+-->
+<script>location.replace("./" + location.search)</script>
+<link rel="icon" href="../support/icon.png" type="image/png">
+<style>
+  :root{
+    --bg:#1A120B; --card:#2A1B14; --ink:#F7E9C8; --muted:#A89A78;
+    --brand:#E0A33A; --line:#5A3E20; --chip:#3A2A1A;
+  }
+  @media (prefers-color-scheme: light){
+    :root{ --bg:#F7E9C8; --card:#FFFFFF; --ink:#1A120B; --muted:#6B5A3A;
+           --brand:#8C5A1A; --line:#D9C089; --chip:#EFE0B8; }
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);
+       font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
+       padding:32px 20px;display:flex;min-height:100vh;align-items:center;justify-content:center}
+  main{max-width:480px;margin:0 auto;text-align:center}
+  .mark{width:96px;height:96px;border-radius:24px;display:block;margin:0 auto 18px}
+  h1{font-size:26px;margin:0 0 6px;letter-spacing:-.5px}
+  p{margin:0 0 24px;color:var(--muted)}
+  .badges{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+  .badge{display:inline-block;transition:transform .15s}
+  .badge:hover{transform:translateY(-2px)}
+  .badge img{height:52px;width:auto;display:block}
+  hr{border:0;border-top:1px solid var(--line);margin:24px auto;max-width:280px}
+  footer{color:var(--muted);font-size:13px;margin-top:24px}
+  a{color:var(--brand);text-decoration:none;font-weight:600}
+  a:hover{text-decoration:underline}
+</style>
+</head>
+<body>
+<main>
+  <img class="mark" src="../support/icon.png" alt="Dig Hazard" width="96" height="96">
+  <h1>Dig Hazard — dig for what the tomb remembers</h1>
+  <p>Boulder-dash archaeology: 106 sites, three campaigns, every gem a chapter relic. Free on the App Store and Google Play.</p>
+  <div class="badges">
+    <a class="badge" id="badge-appstore" href="https://apps.apple.com/app/apple-store/id6807435155?pt=124095771&ct=web&mt=8">
+      <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg"
+           alt="Download on the App Store" height="52">
+    </a>
+    <a class="badge" id="badge-playstore" href="https://play.google.com/store/apps/details?id=com.nevranizamoglu.dighazard">
+      <img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png"
+           alt="Get it on Google Play" height="52">
+    </a>
+  </div>
+  <noscript>
+    <hr>
+    <p><strong>JavaScript is off.</strong> Open the store directly:</p>
+    <p><a href="https://apps.apple.com/app/apple-store/id6807435155?pt=124095771&ct=web&mt=8">App Store</a> &middot; <a href="https://play.google.com/store/apps/details?id=com.nevranizamoglu.dighazard">Google Play</a></p>
+  </noscript>
+  <footer><a href="../privacy/">Privacy</a> &middot; <a href="../terms/">Terms</a> &middot; <a href="../support/">Support</a> &middot; &copy; <span class="year">2026</span> Nevra Nizamoğlu</footer>
+</main>
+<script>
+  // Read query string. `src` = attribution source (pinterest, web,
+  // instagram, tiktok, etc.) — the short-video platforms the clips
+  // are posted to.
+  //
+  // App Store Connect campaign link: `pt` is the account's provider
+  // token (Analytics → Acquisition → Campaigns); `ct` is the channel
+  // and becomes one row per value there (pinterest / instagram /
+  // tiktok / web). `ct` without `pt` is ignored by Apple, and `at` is
+  // the affiliate token, not a content tag.
+  //
+  // Play Store: the `referrer` query is what populates
+  // Play Console → Acquisition → utm_source / utm_medium / utm_content.
+  // Both Apple and Play use `utm_medium=social` so installs from this
+  // funnel roll up under one campaign row in each dashboard.
+  (function () {
+    var sp = new URLSearchParams(location.search);
+    var src = (sp.get("src") || "web").replace(/[^a-z0-9_-]/gi, "");
+
+    var ua = navigator.userAgent || "";
+    var appStore = "https://apps.apple.com/app/apple-store/id6807435155?pt=124095771&ct=" + encodeURIComponent(src) + "&mt=8";
+    var playStore = "https://play.google.com/store/apps/details?id=com.nevranizamoglu.dighazard&referrer=" + encodeURIComponent("utm_source=" + src + "&utm_medium=social");
+    document.getElementById("badge-appstore").href = appStore;
+    document.getElementById("badge-playstore").href = playStore;
+
+    if (/android/i.test(ua)) {
+      location.replace(playStore);
+    } else if (/iphone|ipad|ipod/i.test(ua)) {
+      location.replace(appStore);
+    }
+    // Otherwise: stay on the page; the user lands on the two-badge UI.
+  })();
+</script>
+</body>
+</html>
