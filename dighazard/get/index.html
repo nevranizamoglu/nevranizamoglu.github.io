@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Get Dig Hazard</title>
+<title>Dig Hazard — coming soon</title>
 <meta name="robots" content="noindex">
 <!--
   Pre-order / pre-registration links do not exist yet — until they do,
@@ -50,8 +50,9 @@
 <main>
   <img class="mark" src="../support/icon.png" alt="Dig Hazard" width="96" height="96">
   <h1>Dig Hazard — dig for what the tomb remembers</h1>
-  <p>Boulder-dash archaeology: 106 sites, three campaigns, every gem a chapter relic. Free on the App Store and Google Play.</p>
-  <div class="badges">
+  <p>A retro cave-digging puzzle: 100 sites, two heroes, a museum to fill. Free on the App Store and Google Play.</p>
+  <p id="soon" hidden><strong>Coming soon.</strong> Dig Hazard is on its way to both stores. Until then: <a href="mailto:nevranizamoglu@gmail.com?subject=Dig%20Hazard%20launch">tell me</a> and I'll write when it's out.</p>
+  <div class="badges" id="badges">
     <a class="badge" id="badge-appstore" href="https://apps.apple.com/app/apple-store/id6807435155?pt=124095771&ct=web&mt=8">
       <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg"
            alt="Download on the App Store" height="52">
@@ -83,7 +84,16 @@
   // Play Console → Acquisition → utm_source / utm_medium / utm_content.
   // Both Apple and Play use `utm_medium=social` so installs from this
   // funnel roll up under one campaign row in each dashboard.
+  // LAUNCH DAY: set LIVE = true. Until then the page shows "Coming soon",
+  // hides the badges and never redirects — the product pages 404 before
+  // release, and a bio link that bounces to a 404 loses the visitor.
+  var LIVE = false;
   (function () {
+    if (!LIVE) {
+      document.getElementById("soon").hidden = false;
+      document.getElementById("badges").hidden = true;
+      return;
+    }
     var sp = new URLSearchParams(location.search);
     var src = (sp.get("src") || "web").replace(/[^a-z0-9_-]/gi, "");
 
