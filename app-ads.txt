@@ -2,3 +2,5 @@
 google.com, pub-5474663970160639, DIRECT, f08c47fec0942fa0
 # Dayfeed - com.nevranizamoglu.dayfeed
 google.com, pub-5474663970160639, DIRECT, f08c47fec0942fa0
+# Dig Hazard - com.nevranizamoglu.dighazard
+google.com, pub-5474663970160639, DIRECT, f08c47fec0942fa0
